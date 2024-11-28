@@ -1,0 +1,82 @@
+/* faq page css */
+.faq-title {
+    margin-bottom: 37px;
+}
+.faq-collapse .faq-title {
+    margin-bottom: 45px;
+}
+.faq-title h1{
+    font-size: 30px;
+    margin-bottom: 18px;
+    text-align: center;
+    line-height: 1;  
+}
+.faq-title p{
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+.faq-box{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+}
+.faq-box ul.faq-ul{
+    width: calc(50% - 30px);
+    margin-left: 30px;
+    margin-top: -16px;
+}
+.faq-box ul.faq-ul li.faq-li{
+    margin-top: 16px;
+}
+.faq-box ul.faq-ul li.faq-li h3{
+    font-size: 16px;
+    color: #333;
+    font-weight: 600; 
+}
+.faq-box ul.faq-ul li.faq-li h3 span{
+    color: #052a50;
+}
+.faq-box ul.faq-ul li.faq-li span.faq-desc{
+    padding-left: 20px;
+    margin-top: 6px;
+    line-height: 25px;
+}
+.faq-box a.btn-style1{
+    margin: 0 auto;
+    margin-top: 22px;
+}
+/* collapse css */
+.faq-start{
+    margin-bottom: 30px;
+}
+.faq-start span{
+    background-color: #fff;
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 12px 0px rgb(0 0 0 / 10%);
+}
+.faq-start a.collapse-title{
+    background-color: #052a50;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 16px;
+    display: block;
+    font-weight: 600;
+}
+.faq-start .collapse-content {
+    padding-top: 13px;
+}
+.faq-start .collapse-content p{
+    margin-top: 14px;
+}
+.faq-start .collapse-content p:first-child{
+    margin-top: 0px;
+}

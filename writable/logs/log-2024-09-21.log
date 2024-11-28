@@ -1,0 +1,24 @@
+CRITICAL - 2024-09-21 08:00:03 --> ErrorException: require(components/js.php): failed to open stream: No such file or directory
+in APPPATH\Views\order.php on line 23.
+ 1 APPPATH\Views\order.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(components/js.php): failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\order.php', 23, [])
+ 2 APPPATH\Views\order.php(23): require()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\order.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('order', [], true)
+ 6 APPPATH\Controllers\BaseAction.php(42): view('order')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->order()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-21 08:03:13 --> ErrorException: require(imports/js.php): failed to open stream: No such file or directory
+in APPPATH\Views\index.php on line 218.
+ 1 APPPATH\Views\index.php(218): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(imports/js.php): failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\index.php', 218, [])
+ 2 APPPATH\Views\index.php(218): require()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\BaseAction.php(10): view('index')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

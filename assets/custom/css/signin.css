@@ -1,0 +1,127 @@
+
+/* General modal adjustments */
+.modal-dialog {
+    display: flex;
+    justify-content: center;
+  }
+  .right-section .modal-body{
+    padding: 0 !important;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .modal-content {
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  /* Left section */
+  .left-section {
+    background-color: #f3f3f3;
+    /* padding: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%; /* Take up half of the space */
+  }
+  
+  .image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .illustration-image {
+    width: 100%;
+    /* max-width: 350px; */
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Right section */
+  .right-section {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;  */
+    display: grid;
+    align-content: center;
+    padding: 40px 30px;
+    width: 50%;
+    height: 100%; /* Ensure it takes the full height */
+  }
+  h5.signin_signu-modal-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  input.form-control {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px 15px;
+  }
+  
+  input.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  .btn-primary {
+    background-color: #b88e52;
+    border-color: #b88e52;
+    padding: 10px 20px;
+    border-radius: 25px;
+    width: 100%;
+    font-weight: bold;
+  }
+  
+  .btn-primary:hover {
+    background-color: #231e16;
+    border-color: #231e16;
+  }
+  
+  .show-ls-popup {
+    cursor: pointer;
+  }
+  
+  .signup-content, .signin-content {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .text-primary {
+    color: #007bff;
+  }
+  
+  .password-eye {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 991px) {
+    .left-section {
+      display: none; /* Hide the left section on smaller screens */
+    }
+  
+    .right-section {
+      width: 100%; /* Take full width on small screens */
+    }
+  }
+  
+
+
+  .custom-password-input{
+    border-top-right-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
+  }
+
+  .custom-small small{
+    position: absolute;
+  }

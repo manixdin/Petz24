@@ -1,0 +1,24 @@
+/* terms conditions page css */
+.terms-title h1{
+    font-size: 30px;
+    margin-bottom: 31px;
+    text-align: center;
+}
+.terms-content ul.terms-policy li:first-child {
+    margin-top: 0px;
+}
+.terms-content ul.terms-policy li {
+    margin-top: 16px;
+}
+.terms-content ul.terms-policy li h2{
+    font-size: 16px;
+    color: #222;
+}
+.terms-content ul.terms-policy li h2 p{
+    color: #f5ab1e;
+}
+.terms-content ul.terms-policy li p.trems-desc{
+    padding-left: 20px;
+    display: block;
+    margin-top: 6px;
+}

@@ -1,0 +1,7 @@
+CRITICAL - 2024-11-28 16:08:26 --> TypeError: Argument 2 passed to view() must be of the type array, null given, called in C:\xampp\htdocs\projects\petz24\app\Controllers\BaseAction.php on line 83
+in SYSTEMPATH\Common.php on line 1166.
+ 1 APPPATH\Controllers\BaseAction.php(83): view('petgrooming', null)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->petgrooming()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

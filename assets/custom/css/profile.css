@@ -1,0 +1,392 @@
+.order-histry-area .order-history {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-left: -30px;
+}
+.order-histry-area .order-history .profile {
+    width: calc(25% - 30px);
+    margin-left: 30px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+.order-histry-area .order-history .profile-form {
+    width: calc(75% - 30px);
+    margin-left: 30px;
+}
+.order-histry-area .order-history .profile .order-pro {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+.order-histry-area .order-history .profile .order-pro .pro-img img {
+    border: 3px solid #eee;
+    border-radius: 100%;
+}
+.order-histry-area .order-history .profile .order-pro .order-name {
+    margin-left: 15px;
+}
+.order-histry-area .order-history .profile .order-pro .order-name h4 {
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+    line-height: 1;
+}
+.order-histry-area .order-history .profile .order-pro .order-name span {
+    font-size: 13px;
+    color: #9da9b9;
+    margin-top: 12px;
+}
+.order-histry-area .order-history .profile .order-his-page ul.profile-ul li.profile-li a {
+    position: relative;
+    width: 100%;
+    padding: 15px 30px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    border-top: 1px solid #ddd;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+.order-histry-area .order-history .profile .order-his-page ul.profile-ul li.profile-li a:after {
+    background-color: #052a50;
+    content: '';
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    left: 18px;
+    width: 2px;
+    height: 15px;
+}
+.order-histry-area .order-history .profile .order-his-page ul.profile-ul li.profile-li a.active:after {
+    background-color: #fff;
+}
+.order-histry-area .order-history .profile .order-his-page ul.profile-ul li.profile-li a:hover {
+    background-color: #f5f5f5;
+    color: #333;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+.order-histry-area .order-history .profile .order-his-page ul.profile-ul li.profile-li a.active {
+    background-color: #052a50;
+    color: #fff;
+    border-color: #052a50;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+.order-histry-area .order-history .profile .order-his-page ul.profile-ul li.profile-li a span.pro-count {
+    background-color: #052a50;
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+    line-height: 1;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+.order-histry-area .order-history .profile .order-his-page ul.profile-ul li.profile-li a.active span.pro-count {
+    background-color: #fff;
+    color: #333;
+}
+.order-histry-area .order-history .order-info {
+    width: calc(65% - 30px);
+    margin-left: 30px;
+}
+.order-histry-area .order-history .order-info .table {
+    border-top: 1px solid #eee;
+}
+.order-histry-area .order-history .order-info .table thead {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.order-histry-area .order-history .order-info .table thead tr th {
+    padding-top: 11px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+.order-histry-area .order-history .order-info .table tbody tr td {
+    padding-top: 11px;
+    padding-bottom: 10px;
+}
+.order-histry-area .order-history .order-info .table tbody tr td.canceled {
+    color: #ff5252;
+}
+.order-histry-area .order-history .order-info .table tbody tr td.process {
+    color: #50c6e9;
+}
+.order-histry-area .order-history .order-info .table tbody tr td.delayed {
+    color: #052a50;
+}
+.order-histry-area .order-history .order-info .table tbody tr td.delivered {
+    color: #43d9a3;
+}
+/* profile page css */ 
+.order-histry-area .order-history .profile-form form ul.pro-input-label {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: -30px;
+    margin-top: 15px;
+}
+.order-histry-area .order-history .profile-form form ul.pro-input-label:first-child {
+    margin-top: 0px;
+}
+.order-histry-area .order-history .profile-form form ul.pro-input-label li {
+    width: calc(50% - 30px);
+    margin-left: 30px;
+}
+.order-histry-area .order-history .profile-form form ul.pro-input-label li label {
+    font-size: 14px;
+}
+.order-histry-area .order-history .profile-form form ul.pro-input-label li input {
+    width: 100%;
+    border: 1px solid #eee;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.order-histry-area .order-history .profile-form form ul.pro-submit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    margin-top: 30px;
+    border-top: 1px solid #eee;
+}
+/* pro address css */
+.order-histry-area .order-history .profile-address {
+    width: calc(65% - 30px);
+    margin-left: 30px;
+}
+.order-histry-area .order-history .profile-address form .pro-add-title h4 {
+    font-size: 22px;
+    color: #333;
+    font-weight: 500;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #eee;
+    line-height: 1;   
+}
+.order-histry-area .order-history .profile-address form ul.add-label-input {
+    margin-left: -30px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+.order-histry-area .order-history .profile-address form ul.add-label-input li {
+    width: calc(50% - 30px);
+    margin-left: 30px;
+}
+.order-histry-area .order-history .profile-address form ul.add-label-input li  label {
+    font-size: 14px;
+    color: #333;
+}
+.order-histry-area .order-history .profile-address form ul.add-label-input li  input {
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+.order-histry-area .order-history .profile-address form ul.add-label-input li  select {
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+.order-histry-area .order-history .profile-address form ul.pro-submit {
+    margin-top: 30px;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #eee;
+}
+.order-histry-area .order-history .profile-address form ul.pro-submit li {
+    display: flex;
+    align-items: center;
+}
+.order-histry-area .order-history .profile-address form ul.pro-submit li input {
+    margin-right: 5px;
+}
+.order-histry-area .order-history .profile-form form ul.pro-submit li {
+    display: flex;
+    align-items: center;
+    line-height: 1;
+}
+.order-histry-area .order-history .profile-form form ul.pro-submit li input {
+    margin-right: 5px;
+}
+/* profile wishlist page css */
+.order-histry-area .order-history .profile-wishlist {
+    width: calc(65% - 30px);
+    margin-left: 30px;
+}
+/* tickets page css */
+.order-histry-area .order-history .profile-tickets {
+    width: calc(65% - 30px);
+    margin-left: 30px;
+}
+.order-histry-area .order-history .profile-tickets .table {
+    border-top: 1px solid #eee;
+}
+.order-histry-area .order-history .profile-tickets .table thead tr th {
+    padding-top: 11px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+.order-histry-area .order-history .profile-tickets .table tbody tr td {
+    padding-top: 11px;
+    padding-bottom: 10px;
+}
+.order-histry-area .order-history .profile-tickets .table tbody tr td.canceled {
+    color: #ff5252;
+}
+.order-histry-area .order-history .profile-tickets .table tbody tr td.process {
+    color: #50c6e9;
+}
+.order-histry-area .order-history .profile-tickets .table tbody tr td.delayed {
+    color: #052a50;
+}
+.order-histry-area .order-history .profile-tickets .table tbody tr td.delivered {
+    color: #43d9a3;
+}
+
+.checkout-area .order-area ul.order-history{
+    padding: 0px 20px;
+}
+.checkout-area .order-area ul.order-history li.order-details{
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.checkout-area .order-area ul.order-history li.order-details:first-child{
+    margin-top: 0px;
+    border: none;
+}
+.checkout-area .order-area ul.order-history li.order-details:last-child{
+    padding-top: 15px;
+    padding-bottom: 14px;
+    margin-top: 14px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.checkout-area .order-area ul.order-history li.order-details:last-child span{
+    font-weight: 600;
+}
+.order-histry-area .order-history .profile .order-his-page ul.profile-ul li.profile-li a.active span.pro-count {
+    background-color: #fff;
+    color: #333;
+}
+
+
+.wishlist-area{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+.wishlist-area:last-child{
+    border-bottom: none;
+}
+.wishlist-area .wishlist-details .wishlist-item{
+    padding: 13px 0px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.wishlist-area .wishlist-details .wishlist-item span.wishlist-head{
+    font-size: 16px;
+    font-weight: 700;
+}
+.wishlist-area .wishlist-details .wishlist-item span.c-items{
+    border-bottom: 1px solid #000;
+    margin-bottom: 3px;
+}
+.wishlist-area .wishlist-details .wishlist-all-pro{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.wishlist-area .wishlist-details .wishlist-all-pro .wishlist-pro{
+    width: 60%;
+    margin-top: 20px;
+    display: flex;
+}
+.wishlist-area .wishlist-details .wishlist-all-pro .wishlist-pro .wishlist-pro-image{
+    margin-right: 15px;
+}
+.wishlist-area .wishlist-details .wishlist-all-pro .wishlist-pro .pro-details h4{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+}
+.wishlist-area .wishlist-details .wishlist-all-pro .wishlist-pro .pro-details span.all-size{
+    font-size: 14px;
+    margin-top: 8px;
+    font-weight: 600;
+    display: block;
+}
+.wishlist-area .wishlist-details .wishlist-all-pro .wishlist-pro .pro-details span.all-size span.pro-size{
+    font-weight: 400;   
+}
+.wishlist-area .wishlist-details .wishlist-all-pro .wishlist-pro .pro-details span.wishlist-text{
+    margin-top: 8px;
+    line-height: 2;
+}
+.wishlist-area .wishlist-details .wishlist-all-pro .qty-item{
+    width: 20%;
+}
+.wishlist-area .wishlist-details .wishlist-all-pro .qty-item a.add-wishlist{
+    color: #f5ab1e;
+    margin-top: 7px;
+    text-decoration: underline;
+    display: block;
+    text-align: center;
+}
+.wishlist-area .wishlist-details .wishlist-all-pro .qty-item a.add-wishlist:first-child {
+    margin-top: 0px;
+}
+.wishlist-area .wishlist-details .wishlist-all-pro .all-pro-price{
+    width: 20%;
+    text-align: right;
+}
+.wishlist-area .wishlist-details .wishlist-all-pro .all-pro-price span.new-price{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.wishlist-area .wishlist-details .wishlist-all-pro .all-pro-price span.old-price{
+    color: #999;
+}
+.wishlist-area .wishlist-details .other-link{
+    margin-top: 20px;
+    padding: 15px 0px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.wishlist-area .wishlist-details .other-link ul.c-link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-form .btn-style1-custom{
+    display: none!important;
+}
+.profile-form .existing-pet, .profile-form .add-pet-wrapper, .profile-form .center-wrapper{
+    min-height: 165px!important;
+}
+.profile-form .pets-details-wrapper{
+    border-bottom: none!important;
+}
+.change-profile-tap{
+    cursor: pointer;
+}

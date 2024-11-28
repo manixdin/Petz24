@@ -1,0 +1,69 @@
+CRITICAL - 2024-10-19 12:15:53 --> Error: Class 'App\Controllers\DateTime' not found
+in APPPATH\Controllers\BookingController.php on line 145.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookingController->getTimeSlot()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-19 12:16:42 --> Error: Class 'App\Controllers\DateTime' not found
+in APPPATH\Controllers\BookingController.php on line 145.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookingController->getTimeSlot()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-19 12:17:32 --> Error: Class 'App\Controllers\Date' not found
+in APPPATH\Controllers\BookingController.php on line 145.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookingController->getTimeSlot()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-19 12:17:59 --> Error: Call to a member function format() on string
+in APPPATH\Controllers\BookingController.php on line 146.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookingController->getTimeSlot()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-19 12:18:37 --> Exception: DateTime::__construct(): Failed to parse time string (Sat Oct 19 2024 00:00:00 GMT+0530 (India Standard Time)) at position 41 (S): Double timezone specification
+in APPPATH\Controllers\BookingController.php on line 145.
+ 1 APPPATH\Controllers\BookingController.php(145): DateTime->__construct('Sat Oct 19 2024 00:00:00 GMT+0530 (India Standard Time)')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookingController->getTimeSlot()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-19 12:18:52 --> Exception: DateTime::__construct(): Failed to parse time string (Sat Oct 19 2024 00:00:00 GMT+0530 (India Standard Time)) at position 41 (S): Double timezone specification
+in APPPATH\Controllers\BookingController.php on line 153.
+ 1 APPPATH\Controllers\BookingController.php(153): DateTime->__construct('Sat Oct 19 2024 00:00:00 GMT+0530 (India Standard Time)')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookingController->getTimeSlot()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-19 12:20:13 --> ParseError: syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH\Controllers\BookingController.php on line 162.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\projects\\petz24\\app\\Controllers\\BookingController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\BookingController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\BookingController')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\BookingController')
+ 5 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\BookingController', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-19 12:21:26 --> Exception: DateTime::__construct(): Failed to parse time string (Sat Oct 19 2024 00:00:00 GMT+0530 (India Standard Time)) at position 41 (S): Double timezone specification
+in APPPATH\Controllers\BookingController.php on line 159.
+ 1 APPPATH\Controllers\BookingController.php(159): DateTime->__construct('Sat Oct 19 2024 00:00:00 GMT+0530 (India Standard Time)')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookingController->getTimeSlot()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-19 18:51:45 --> ErrorException: Attempt to assign property 'from_time_12hr' of non-object
+in APPPATH\Controllers\BookingController.php on line 177.
+ 1 APPPATH\Controllers\BookingController.php(177): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to assign property \'from_time_12hr\' of non-object', 'C:\\xampp\\htdocs\\projects\\petz24\\app\\Controllers\\BookingController.php', 177, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookingController->getTimeSlot()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-19 18:52:13 --> ErrorException: Attempt to assign property 'from_time_12hr' of non-object
+in APPPATH\Controllers\BookingController.php on line 177.
+ 1 APPPATH\Controllers\BookingController.php(177): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to assign property \'from_time_12hr\' of non-object', 'C:\\xampp\\htdocs\\projects\\petz24\\app\\Controllers\\BookingController.php', 177, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookingController->getTimeSlot()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

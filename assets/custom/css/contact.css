@@ -1,0 +1,122 @@
+/* contact page css */
+.map-area .map-title h1{
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.map-area .map {
+    display: flex;
+}
+.map-area .map iframe{
+    width: 100%;
+    height: 680px;
+}
+.map-area .map-details{
+    display: flex;
+    flex-wrap: wrap;
+}
+.map-area .map-details .contact-info{
+    width: 50%;
+}
+.map-area .map-details .contact-info .contact-details h4{
+    font-size: 18px;
+}
+.map-area .map-details .contact-info .contact-details form {
+    margin-top: 18px;
+}
+.map-area .map-details .contact-info .contact-details form label{
+    display: block;
+    margin-top: 15px;
+}
+.map-area .map-details .contact-info .contact-details form label:first-child {
+    margin-top: 0px;
+}
+.map-area .map-details .contact-info .contact-details form input{
+    width: 100%;
+    border-radius: 4px;
+    padding: 7px 15px;
+    margin-top: 10px;
+}
+.map-area .map-details .contact-info .contact-details form textarea{
+    width: 100%;
+    resize: none;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+.map-area .map-details .contact-info .contact-details a{
+    margin-top: 24px;
+    display: inline-flex;
+    align-items: center;
+}
+.map-area .map-details .contact-info .contact-details a i {
+    margin-left: 5px;
+}
+.map-area .map-details .contact-info .information{
+    margin-left: 30px;
+}
+.map-area .map-details .contact-info .information h4{
+    font-size: 18px; 
+}
+.map-area .map-details .contact-info .information p.info-description{
+    margin-top: 16px;
+}
+.map-area .map-details .contact-info .information .contact-in {
+    margin-top: 22px;
+}
+.map-area .map-details .contact-info .information .contact-in ul.info-details{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+.map-area .map-details .contact-info .information .contact-in ul.info-details:first-child {
+    margin-top: 0px;
+}
+.map-area .map-details .contact-info .information .contact-in ul.info-details li i{
+    font-size: 20px;
+    margin-right: 20px;
+}
+.map-area .map-details .contact-info .information .contact-in ul.info-details li h4{
+    font-size: 14px;
+    line-height: 1;
+}
+.map-area .map-details .contact-info .information .contact-in ul.info-details li a {
+    margin-top: 7px;
+}
+/* breadcrumb css */
+.about-breadcrumb .about-back{
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 5;
+}
+.about-breadcrumb .about-back .about-l ul.about-link{
+    text-align: center;
+}
+.about-breadcrumb .about-back .about-l ul.about-link li.go-home a{
+    font-size: 18px;
+    color: #333;
+    position: relative;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+.about-breadcrumb .about-back .about-l ul.about-link li.go-home a::after{
+    background-color: #333;
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    right: 0px;
+    left: 0px;
+    width: 3px;
+    height: 15px;
+    margin: 0 auto;
+}
+.about-breadcrumb .about-back .about-l ul.about-link li.about-p {
+    padding-top: 26px;
+}
+.about-breadcrumb .about-back .about-l ul.about-link li.about-p span{
+    font-size: 18px;
+    color: #333;
+    font-weight: 500;
+}

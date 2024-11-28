@@ -1,0 +1,258 @@
+/* slider css */
+.slider .home-slider .img-back{
+    height: 650px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slider .home-slider .img-back .h-s-content{
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    width: 45%;
+}
+.slider .home-slider .img-back .h-s-content.slide-c-l{
+    left: 10%;
+}
+.slider .home-slider .img-back .h-s-content.slide-c-r{
+    right: 10%;
+    text-align: right;
+}
+.slider .home-slider .img-back .h-s-content.slide-c-c{
+    left: 10%;
+    right: 10%;
+    margin: 0 auto;
+    text-align: center;
+}
+.slider .home-slider .owl-item.active .img-back .h-s-content span,
+.slider .home-slider .owl-item.active .img-back .h-s-content h1,
+.slider .home-slider .owl-item.active .img-back .h-s-content a{
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.slider .home-slider .owl-item.active .img-back .h-s-content span{
+    -webkit-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+    -webkit-animation-delay: 0.7s;
+    animation-duration: 0.7s;
+}
+.slider .home-slider .owl-item.active .img-back .h-s-content h1{
+    -webkit-animation-delay: 1.0s;
+    animation-delay: 1.0s;
+    -webkit-animation-delay: 1.0s;
+    animation-duration: 1.0s;
+}
+.slider .home-slider .owl-item.active .img-back .h-s-content a{
+    -webkit-animation-delay: 1.3s;
+    animation-delay: 1.3s;
+    -webkit-animation-duration: 1.3s;
+    animation-duration: 1.3s;
+}
+.slider .home-slider .img-back .h-s-content span{
+    font-size: 20px;
+    font-weight: 600;
+}
+.slider .home-slider .img-back .h-s-content h1{
+    font-size: 50px;
+    margin-top: 12px;
+}
+.slider .home-slider .img-back .h-s-content a{
+    margin-top: 19px;
+}
+/* slider navigation css */
+.owl-theme .owl-nav {
+    margin-top: 0px;
+}
+.slider .home-slider.owl-theme .owl-nav{
+    margin-top: 0px;
+}
+.slider .home-slider .owl-nav button{
+    background-color: #052a50;
+    color: #fff;
+    border: 2px solid #052a50;
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    font-size: 18px;
+    width: 38px;
+    height: 38px;
+    margin: 0;
+    border-radius: 100%;
+}
+.slider .home-slider .owl-nav button.owl-prev{
+    left: 30px;
+}
+.slider .home-slider .owl-nav button.owl-next{
+    right: 30px;
+}
+.slider .home-slider .owl-nav button:hover{
+    background-color: transparent;
+    color: #052a50;
+}
+/* slider dot css */
+.slider .home-slider .owl-dots{
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+    left: 0px;
+    line-height: 0px;
+}
+.slider .home-slider .owl-dots button{
+    margin-right: 10px;
+}
+.slider .home-slider .owl-dots button:last-child{
+    margin-right: 0px;
+}
+.slider .home-slider .owl-dots button.owl-dot span{
+    width: 6px;
+    height: 6px;
+    margin: 0px;
+    background-color: #052a50;
+    border-radius: 50%;
+}
+.slider .home-slider .owl-dots button.owl-dot.active span,
+.slider .home-slider .owl-dots button.owl-dot:hover span{
+    background-color: #000000;
+}
+.slider .owl-theme .owl-nav .disabled{
+    opacity: 1;
+}
+
+/* Carousel button css */
+.home-category.owl-carousel .owl-nav{
+    margin-top: 0;
+}
+.home-category.owl-carousel .owl-nav button,
+.h-t-products1 .trending-products .owl-nav button,
+.testimonial-bg1 .testi-m .owl-nav button{
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    background-color: #052a50;
+    color: #fff;
+    font-size: 20px;
+    margin: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    opacity: 0;
+    visibility: hidden;
+}
+.category-img1 .home-category:hover .owl-nav button{
+    opacity: 1;
+    visibility: visible;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+}
+.category-img1 .home-category:hover .owl-nav button.owl-prev{
+    left: -10px;
+}
+.category-img1 .home-category:hover .owl-nav button.owl-next{
+    right: -10px;
+}
+.home-category.owl-carousel .owl-nav button:hover,
+.h-t-products1 .trending-products .owl-nav button:hover,
+.testimonial-bg1 .testi-m .owl-nav button:hover{
+    background-color: #fff;
+    color: #052a50;
+}
+.home-category.owl-carousel .owl-nav button.owl-prev,
+.h-t-products1 .trending-products .owl-nav button.owl-prev,
+.testimonial-bg1 .testi-m .owl-nav button.owl-prev{
+    left: 10px;
+}
+.home-category.owl-carousel .owl-nav button.owl-next,
+.h-t-products1 .trending-products .owl-nav button.owl-next,
+.testimonial-bg1 .testi-m .owl-nav button.owl-next{
+    right: 10px;
+}
+
+/* Banner grid css */
+.t-banner1 .home-offer-banner{
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -30px;
+}
+.t-banner1 .home-offer-banner .o-t-banner{
+    width: calc(50% - 30px);
+    margin-left: 30px;
+    position: relative;
+}
+.t-banner1 .home-offer-banner .o-t-banner a.image-b{
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+.t-banner1 .home-offer-banner .o-t-banner a.image-b::before,
+.t-banner1 .home-offer-banner .o-t-banner a.image-b::after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    right: 10px;
+    left: 10px;
+    opacity: 0;
+    visibility: hidden;
+    filter: alpha(opacity=0);
+    z-index: 1;
+}
+.t-banner1 .home-offer-banner .o-t-banner a.image-b::before{
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: scale(0, 1);
+    -o-transform: scale(0, 1);
+    transform: scale(0, 1);
+}
+.t-banner1 .home-offer-banner .o-t-banner a.image-b::after{
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    -webkit-transform: scale(1, 0);
+    -o-transform: scale(1, 0);
+    transform: scale(1, 0);
+}
+.t-banner1 .home-offer-banner .o-t-banner a.image-b:hover::after,
+.t-banner1 .home-offer-banner .o-t-banner a.image-b:hover::before{
+    opacity: 1;
+    visibility: visible;
+    filter: alpha(opacity=100);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+.t-banner1 .home-offer-banner .o-t-banner:hover a.image-b img{
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.t-banner1 .home-offer-banner .o-t-banner a.image-b::before,
+.t-banner1 .home-offer-banner .o-t-banner a.image-b::after,
+.t-banner1 .home-offer-banner .o-t-banner a.image-b:hover::after,
+.t-banner1 .home-offer-banner .o-t-banner a.image-b:hover::before,
+.t-banner1 .home-offer-banner .o-t-banner a.image-b img,
+.t-banner1 .home-offer-banner .o-t-banner:hover a.image-b img{
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.t-banner1 .home-offer-banner .o-t-banner .o-t-content{
+    width: 50%;
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    left: 30px;
+}
+.t-banner1 .home-offer-banner .o-t-banner .o-t-content h6{
+    font-size: 22px;
+    color: #000;
+}
+.t-banner1 .home-offer-banner .o-t-banner .o-t-content a{
+    margin-top: 21px;
+}
+.t-banner1 .home-offer-banner .o-t-banner .banner-color h6{
+    color: #000;
+}

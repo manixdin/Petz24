@@ -1,0 +1,357 @@
+/* billing page css */
+.billing-area .billing-title h4{
+    font-size: 20px; 
+}
+.billing-area .billing-address-1 {
+    padding-top: 15px;
+    margin-top: 12px;
+    border-top: 1px solid #eee;
+}
+.billing-area .billing-address-1 ul.add-name{
+    margin-left: -30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.billing-area .billing-address-1 ul.add-name li.billing-name{
+    width: calc(50% - 30px);
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+.billing-area .billing-address-1 ul.add-name li.billing-name input{
+    width: 100%;
+    font-size: 13px;
+    margin-top: 10px;
+    border: 1px solid #eee;
+}
+.billing-area .billing-address-1 ul.billing-locatio{
+    margin-left: -30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.billing-area .billing-address-1 ul.billing-locatio li.billing-info{
+    width: calc(33.33% - 30px);
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+.billing-area .billing-address-1 ul.billing-locatio li.billing-info input{
+    width: 100%;
+    margin-top: 10px;
+    font-size: 13px;
+    border: 1px solid #eee;
+}
+.billing-area .billing-address-1 ul.country-info{
+    margin-left: -30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.billing-area .billing-address-1 ul.country-info li.billing-country{
+    width: calc(50% - 30px);
+    margin-left: 30px;
+    margin-bottom: 22px;
+}
+.billing-area .billing-address-1 ul.country-info li.billing-country input{
+    width: 100%;
+    margin-top: 10px;
+    font-size: 13px;
+    border: 1px solid #eee;
+}
+.billing-area .billing-address-1 ul.country-info li.billing-country select{
+    width: 100%;
+    margin-top: 10px;
+    font-size: 13px;
+    border: 1px solid #eee;
+}
+.billing-area .next-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+.billing-area .next-button a{
+    background-color: #f5ab1e;
+    color: #fff;
+    font-weight: 600;
+    padding: 7px 15px;
+    border: 2px solid #f5ab1e;
+    border-radius: 3px;
+    
+    line-height: 1;
+}
+.billing-area .next-button a:hover{
+    background-color: transparent;
+    color: #000;
+}
+
+
+.toggle-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 100%; 
+}
+
+.toggle-btn {
+    padding: 8px 16px;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 35px;
+}
+
+.toggle-btn.active {
+    background-color: #06294F;
+    color: #fff;
+}
+
+.billing-addresss-1 {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.billing-addresss-1 label {
+    margin-right: 10px;
+    width: 80px;
+    /* Set a fixed width for labels for alignment */
+}
+
+.billing-addresss-1 input {
+    flex: 1;
+    /* Allow inputs to grow and fill the available space */
+    border-radius: 100px;
+    /* Set a max-width for inputs */
+    padding: 8px 12px;
+    /* Add padding for input fields */
+    border: 1px solid #ccc;
+    /* Add border for input fields */
+    outline: none;
+    /* Remove outline on focus */
+}
+
+ 
+.btn.btn-style1-custom {
+    margin-top: 20px;
+    /* Adjust margin for button */
+    display: inline-block;
+    /* Make the button inline */
+    padding: 10px 20px;
+    /* Add padding for the button */
+    background-color: #06294F;
+    /* Set background color for the button */
+    color: #fff;
+    /* Set text color for the button */
+    border: 2px solid #052a50;
+    /* Remove button border */
+    border-radius: 50px;
+    /* Add border-radius for button */
+    text-decoration: none;
+    /* Remove default link underline */
+}
+
+.btn.btn-style1-custom:hover { 
+    border: 2px solid #052a50 !important; 
+}
+
+.dogBtn {
+    width: 117px;
+}
+
+.catBtn {
+    width: 111px;
+}
+
+.maleBtn {
+    width: 119px;
+}
+
+.femaleBtn {
+    width: 110px;
+}
+
+.age-year {
+    width: 117px;
+}
+
+.age-month {
+    width: 117px;
+}
+
+.breed {
+    width: 243px;
+}
+
+.dob {
+    width: 243px;
+}
+
+.name {
+    width: 243px;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 600px) {
+    .billing-addresss-1 {
+        flex-wrap: wrap;
+    }
+
+    .billing-addresss-1 label {
+        margin-bottom: 5px;
+    }
+
+    .billing-addresss-1 input {
+        margin-bottom: 10px;
+    }
+
+    .toggle-btn {
+        padding: 8px;
+    }
+
+    .add-pet {
+        width: 72px !important;
+        height: 72px !important;
+
+    }
+
+    .femaleBtn,
+    .maleBtn,
+    .catBtn,
+    .age-year,
+    .age-month,
+    .dogBtn {
+        width: 140px;
+    }
+
+    .name,
+    .dob,
+    .breed {
+        width: 280px;
+    }
+
+}
+
+.add-pet {
+    width: 100px;
+    height: 100px;
+    border: 2px dashed #052a5040;
+    border-radius: 100px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.add-pet-label {
+    font-size: 13px;
+    font-weight: 400;
+    color: #06294F
+}
+
+.pet-active {
+    border: 2px solid #06294F;
+    border-radius: 50px
+}
+
+/* Time Slot Start */
+#calendar-header i {
+    font-size: 30px;
+}
+#calendar .day.active:first-child {
+    background-color: red;
+    color: white;
+}
+.track-area{
+    margin-bottom: 100px;
+}
+#calendar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    padding: 20px;
+    max-width: 600px;
+}
+
+.day {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    font-size: 16px;
+    cursor: pointer;
+    user-select: none;
+    height: 45px;
+    width: 45px;
+}
+.day.active.active-date{
+    background-color: #052a50;
+    color: #fff;
+    border-radius: 25px;
+}
+
+.day.disabled {
+    cursor: not-allowed;
+} 
+
+.time-slot button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.day-name {
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+} 
+
+#timeSlot h4{
+    margin-bottom: 15px;
+}
+
+.timeslot-list {
+    display: flex;
+}
+
+.slot {
+    width: 20%;
+    padding: 10px;
+    font-size: 14px;
+    border: 2px solid #052a50;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 15px;
+}
+.slot.yes{
+    cursor: pointer;
+}
+.slot.no{
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+.slot.yes:hover {
+    background: #052a50;
+    color: #fff;
+}
+/* Time Slot End */
+/* Address Form Css */
+#user-address-form .billing-addresss-1 label{
+    width: 170px!important;
+}
+/* Address Form Css */

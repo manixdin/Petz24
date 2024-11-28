@@ -1,0 +1,25 @@
+/* about page css */
+.about-content .about-title{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+.about-content .about-title h1{
+    font-size: 30px;
+    line-height: 1;
+}
+.about-content .about-title p{
+    margin-top: 18px;
+}
+.about-content .about-details {
+    text-align: center;
+}
+.about-content .about-details {
+    margin-top: 23px;
+}
+.about-content .about-details p{
+    margin-top: 15px;
+}
+.about-content .about-details p:first-child {
+    margin-top: 0px;
+}

@@ -1,0 +1,41 @@
+ERROR - 2024-09-18 17:51:30 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in C:\xampp\htdocs\projects\petz24\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\petz24\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\projects\petz24\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\projects\petz24\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\projects\petz24\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\projects\petz24\app\Controllers\Workflow_User.php(86): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(941): App\Controllers\Workflow_User->updateSpecificUser()
+#6 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_User))
+#7 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projects\petz24\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-09-18 17:51:30 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '1' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user_tbl` (`user_id`, `first_name`, `last_name`, `mobile_number`, `email_id`, `password`, `flag`) VALUES (:user_id:, :first_name:, :last_name:, :mobile_number:, :email_id:, :password:, :flag:)', [...], false)
+ 2 APPPATH\Controllers\Workflow_User.php(86): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_User->updateSpecificUser()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_User))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-18 17:51:30 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '1' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user_tbl` (`user_id`, `first_name`, `last_name`, `mobile_number`, `email_id`, `password`, `flag`) VALUES (\'1\', \'karthikk\', \'sam\', \'8899556644\', \'karthik@zoho.com\', \'master\', \'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user_tbl` (`user_id`, `first_name`, `last_name`, `mobile_number`, `email_id`, `password`, `flag`) VALUES (\'1\', \'karthikk\', \'sam\', \'8899556644\', \'karthik@zoho.com\', \'master\', \'1\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user_tbl` (`user_id`, `first_name`, `last_name`, `mobile_number`, `email_id`, `password`, `flag`) VALUES (:user_id:, :first_name:, :last_name:, :mobile_number:, :email_id:, :password:, :flag:)', [...], false)
+ 4 APPPATH\Controllers\Workflow_User.php(86): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_User->updateSpecificUser()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_User))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-18 17:51:30 --> [Caused by] mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `user_tbl` (`user_id`, `first_name`, `last_name`, `mobile_number`, `email_id`, `password`, `flag`) VALUES (\'1\', \'karthikk\', \'sam\', \'8899556644\', \'karthik@zoho.com\', \'master\', \'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user_tbl` (`user_id`, `first_name`, `last_name`, `mobile_number`, `email_id`, `password`, `flag`) VALUES (\'1\', \'karthikk\', \'sam\', \'8899556644\', \'karthik@zoho.com\', \'master\', \'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user_tbl` (`user_id`, `first_name`, `last_name`, `mobile_number`, `email_id`, `password`, `flag`) VALUES (\'1\', \'karthikk\', \'sam\', \'8899556644\', \'karthik@zoho.com\', \'master\', \'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user_tbl` (`user_id`, `first_name`, `last_name`, `mobile_number`, `email_id`, `password`, `flag`) VALUES (:user_id:, :first_name:, :last_name:, :mobile_number:, :email_id:, :password:, :flag:)', [...], false)
+ 5 APPPATH\Controllers\Workflow_User.php(86): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_User->updateSpecificUser()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_User))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

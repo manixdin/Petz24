@@ -1,0 +1,301 @@
+/* Added by Mani */
+/* Added by Mani */
+.error{
+    color: red!important;
+    display: none   ;
+}
+.home-slider-5 .home-slider-main-5 .home5-slider .img-back{
+    width: 100%;
+    height: 300px!important;
+}
+.home-slider-5 .home-slider-main-5 .home5-slider{
+    position: relative;
+}
+.cate-image{
+    text-align: center;
+}
+.cate-image span{
+    margin-top: 10px;
+    font-size:14px;
+    font-weight: 600;
+}
+.home5-category.mt-custom{
+    margin-top: 122px;
+}
+.top-5{
+    /* background: #fff; */
+    /* max-width: 100%; */
+    /* padding: 0px 20px; */
+}
+.top-news{
+    background-color: #fff;
+    max-width: 100%;
+    padding: 0px 20px;
+}
+.top-5 .header-area{
+    background-color: #ededed;
+}
+.home5-category-top .cate-image img{
+    width: 85px;
+}
+.home5-category-top{
+    padding:20px 0px;
+}
+.deal5-back .deal-area5 .deal-content h2{
+    font-size: 40px;
+}
+.deal5-back{
+    height: 400px;
+    background-attachment: fixed!important;
+}
+
+
+.t-banner1 .home-offer-banner{
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -30px;
+}
+.t-banner1 .home-offer-banner .o-t-banner{
+    width: calc(33% - 30px);
+    margin-left: 30px;
+    position: relative;
+}
+.t-banner1 .home-offer-banner .o-t-banner a.image-b{
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+.t-banner1 .home-offer-banner .o-t-banner a.image-b::before,
+.t-banner1 .home-offer-banner .o-t-banner a.image-b::after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    right: 10px;
+    left: 10px;
+    opacity: 0;
+    visibility: hidden;
+    filter: alpha(opacity=0);
+    z-index: 1;
+}
+.t-banner1 .home-offer-banner .o-t-banner a.image-b::before{
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: scale(0, 1);
+    -o-transform: scale(0, 1);
+    transform: scale(0, 1);
+}
+.t-banner1 .home-offer-banner .o-t-banner a.image-b::after{
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    -webkit-transform: scale(1, 0);
+    -o-transform: scale(1, 0);
+    transform: scale(1, 0);
+}
+.t-banner1 .home-offer-banner .o-t-banner a.image-b:hover::after,
+.t-banner1 .home-offer-banner .o-t-banner a.image-b:hover::before{
+    opacity: 1;
+    visibility: visible;
+    filter: alpha(opacity=100);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+.t-banner1 .home-offer-banner .o-t-banner:hover a.image-b img{
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.t-banner1 .home-offer-banner .o-t-banner a.image-b::before,
+.t-banner1 .home-offer-banner .o-t-banner a.image-b::after,
+.t-banner1 .home-offer-banner .o-t-banner a.image-b:hover::after,
+.t-banner1 .home-offer-banner .o-t-banner a.image-b:hover::before,
+.t-banner1 .home-offer-banner .o-t-banner a.image-b img,
+.t-banner1 .home-offer-banner .o-t-banner:hover a.image-b img{
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.t-banner1 .home-offer-banner .o-t-banner .o-t-content{
+    width: 50%;
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    left: 30px;
+}
+.t-banner1 .home-offer-banner .o-t-banner .o-t-content h6{
+    font-size: 22px;
+    color: #000;
+}
+.t-banner1 .home-offer-banner .o-t-banner .o-t-content a{
+    margin-top: 21px;
+}
+.t-banner1 .home-offer-banner .o-t-banner .banner-color h6{
+    color: #000;
+}
+
+.search-div{
+    margin-top: 30px;
+}
+
+.footer-logo {
+    width: 82%;
+}
+
+.footer-appstore{
+    width: 150px;
+}
+
+.footer-playtore{
+    width: 90%;
+}
+.pro-details{
+    color: #052a50 !important;
+}
+
+.section-tb-padding {
+    padding-top: 167px !important;
+    padding-bottom: 24px !important;
+}
+.section-tb-padding-footer {
+    padding-top: 30px !important;
+    padding-bottom: 24px !important;
+}
+
+.btn-style1-custom{
+    color: #fff;
+    width: 200px;
+    font-size: 14px;
+    padding: 10px 30px;
+    background-color: #052a50;
+    font-weight: 600;
+    border: 2px solid #052a50;
+    height: 43px;
+    margin-top: 12px;
+    border-radius: 25px;
+}
+@media only screen and (max-width: 767px) {
+    .btn-style1-custom {
+        min-height: 36px;
+        padding: 8px 25px;
+        line-height: normal !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 11px;
+    }
+    .news-5 form a {
+        padding: 9px 14px !important; 
+    }
+    .home-slider-5 .home-slider-main-5 .home5-slider .img-back{
+        width: 100%;
+        height: 68px !important;
+    }
+}
+
+
+/* 
+.btn:hover {
+    color: #fff !important;
+} */
+
+
+.all-filter .categories-page-filter ul.all-option {
+   
+    border-top: 0px solid transparent !important;
+}
+
+/* #signin_signup_popup .modal-header > .modal-header-content{
+    background-image: url(../images/login_pets.png);
+    width: 300px;
+} */
+
+.c-pointer{
+    cursor: pointer;
+}
+
+.input-group .password-eye{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: large;
+    z-index: 10;
+}
+/* skeleton start */
+.card-skeleton { 
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    width:100%;
+    padding:10px; 
+} 
+.skeleton {
+    position: relative;
+    background-color: #e2e5e7;
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    background-size: 40px 100%;
+    background-repeat: no-repeat;
+    background-position: left -40px top 0;
+    -webkit-animation: shine 1s ease infinite;
+            animation: shine 1s ease infinite;
+} 
+.skeleton.pad-55{ 
+    padding-bottom: 55%;
+}
+.skeleton.pad-10{ 
+    padding-bottom: 10%;
+}
+.skeleton.pad-15{ 
+    padding-bottom: 15%;
+}
+.skeleton.pad-25{ 
+    padding-bottom: 25%;
+}
+.skeleton.pad-20{ 
+    padding-bottom: 20%;
+}
+.skeleton.pad-30{ 
+    padding-bottom: 30%;
+}
+.skeleton.pad-40{ 
+    padding-bottom: 40%;
+}
+.skeleton.pad-50{ 
+    padding-bottom: 50%;
+}
+.card-skeleton .skeleton{
+    border-radius:2px;
+}
+.skeleton-img{
+    width: 26%; 
+    margin-left: 37%;
+}
+.skeleton-title{
+    margin: -10px;
+    margin-bottom: 1rem!important;
+}
+.skeleton-carddd-shadow{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px!important;
+} 
+
+@-webkit-keyframes shine {
+    to {
+        background-position: right -40px top 0;
+    }
+}
+
+@keyframes shine {
+    to {
+        background-position: right -40px top 0;
+    }
+} 
+/* skeleton end */
+.box-shadow{ 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+.profile-form{
+    display: none;
+}
+.profile-form.active{
+    display: block;
+}
