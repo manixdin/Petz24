@@ -1,0 +1,40 @@
+.carousel-container{
+  padding-bottom: 50px;
+}
+
+.book-appoinment-custom{
+  padding-top: 50px !important;
+}
+
+.section-title{
+  margin-bottom: 0px !important;
+}
+
+.section-title-2{
+  font-weight: normal;
+  margin-bottom: 50px;
+}
+
+.content-card{
+  max-width: 350px !important;
+}
+
+
+.desktop-banner{
+  display: block;
+    }
+.mobile-banner{
+  display: none;
+
+}
+
+@media screen  and (max-width:600px){
+  .desktop-banner{
+display: none;
+  }
+  .mobile-banner{
+    display: block;
+  
+  }
+  
+}

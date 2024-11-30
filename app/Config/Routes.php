@@ -38,6 +38,8 @@ $routes->get('cart', 'BaseAction::cart');
 $routes->get('wishlist', 'BaseAction::wishlist');
 // pet grooming
 $routes->get('petgrooming', 'BaseAction::petgrooming');
+$routes->get('petgroomingexperience', 'BaseAction::petgroomingexperience');
+
 //order
 $routes->get('order', 'BaseAction::order');
 //checkout
