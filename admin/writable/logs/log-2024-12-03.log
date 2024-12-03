@@ -117,3 +117,10 @@ in APPPATH\Controllers\Workflow_Clinic.php on line 18.
  2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
  3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-03 16:26:29 --> ErrorException: Undefined array key "breed_id"
+in APPPATH\Controllers\Workflow_Clinic.php on line 71.
+ 1 APPPATH\Controllers\Workflow_Clinic.php(71): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Clinic->updateClinic()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

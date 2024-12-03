@@ -1,4 +1,4 @@
-var mode, masterData, product_category_id, productType_Details;
+var mode, masterData, clinic_id;
 const module = 'clinic';
 
 $(document).ready(function () {
@@ -14,21 +14,14 @@ $(document).ready(function () {
 });
 
 $('#add_clinic').on('click',function () {
-
   mode = "new";
-  
   $('#clinic-form')[0].reset();
   $('#clinicModelTitle').html('Add Clinic');
   $("#popup-modal").modal("show");
-
-
 });
 
 $("#btn-submit").on('click', function () {   
-
-  
   $(".error").hide();
-
   let formObject = [
     {
       value: $("#clinic_name").val(),
@@ -57,34 +50,22 @@ $("#btn-submit").on('click', function () {
       insertClinicData();
       }
     if (mode == "edit") {
-      updateProductData();
+      updateClinicData();
     }
   }
 });
 
 //====[ Edit Product Data ]===
 $(document).on("click", ".btnEdit", function () {
-      
   mode = 'edit';
-  
   let index = $(this).attr("id");
-  product_category_id = masterData[index]['product_category_id'];
-
-
-  console.log(masterData[index]);
-  
-
-  $('#clinicModelTitle').html('Edit Product Type');
-  
-  $('#productcategoryselect').children().remove();
-  $('#productcategoryselect').append($('<option>', { value: masterData[index].product_type_id }).text(masterData[index].type));
-  $.each(productType_Details, function (key, value) {
-    $('#productcategoryselect')
-      .append($('<option>', { value: value.product_type_id }).text(value.type));
-  });
-
-  $("#product_category_name").val(masterData[index].category);
-
+  clinic_id = masterData[index]['clinic_id'];
+  $('#clinicModelTitle').html('Edit Clinic');
+  $("#clinic_name").val(masterData[index].clinic_name);
+  $("#address").val(masterData[index].address);
+  $("#city").val(masterData[index].city);
+  $("#state").val(masterData[index].state);
+  $("#pincode").val(masterData[index].pincode);
   $("#popup-modal").modal("show");
 });
 
@@ -96,15 +77,9 @@ function getFormData(){
 
 function refreshDetails(){
   getClinic();
-  // getpetDetaproductTypeDetails();
-
   $("#popup-modal").modal("hide");
 }
 
-function cleanPoup() {
-  $('#product-type-form')[0].reset();
-  $('#product_image_url').hide();
-}
 
 //===[ Insert Product Data ]===
 function insertClinicData() {
@@ -117,11 +92,11 @@ function insertClinicData() {
 }
 
 //===[ Update Product Data ]===
-function updateProductData() {
+function updateClinicData() {
 
   let data = getFormData();
   
-  data.append("product_category_id", product_category_id);
+  data.append("clinic_id", clinic_id);
 
   PUT({ module, data }).then((response) => {
     SWAL_HANDLER(response);
@@ -132,36 +107,6 @@ function updateProductData() {
 
     
   
-    // *************************** [Display the image on Modal ] ****************************************************
-  
-    $(document).on("change", "#product_img", function () {
-      dispImg(this, "product_image_url");
-    });
-  
-    $(document).on("change", "#img_1", function () {
-      dispImg(this, "img1_url");
-    });
-    $(document).on("change", "#img_2", function () {
-      dispImg(this, "img2_url");
-    });
-    $(document).on("change", "#img_3", function () {
-      dispImg(this, "img3_url");
-    });
-    $(document).on("change", "#img_4", function () {
-      dispImg(this, "img4_url");
-    });
-  
-    function dispImg(input, id) {
-      if (input.files && input.files[0]) {
-        var reader = new FileReader();
-        reader.onload = function (e) {
-          $("#" + id).attr("src", e.target.result);
-          $("#" + id).css("display", "block");
-        };
-        reader.readAsDataURL(input.files[0]);
-      }
-    }
-    
 
 
     //====[ Get All Pet Data ]===
@@ -177,16 +122,7 @@ function getClinic() {
 
 
 
-function getpetDetaproductTypeDetails() {
-  GET({ module: 'producttype' }).then((data) => {
-    productType_Details = data;    
-  });
-}
-
-
-
     function displayClinicDetails(tableData) {
-// console.log(tableData);
 
 
       //===[Destroy Data Table]===
@@ -252,7 +188,7 @@ function getpetDetaproductTypeDetails() {
     $(document).on("click", ".BtnDelete", function () {
       mode = "delete";
       var index = $(this).attr("id");
-      product_category_id = masterData[index]['product_category_id'];
+      clinic_id = masterData[index]['clinic_id'];
       
   
       Swal.fire({
@@ -266,7 +202,7 @@ function getpetDetaproductTypeDetails() {
       }).then((result) => {
         if (result.isConfirmed) {
     
-          DELETE({ module, data: { product_category_id } }).then((response) => {
+          DELETE({ module, data: { clinic_id } }).then((response) => {
             SWAL_HANDLER(response);
     
             refreshDetails();

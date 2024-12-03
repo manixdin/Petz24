@@ -94,8 +94,8 @@ $routes->post('deleteproductimage', 'Workflow_Product_Image::deleteProductImage'
 # Clinic
 $routes->get('getclinic', 'Workflow_Clinic::getClinic');
 $routes->post('insertclinic', 'Workflow_Clinic::insertClinic');
-// $routes->post('updateproductimage', 'Workflow_Clinic::updateProductImage');
-// $routes->post('deleteproductimage', 'Workflow_Clinic::deleteProductImage');
+$routes->post('updateclinic', 'Workflow_Clinic::updateClinic');
+$routes->post('deleteclinic', 'Workflow_Clinic::deleteClinic');
 
 //NAVBAR ROUTES
 $routes->get('title', 'Navbar::title');
