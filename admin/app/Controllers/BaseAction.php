@@ -59,6 +59,12 @@ class BaseAction extends BaseController
         return view('breed');
     }
 
+    public function clinic()
+    {
+        return view('clinic');
+    }
+
+
     ##############################################
 
     public function productDescription()

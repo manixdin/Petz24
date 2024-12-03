@@ -29,6 +29,7 @@ $routes->get('brand', 'BaseAction::brand');
 
 #Breed
 $routes->get('breed', 'BaseAction::breed');
+$routes->get('clinic', 'BaseAction::clinic');
 
 ###########################[ API Routes ]##################################
 
@@ -88,6 +89,13 @@ $routes->get('getproductimage', 'Workflow_Product_Image::getProductImage');
 $routes->post('insertproductimage', 'Workflow_Product_Image::insertProductImage');
 $routes->post('updateproductimage', 'Workflow_Product_Image::updateProductImage');
 $routes->post('deleteproductimage', 'Workflow_Product_Image::deleteProductImage');
+
+
+# Clinic
+$routes->get('getclinic', 'Workflow_Clinic::getClinic');
+$routes->post('insertclinic', 'Workflow_Clinic::insertClinic');
+// $routes->post('updateproductimage', 'Workflow_Clinic::updateProductImage');
+// $routes->post('deleteproductimage', 'Workflow_Clinic::deleteProductImage');
 
 //NAVBAR ROUTES
 $routes->get('title', 'Navbar::title');

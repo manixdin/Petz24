@@ -4,12 +4,21 @@ function FORM_VALIDATION(formData){
         return false;
     }
 
-    const foundItem = formData.find(item => item.value === "" || item.value === null || item.value === undefined);
+    for (let item of formData) {
+      // Check for empty, null, or undefined values
+      if (item.value === "" || item.value === null || item.value === undefined) {
+          validateError(item.error);
+          return false;
+      }
 
-    if(foundItem){
-        validateError(foundItem.error);
-        return false;
-    }
+      // Additional check for pincode
+      if (item.error === "Please enter the pincode") {
+          if (!/^\d{6}$/.test(item.value)) { // Adjust regex as per your requirements
+              validateError("Please enter a valid 6-digit pincode");
+              return false;
+          }
+      }
+  }
 
     return true;
 }
