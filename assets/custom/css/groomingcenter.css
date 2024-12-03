@@ -453,6 +453,9 @@ span.summary-width {
     width: 95px;
     font-weight: 600;
 }
+#bookingData span.summary-width {
+    width: 160px; 
+}
 .display-inline{
     display: inline!important;
 }

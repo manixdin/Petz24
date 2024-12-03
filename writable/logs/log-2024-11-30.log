@@ -1,0 +1,74 @@
+ERROR - 2024-11-30 17:21:53 --> mysqli_sql_exception: Incorrect parameter count in the call to native function 'IFNULL' in C:\xampp\htdocs\projects\petz24\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\petz24\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT b.`booki...', 0)
+#1 C:\xampp\htdocs\projects\petz24\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT b.`booki...')
+#2 C:\xampp\htdocs\projects\petz24\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT b.`booki...')
+#3 C:\xampp\htdocs\projects\petz24\app\Controllers\MyBookingController.php(17): CodeIgniter\Database\BaseConnection->query('SELECT b.`booki...')
+#4 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(941): App\Controllers\MyBookingController->getMyBooking()
+#5 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MyBookingController))
+#6 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projects\petz24\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-30 17:21:53 --> CodeIgniter\Database\Exceptions\DatabaseException: Incorrect parameter count in the call to native function 'IFNULL'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\MyBookingController.php(17): CodeIgniter\Database\BaseConnection->query('SELECT b.`booking_id`, b.`booking_date`, t.from_time, t.to_time, p.plan_name, IFNULL(b.`address_id`, \'yes\', \'no\') as status, b.`center_id` FROM `booking_tbl` b inner join timeslot_tbl t ON t.slot_id = b.`slot_id` inner join pet_plan_tbl p ON p.plan_id = b.`plan_id` WHERE b.user_id = \'14\'')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\MyBookingController->getMyBooking()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MyBookingController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-30 17:21:53 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Incorrect parameter count in the call to native function 'IFNULL'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT b.`booking_id`, b.`booking_date`, t.from_time, t.to_time, p.plan_name, IFNULL(b.`address_id`, \'yes\', \'no\') as status, b.`center_id` FROM `booking_tbl` b inner join timeslot_tbl t ON t.slot_id = b.`slot_id` inner join pet_plan_tbl p ON p.plan_id = b.`plan_id` WHERE b.user_id = \'14\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT b.`booking_id`, b.`booking_date`, t.from_time, t.to_time, p.plan_name, IFNULL(b.`address_id`, \'yes\', \'no\') as status, b.`center_id` FROM `booking_tbl` b inner join timeslot_tbl t ON t.slot_id = b.`slot_id` inner join pet_plan_tbl p ON p.plan_id = b.`plan_id` WHERE b.user_id = \'14\'')
+ 3 APPPATH\Controllers\MyBookingController.php(17): CodeIgniter\Database\BaseConnection->query('SELECT b.`booking_id`, b.`booking_date`, t.from_time, t.to_time, p.plan_name, IFNULL(b.`address_id`, \'yes\', \'no\') as status, b.`center_id` FROM `booking_tbl` b inner join timeslot_tbl t ON t.slot_id = b.`slot_id` inner join pet_plan_tbl p ON p.plan_id = b.`plan_id` WHERE b.user_id = \'14\'')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\MyBookingController->getMyBooking()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MyBookingController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-30 17:21:53 --> [Caused by] mysqli_sql_exception: Incorrect parameter count in the call to native function 'IFNULL'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT b.`booking_id`, b.`booking_date`, t.from_time, t.to_time, p.plan_name, IFNULL(b.`address_id`, \'yes\', \'no\') as status, b.`center_id` FROM `booking_tbl` b inner join timeslot_tbl t ON t.slot_id = b.`slot_id` inner join pet_plan_tbl p ON p.plan_id = b.`plan_id` WHERE b.user_id = \'14\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT b.`booking_id`, b.`booking_date`, t.from_time, t.to_time, p.plan_name, IFNULL(b.`address_id`, \'yes\', \'no\') as status, b.`center_id` FROM `booking_tbl` b inner join timeslot_tbl t ON t.slot_id = b.`slot_id` inner join pet_plan_tbl p ON p.plan_id = b.`plan_id` WHERE b.user_id = \'14\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT b.`booking_id`, b.`booking_date`, t.from_time, t.to_time, p.plan_name, IFNULL(b.`address_id`, \'yes\', \'no\') as status, b.`center_id` FROM `booking_tbl` b inner join timeslot_tbl t ON t.slot_id = b.`slot_id` inner join pet_plan_tbl p ON p.plan_id = b.`plan_id` WHERE b.user_id = \'14\'')
+ 4 APPPATH\Controllers\MyBookingController.php(17): CodeIgniter\Database\BaseConnection->query('SELECT b.`booking_id`, b.`booking_date`, t.from_time, t.to_time, p.plan_name, IFNULL(b.`address_id`, \'yes\', \'no\') as status, b.`center_id` FROM `booking_tbl` b inner join timeslot_tbl t ON t.slot_id = b.`slot_id` inner join pet_plan_tbl p ON p.plan_id = b.`plan_id` WHERE b.user_id = \'14\'')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\MyBookingController->getMyBooking()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MyBookingController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-11-30 17:22:18 --> mysqli_sql_exception: Incorrect parameter count in the call to native function 'IFNULL' in C:\xampp\htdocs\projects\petz24\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\petz24\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT b.`booki...', 0)
+#1 C:\xampp\htdocs\projects\petz24\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT b.`booki...')
+#2 C:\xampp\htdocs\projects\petz24\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT b.`booki...')
+#3 C:\xampp\htdocs\projects\petz24\app\Controllers\MyBookingController.php(17): CodeIgniter\Database\BaseConnection->query('SELECT b.`booki...')
+#4 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(941): App\Controllers\MyBookingController->getMyBooking()
+#5 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MyBookingController))
+#6 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projects\petz24\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-30 17:22:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Incorrect parameter count in the call to native function 'IFNULL'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\MyBookingController.php(17): CodeIgniter\Database\BaseConnection->query('SELECT b.`booking_id`, b.`booking_date`, t.from_time, t.to_time, p.plan_name, IFNULL(b.`address_id`, \'yes\', \'no\') as addressStatus, b.`center_id` FROM `booking_tbl` b inner join timeslot_tbl t ON t.slot_id = b.`slot_id` inner join pet_plan_tbl p ON p.plan_id = b.`plan_id` WHERE b.user_id = \'14\'')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\MyBookingController->getMyBooking()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MyBookingController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-30 17:22:18 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Incorrect parameter count in the call to native function 'IFNULL'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT b.`booking_id`, b.`booking_date`, t.from_time, t.to_time, p.plan_name, IFNULL(b.`address_id`, \'yes\', \'no\') as addressStatus, b.`center_id` FROM `booking_tbl` b inner join timeslot_tbl t ON t.slot_id = b.`slot_id` inner join pet_plan_tbl p ON p.plan_id = b.`plan_id` WHERE b.user_id = \'14\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT b.`booking_id`, b.`booking_date`, t.from_time, t.to_time, p.plan_name, IFNULL(b.`address_id`, \'yes\', \'no\') as addressStatus, b.`center_id` FROM `booking_tbl` b inner join timeslot_tbl t ON t.slot_id = b.`slot_id` inner join pet_plan_tbl p ON p.plan_id = b.`plan_id` WHERE b.user_id = \'14\'')
+ 3 APPPATH\Controllers\MyBookingController.php(17): CodeIgniter\Database\BaseConnection->query('SELECT b.`booking_id`, b.`booking_date`, t.from_time, t.to_time, p.plan_name, IFNULL(b.`address_id`, \'yes\', \'no\') as addressStatus, b.`center_id` FROM `booking_tbl` b inner join timeslot_tbl t ON t.slot_id = b.`slot_id` inner join pet_plan_tbl p ON p.plan_id = b.`plan_id` WHERE b.user_id = \'14\'')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\MyBookingController->getMyBooking()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MyBookingController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-30 17:22:18 --> [Caused by] mysqli_sql_exception: Incorrect parameter count in the call to native function 'IFNULL'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT b.`booking_id`, b.`booking_date`, t.from_time, t.to_time, p.plan_name, IFNULL(b.`address_id`, \'yes\', \'no\') as addressStatus, b.`center_id` FROM `booking_tbl` b inner join timeslot_tbl t ON t.slot_id = b.`slot_id` inner join pet_plan_tbl p ON p.plan_id = b.`plan_id` WHERE b.user_id = \'14\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT b.`booking_id`, b.`booking_date`, t.from_time, t.to_time, p.plan_name, IFNULL(b.`address_id`, \'yes\', \'no\') as addressStatus, b.`center_id` FROM `booking_tbl` b inner join timeslot_tbl t ON t.slot_id = b.`slot_id` inner join pet_plan_tbl p ON p.plan_id = b.`plan_id` WHERE b.user_id = \'14\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT b.`booking_id`, b.`booking_date`, t.from_time, t.to_time, p.plan_name, IFNULL(b.`address_id`, \'yes\', \'no\') as addressStatus, b.`center_id` FROM `booking_tbl` b inner join timeslot_tbl t ON t.slot_id = b.`slot_id` inner join pet_plan_tbl p ON p.plan_id = b.`plan_id` WHERE b.user_id = \'14\'')
+ 4 APPPATH\Controllers\MyBookingController.php(17): CodeIgniter\Database\BaseConnection->query('SELECT b.`booking_id`, b.`booking_date`, t.from_time, t.to_time, p.plan_name, IFNULL(b.`address_id`, \'yes\', \'no\') as addressStatus, b.`center_id` FROM `booking_tbl` b inner join timeslot_tbl t ON t.slot_id = b.`slot_id` inner join pet_plan_tbl p ON p.plan_id = b.`plan_id` WHERE b.user_id = \'14\'')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\MyBookingController->getMyBooking()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MyBookingController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

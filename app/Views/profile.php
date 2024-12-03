@@ -26,7 +26,6 @@
                                 </div>
                                 <div class="order-name">
                                     <h4> <span class='first_name'></span> <span class='last_name'></span> <i id='edit_user_profile' class='fa-fa-edit c-pointer'></i></h4>
-                                    <span>Joined April 06, 2024</span>
                                 </div>
                             </div>
                             <div class="order-his-page">
