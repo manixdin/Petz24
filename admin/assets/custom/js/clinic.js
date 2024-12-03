@@ -137,7 +137,7 @@ function getClinic() {
     
         $('#datatable').dataTable({
           "oLanguage": {
-            "sEmptyTable": "My Custom Message On Empty Table"
+            "sEmptyTable": "There is no clinic data available"
           }
         });
     
