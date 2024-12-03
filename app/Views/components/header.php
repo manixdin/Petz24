@@ -194,6 +194,7 @@
 
                                             <ul class="dropdown-menu 5dropdown-font-size">
                                                 <li><a class="dropdown-item c-pointer" href="<?= base_url('profile') ?>">Profile</a></li>
+                                                <li><a class="dropdown-item c-pointer" href="<?= base_url('my-booking') ?>">My Bookings</a></li>
                                                 <li><a class="dropdown-item logoutUser c-pointer">Logout</a></li>
                                             </ul>
                                         </div>

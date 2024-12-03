@@ -32,6 +32,12 @@ $routes->post('update-user-address','UserAddressController::updateUserAddress');
 $routes->post('delete-user-address','UserAddressController::deleteUserAddress');
 // User Address Functionality start
 
+/*====[ My Booking Module ]=====*/
+$routes->get('my-booking', 'MyBookingController::index');
+$routes->post('get-my-booking', 'MyBookingController::getMyBooking');
+$routes->get('booking-info/(:num)', 'MyBookingController::bookingInfo/$1');
+$routes->post('get-booking-info', 'MyBookingController::getBookingInfo');
+
 //Cart
 $routes->get('cart', 'BaseAction::cart');
 //Wishlist

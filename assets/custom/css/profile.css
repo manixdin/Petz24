@@ -1,3 +1,9 @@
+.profile-form .pets-image{
+    width:60px;
+}
+.profile-form .pets-details-wrapper{
+    padding-bottom:0;
+}
 .order-histry-area .order-history {
     display: flex;
     flex-wrap: wrap;
@@ -382,7 +388,7 @@
     display: none!important;
 }
 .profile-form .existing-pet, .profile-form .add-pet-wrapper, .profile-form .center-wrapper{
-    min-height: 165px!important;
+    min-height: 145px!important;
 }
 .profile-form .pets-details-wrapper{
     border-bottom: none!important;

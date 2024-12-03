@@ -1,0 +1,26 @@
+.booking-container{
+    background:#fff;
+    border-radius: 16px;
+    display:block;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+    width:100%;
+}
+.booking-container .booking-info{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    gap:8px;
+}
+.booking-container img{
+    width:100%;
+}
+.booking-container .booking-info p{
+    color:#052a50;
+    margin-bottom: 0px;
+}
+.booking-container .booking-info p.booking-name{
+    font-size:16px;
+}
+.booking-container .booking-info p.booking-time{
+    font-size:14px;
+}
