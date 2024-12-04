@@ -85,8 +85,10 @@ class BookingController extends BaseController
         $dateTime = new \DateTime($matches[1], new \DateTimeZone('Asia/Kolkata'));
         $formattedDate = $dateTime->format('Y-m-d'); 
         $bookingJson = json_encode($data);
-        $sql = "INSERT INTO `booking_tbl` (`user_id`, `user_pet_id`, `plan_id`, `booking_date`, `slot_id`, `address_id`, `booking_json`) 
-                VALUES (?, ?, ?, ?, ?, ?, ?)";
+        if(!$data['address_id']) $data['address_id'] = NULL;
+        if(!$data['center_id']) $data['center_id'] = NULL;
+        $sql = "INSERT INTO `booking_tbl` (`user_id`, `user_pet_id`, `plan_id`, `booking_date`, `slot_id`, `address_id`, `center_id`, `booking_json`) 
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
         $query = $db->query($sql, [
             $data['user_id'], 
             $data['user_pet_id'], 
@@ -94,6 +96,7 @@ class BookingController extends BaseController
             $formattedDate, 
             $data['slot_id'], 
             $data['address_id'], 
+            $data['center_id'], 
             $bookingJson
         ]); 
         if ($query) {
