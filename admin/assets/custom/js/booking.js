@@ -153,6 +153,9 @@ function getSpecificBooking(module_id) {
 
     function displayClinicDetails(tableData) {
 
+      console.log(tableData);
+      
+
 
       //===[Destroy Data Table]===
       if ($.fn.DataTable.isDataTable('#datatable')) {
@@ -207,6 +210,16 @@ function getSpecificBooking(module_id) {
             },
             {
               mDataProp: "booking_date",
+            },
+            {
+              mDataProp: "booking_type",  // Your data field for booking type
+              render: function (data, type, row) {
+                // Determine the badge class based on booking_type
+                let badgeClass = data ? "badge bg-success" : "badge bg-secondary"; // 'bg-success' for "Home", 'bg-secondary' for "Clinic"
+                
+                // Return the badge HTML
+                return `<span class="${badgeClass}">${data ? "Home" : "Clinic"}</span>`;
+              }
             },
             {
               mDataProp: function (data, type, full, meta) {

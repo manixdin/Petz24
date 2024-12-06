@@ -28,6 +28,7 @@ class Workflow_Booking extends BaseController
             booking_tbl.booking_date as booking_date,
             booking_tbl.booking_status as booking_status,
             booking_tbl.payment_status as payment_status,
+            booking_tbl.address_id as booking_type,
             user_tbl.first_name as first_name, 
             user_tbl.last_name as last_name, 
             pet_plan_tbl.plan_name as plan_name, 

@@ -41,6 +41,7 @@
                                                 <th>Booking Status</th>
                                                 <th>Payment Status</th>
                                                 <th>Booking Date</th>
+                                                <th>Booking Type</th>
 
                                                 <th>Action</th>
                                             </tr>
