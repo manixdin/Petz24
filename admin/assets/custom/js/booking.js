@@ -50,18 +50,18 @@ $("#btn-submit").on('click', function () {
 });
 
 //====[ Edit Product Data ]===
-$(document).on("click", ".btnEdit", function () {
-  mode = 'edit';
-  let index = $(this).attr("id");
-  clinic_id = masterData[index]['clinic_id'];
-  $('#clinicModelTitle').html('Edit Clinic');
-  $("#clinic_name").val(masterData[index].clinic_name);
-  $("#address").val(masterData[index].address);
-  $("#city").val(masterData[index].city);
-  $("#state").val(masterData[index].state);
-  $("#pincode").val(masterData[index].pincode);
-  $("#popup-modal").modal("show");
-});
+// $(document).on("click", ".btnEdit", function () {
+//   mode = 'edit';
+//   let index = $(this).attr("id");
+//   clinic_id = masterData[index]['clinic_id'];
+//   $('#clinicModelTitle').html('Edit Clinic');
+//   $("#clinic_name").val(masterData[index].clinic_name);
+//   $("#address").val(masterData[index].address);
+//   $("#city").val(masterData[index].city);
+//   $("#state").val(masterData[index].state);
+//   $("#pincode").val(masterData[index].pincode);
+//   $("#popup-modal").modal("show");
+// });
 
 $(document).on("click", ".btnView", function () {
   mode = 'edit';
@@ -107,9 +107,6 @@ $(document).on("click", ".btnView", function () {
 
 
 
-
-
-
 function getFormData(){
   return new FormData($("#clinic-form")[0]);
 }
@@ -117,26 +114,6 @@ function getFormData(){
 function refreshDetails(){
   getBooking();
   $("#popup-modal").modal("hide");
-}
-
-
-//===[ Insert Product Data ]===
-function insertClinicData() {
-  let data = getFormData();
-  POST({ module, data }).then((response) => {
-    SWAL_HANDLER(response);
-    refreshDetails();
-  });
-}
-
-//===[ Update Product Data ]===
-function updateClinicData() {
-  let data = getFormData();
-  data.append("clinic_id", clinic_id);
-  PUT({ module, data }).then((response) => {
-    SWAL_HANDLER(response);
-    refreshDetails();
-  });
 }
 
     //====[ Get All Pet Data ]===
@@ -176,7 +153,6 @@ function getSpecificBooking(module_id) {
 
     function displayClinicDetails(tableData) {
 
-console.log(tableData);
 
       //===[Destroy Data Table]===
       if ($.fn.DataTable.isDataTable('#datatable')) {
@@ -247,32 +223,7 @@ console.log(tableData);
       }
     }
     
-    // *************************** [Delete Data] *************************************************************************
-    $(document).on("click", ".BtnDelete", function () {
-      mode = "delete";
-      var index = $(this).attr("id");
-      clinic_id = masterData[index]['clinic_id'];
-      
-  
-      Swal.fire({
-        title: "Are you sure?",
-        text: "You want to delete it?",
-        icon: "warning",
-        showCancelButton: true,
-        confirmButtonColor: "#3085d6",
-        cancelButtonColor: "#d33",
-        confirmButtonText: "Yes, delete it!",
-      }).then((result) => {
-        if (result.isConfirmed) {
-    
-          DELETE({ module, data: { clinic_id } }).then((response) => {
-            SWAL_HANDLER(response);
-    
-            refreshDetails();
-          });
-        }
-      });
-    });
+    // *************************** [Delete Data]
   
     $(document).on('change','#navbar_title_id',function(){
 
