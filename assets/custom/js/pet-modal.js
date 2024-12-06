@@ -65,6 +65,7 @@ $(document).ready(function() {
                     </div>
                 </div>
                 `; 
+                console.log($('#user-pet-list'));
                 $('#user-pet-list').html(petUserList);
             },
             error: function (xhr, status, error) {

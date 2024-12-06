@@ -19,6 +19,10 @@ $routes->post('get-user-pet-plan','BookingController::getUserPetPlan');
 $routes->post('get-time-slot','BookingController::getTimeSlot');
 $routes->post('add-booking','BookingController::addBooking');
 /*====[ Booking Module End ]=====*/
+/*====[ Clinic Booking Module Start ]=====*/
+$routes->get('clinic-booking','ClinicBookingController::index');
+$routes->get('get-clinic-list','ClinicBookingController::getClinicList');
+/*====[ Clinic Booking Module End ]=====*/
 // User Pet List Start
 $routes->post('get-user-pet-list','UserPetController::getUserPetList');
 $routes->post('add-user-pet','UserPetController::addUserPet');
