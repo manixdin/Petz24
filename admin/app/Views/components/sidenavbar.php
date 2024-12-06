@@ -166,6 +166,15 @@
                     </a>
                 </li>
 
+                <li class="slide">
+                    <a href="<?php echo base_url() ?>booking" class="side-menu__item">
+                        <i class="bx bx-home side-menu__icon"></i>
+                        <span class="side-menu__label">Booking
+                            <span class="badge bg-warning-transparent ms-2"></span>
+                        </span> 
+                    </a>
+                </li>
+
 
 
                 <!-- End::slide -->

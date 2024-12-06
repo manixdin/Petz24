@@ -46,26 +46,30 @@ function GET({module}) {
 
 function POST({module, module_id, data}){
 
-    
-    
-    if(module_id){
-        return $.ajax({
-            type: "POST",
-            url: base_url + 'getspecific' + module,
-            data: { id: module_id },
-            dataType: "json",
-            success: function (response) {
-                if(response){
-                    return $.parseJSON(response)
-                }
-                return ERROR_STATUS;
-            },
-            error: function (err) {
-                console.log("Error :" + err);
-            },
-        });
-    }
 
+    if(module_id){
+    
+        return new Promise((resolve, reject) => {
+            $.ajax({
+                type: "POST",
+                url: base_url + 'getspecific' + module,
+                data: { id: module_id },
+                dataType: "json",
+                success: function (response) {
+                    if(response.code == 200){
+                        resolve(JSON.parse(response.data));
+                    } else {
+                        resolve(ERROR_STATUS);
+                    }
+                },
+                error: function (err) {
+                    reject(err);
+                },
+            });
+        });
+
+
+    }
     return $.ajax({
         type: "POST",
         url: base_url + 'insert' + module,

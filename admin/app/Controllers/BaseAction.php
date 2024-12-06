@@ -64,6 +64,13 @@ class BaseAction extends BaseController
         return view('clinic');
     }
 
+    public function booking()
+    {
+        return view('booking');
+    }
+
+
+
 
     ##############################################
 

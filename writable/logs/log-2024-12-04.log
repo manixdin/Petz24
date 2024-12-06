@@ -1,0 +1,222 @@
+ERROR - 2024-12-04 16:18:19 --> mysqli_sql_exception: Unknown column 'age_year' in 'field list' in C:\xampp\htdocs\projects\Petz24\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\Petz24\system\Database\MySQLi\Connection.php(306): mysqli->query()
+#1 C:\xampp\htdocs\projects\Petz24\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\xampp\htdocs\projects\Petz24\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\xampp\htdocs\projects\Petz24\app\Controllers\UserPetController.php(32): CodeIgniter\Database\BaseConnection->query()
+#4 C:\xampp\htdocs\projects\Petz24\system\CodeIgniter.php(941): App\Controllers\UserPetController->addUserPet()
+#5 C:\xampp\htdocs\projects\Petz24\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#6 C:\xampp\htdocs\projects\Petz24\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#7 C:\xampp\htdocs\projects\Petz24\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-12-04 16:18:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'age_year' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\UserPetController.php(32): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UserPetController->addUserPet()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-04 16:18:19 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'age_year' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Controllers\UserPetController.php(32): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UserPetController->addUserPet()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-04 16:18:19 --> [Caused by] mysqli_sql_exception: Unknown column 'age_year' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH\Controllers\UserPetController.php(32): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UserPetController->addUserPet()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-04 16:18:22 --> mysqli_sql_exception: Unknown column 'age_year' in 'field list' in C:\xampp\htdocs\projects\Petz24\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\Petz24\system\Database\MySQLi\Connection.php(306): mysqli->query()
+#1 C:\xampp\htdocs\projects\Petz24\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\xampp\htdocs\projects\Petz24\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\xampp\htdocs\projects\Petz24\app\Controllers\UserPetController.php(32): CodeIgniter\Database\BaseConnection->query()
+#4 C:\xampp\htdocs\projects\Petz24\system\CodeIgniter.php(941): App\Controllers\UserPetController->addUserPet()
+#5 C:\xampp\htdocs\projects\Petz24\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#6 C:\xampp\htdocs\projects\Petz24\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#7 C:\xampp\htdocs\projects\Petz24\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-12-04 16:18:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'age_year' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\UserPetController.php(32): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UserPetController->addUserPet()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-04 16:18:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'age_year' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Controllers\UserPetController.php(32): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UserPetController->addUserPet()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-04 16:18:22 --> [Caused by] mysqli_sql_exception: Unknown column 'age_year' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH\Controllers\UserPetController.php(32): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UserPetController->addUserPet()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-04 16:18:22 --> mysqli_sql_exception: Unknown column 'age_year' in 'field list' in C:\xampp\htdocs\projects\Petz24\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\Petz24\system\Database\MySQLi\Connection.php(306): mysqli->query()
+#1 C:\xampp\htdocs\projects\Petz24\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\xampp\htdocs\projects\Petz24\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\xampp\htdocs\projects\Petz24\app\Controllers\UserPetController.php(32): CodeIgniter\Database\BaseConnection->query()
+#4 C:\xampp\htdocs\projects\Petz24\system\CodeIgniter.php(941): App\Controllers\UserPetController->addUserPet()
+#5 C:\xampp\htdocs\projects\Petz24\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#6 C:\xampp\htdocs\projects\Petz24\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#7 C:\xampp\htdocs\projects\Petz24\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-12-04 16:18:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'age_year' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\UserPetController.php(32): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UserPetController->addUserPet()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-04 16:18:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'age_year' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Controllers\UserPetController.php(32): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UserPetController->addUserPet()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-04 16:18:22 --> [Caused by] mysqli_sql_exception: Unknown column 'age_year' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH\Controllers\UserPetController.php(32): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UserPetController->addUserPet()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-04 16:18:22 --> mysqli_sql_exception: Unknown column 'age_year' in 'field list' in C:\xampp\htdocs\projects\Petz24\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\Petz24\system\Database\MySQLi\Connection.php(306): mysqli->query()
+#1 C:\xampp\htdocs\projects\Petz24\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\xampp\htdocs\projects\Petz24\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\xampp\htdocs\projects\Petz24\app\Controllers\UserPetController.php(32): CodeIgniter\Database\BaseConnection->query()
+#4 C:\xampp\htdocs\projects\Petz24\system\CodeIgniter.php(941): App\Controllers\UserPetController->addUserPet()
+#5 C:\xampp\htdocs\projects\Petz24\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#6 C:\xampp\htdocs\projects\Petz24\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#7 C:\xampp\htdocs\projects\Petz24\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-12-04 16:18:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'age_year' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\UserPetController.php(32): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UserPetController->addUserPet()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-04 16:18:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'age_year' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Controllers\UserPetController.php(32): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UserPetController->addUserPet()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-04 16:18:22 --> [Caused by] mysqli_sql_exception: Unknown column 'age_year' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH\Controllers\UserPetController.php(32): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UserPetController->addUserPet()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-04 16:18:22 --> mysqli_sql_exception: Unknown column 'age_year' in 'field list' in C:\xampp\htdocs\projects\Petz24\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\Petz24\system\Database\MySQLi\Connection.php(306): mysqli->query()
+#1 C:\xampp\htdocs\projects\Petz24\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\xampp\htdocs\projects\Petz24\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\xampp\htdocs\projects\Petz24\app\Controllers\UserPetController.php(32): CodeIgniter\Database\BaseConnection->query()
+#4 C:\xampp\htdocs\projects\Petz24\system\CodeIgniter.php(941): App\Controllers\UserPetController->addUserPet()
+#5 C:\xampp\htdocs\projects\Petz24\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#6 C:\xampp\htdocs\projects\Petz24\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#7 C:\xampp\htdocs\projects\Petz24\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-12-04 16:18:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'age_year' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\UserPetController.php(32): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UserPetController->addUserPet()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-04 16:18:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'age_year' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Controllers\UserPetController.php(32): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UserPetController->addUserPet()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-04 16:18:22 --> [Caused by] mysqli_sql_exception: Unknown column 'age_year' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH\Controllers\UserPetController.php(32): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UserPetController->addUserPet()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-04 16:18:23 --> mysqli_sql_exception: Unknown column 'age_year' in 'field list' in C:\xampp\htdocs\projects\Petz24\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\Petz24\system\Database\MySQLi\Connection.php(306): mysqli->query()
+#1 C:\xampp\htdocs\projects\Petz24\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\xampp\htdocs\projects\Petz24\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\xampp\htdocs\projects\Petz24\app\Controllers\UserPetController.php(32): CodeIgniter\Database\BaseConnection->query()
+#4 C:\xampp\htdocs\projects\Petz24\system\CodeIgniter.php(941): App\Controllers\UserPetController->addUserPet()
+#5 C:\xampp\htdocs\projects\Petz24\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#6 C:\xampp\htdocs\projects\Petz24\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#7 C:\xampp\htdocs\projects\Petz24\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-12-04 16:18:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'age_year' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\UserPetController.php(32): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UserPetController->addUserPet()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-04 16:18:23 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'age_year' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 APPPATH\Controllers\UserPetController.php(32): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UserPetController->addUserPet()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-04 16:18:23 --> [Caused by] mysqli_sql_exception: Unknown column 'age_year' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH\Controllers\UserPetController.php(32): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UserPetController->addUserPet()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

@@ -29,7 +29,13 @@ $routes->get('brand', 'BaseAction::brand');
 
 #Breed
 $routes->get('breed', 'BaseAction::breed');
+
+
 $routes->get('clinic', 'BaseAction::clinic');
+
+
+$routes->get('booking', 'BaseAction::booking');
+
 
 ###########################[ API Routes ]##################################
 
@@ -96,6 +102,15 @@ $routes->get('getclinic', 'Workflow_Clinic::getClinic');
 $routes->post('insertclinic', 'Workflow_Clinic::insertClinic');
 $routes->post('updateclinic', 'Workflow_Clinic::updateClinic');
 $routes->post('deleteclinic', 'Workflow_Clinic::deleteClinic');
+
+
+# Booking
+$routes->get('getbooking', 'Workflow_Booking::getBooking');
+$routes->post('getspecificbooking', 'Workflow_Booking::getSpecificBooking');
+$routes->post('updatebooking', 'Workflow_Booking::updateBooking');
+$routes->post('deletebooking', 'Workflow_Booking::deleteBooking');
+
+
 
 //NAVBAR ROUTES
 $routes->get('title', 'Navbar::title');
