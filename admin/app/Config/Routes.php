@@ -161,18 +161,4 @@ $routes->post('deletetimeslot', 'Workflow_PetPlanTimeSlot::deleteTimeSlot');
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+$routes->post('/location', 'LocationController::saveLocation');

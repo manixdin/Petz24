@@ -255,3 +255,48 @@ function updateBookingData() {
       });
     })
 
+
+
+
+    document.getElementById('getLocationBtn').addEventListener('click', function () {
+      const status = document.getElementById('status');
+
+      console.log('workinh');
+      
+
+      if (navigator.geolocation) {
+        status.textContent = "Detecting your location...";
+
+        navigator.geolocation.getCurrentPosition(
+          (position) => {
+            let latitude = position.coords.latitude;
+            let longitude = position.coords.longitude;
+
+            status.textContent = `Your location: Lat ${latitude}, Long ${longitude}`;
+
+            // Send location to the backend
+            fetch('http://localhost/projects/petz24/admin/location', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({ latitude, longitude }),
+            })
+              .then((response) => response.json())
+              .then((data) => {
+                // status.textContent = `Location sent successfully: ${data.message}`;
+              })
+              .catch((error) => {
+                status.textContent = 'Error sending location.';
+                console.error( error);
+              });
+          },
+          (error) => {
+            status.textContent = 'Unable to retrieve your location.';
+            console.error( error);
+          }
+        );
+      } else {
+        status.textContent = 'Geolocation is not supported by your browser.';
+      }
+    });
