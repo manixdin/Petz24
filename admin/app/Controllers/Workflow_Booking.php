@@ -117,7 +117,6 @@ class Workflow_Booking extends BaseController
                 ->set('booking_status', $data['bookingstatus']) // Update specific column
                 ->set('payment_status', $data['paymentstatus']) // Update specific column
                 ->update();
-                print_r($update);
 
             if ($update) {
                 if ($this->model->db->affectedRows()) {

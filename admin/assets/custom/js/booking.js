@@ -100,6 +100,8 @@ function getFormData(){
 function refreshDetails(){
   getBooking();
   $("#popup-modal").modal("hide");
+  $("#popup-modal-edit").modal("hide");
+
 }
 
     //====[ Get All Pet Data ]===
@@ -136,6 +138,9 @@ function updateBookingData() {
   let data = getFormData();
   
   PUT({ module, data }).then((response) => {
+
+    console.log(response);
+    
 
     
     SWAL_HANDLER(response);

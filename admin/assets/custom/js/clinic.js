@@ -99,6 +99,9 @@ function updateClinicData() {
   data.append("clinic_id", clinic_id);
 
   PUT({ module, data }).then((response) => {
+
+    console.log(response);
+    
     SWAL_HANDLER(response);
 
     refreshDetails();
