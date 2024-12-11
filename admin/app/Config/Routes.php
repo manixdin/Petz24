@@ -108,7 +108,6 @@ $routes->post('deleteclinic', 'Workflow_Clinic::deleteClinic');
 $routes->get('getbooking', 'Workflow_Booking::getBooking');
 $routes->post('getspecificbooking', 'Workflow_Booking::getSpecificBooking');
 $routes->post('updatebooking', 'Workflow_Booking::updateBooking');
-$routes->post('deletebooking', 'Workflow_Booking::deleteBooking');
 
 
 

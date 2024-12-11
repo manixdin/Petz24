@@ -74,90 +74,90 @@
                 </div>
                 <div class="modal-body">
                     <form id="clinic-form">
-                        <div class="container">
-                            <div class="row">
+                                        <div class="container">
+                                            <div class="row">
 
-                               
-                            <div class="col-lg-12 mt-3">
-                         
-                                    <div class="form-floating mb-4 floating">
-                                        <input
-                                            class="form-control clinic_name" 
-                                            id="clinic_name"
-                                            placeholder="Enter the clinic name" 
-                                            name="clinic_name"
-                                        >
-                                        <label for="clinic_name"><span class='text-danger'>*</span> Clinic Name</label>
-                                        <span class="error text-danger mt-5 clinic_name"></span>
+                                            
+                                            <div class="col-lg-12 mt-3">
+                                        
+                                                    <div class="form-floating mb-4 floating">
+                                                        <input
+                                                            class="form-control clinic_name" 
+                                                            id="clinic_name"
+                                                            placeholder="Enter the clinic name" 
+                                                            name="clinic_name"
+                                                        >
+                                                        <label for="clinic_name"><span class='text-danger'>*</span> Clinic Name</label>
+                                                        <span class="error text-danger mt-5 clinic_name"></span>
+                                                    </div>
+                                            </div>
+
+                                            <div class="col-lg-12 mt-3">
+                                        
+                                        <div class="form-floating mb-4 floating">
+                                            <input
+                                                class="form-control address" 
+                                                id="address"
+                                                placeholder="Enter the clinic address" 
+                                                name="address"
+                                            >
+                                            <label for="address"><span class='text-danger'>*</span> Address</label>
+                                            <span class="error text-danger mt-5 address"></span>
+                                        </div>
                                     </div>
-                            </div>
-
-                            <div class="col-lg-12 mt-3">
-                         
-                         <div class="form-floating mb-4 floating">
-                             <input
-                                 class="form-control address" 
-                                 id="address"
-                                 placeholder="Enter the clinic address" 
-                                 name="address"
-                             >
-                             <label for="address"><span class='text-danger'>*</span> Address</label>
-                             <span class="error text-danger mt-5 address"></span>
-                         </div>
-                 </div>
 
 
-                 <div class="col-lg-12 mt-3">
-                         
-                         <div class="form-floating mb-4 floating">
-                             <input
-                                 class="form-control city" 
-                                 id="city"
-                                 placeholder="Enter the city" 
-                                 name="city"
-                             >
-                             <label for="city"><span class='text-danger'>*</span> City</label>
-                             <span class="error text-danger mt-5 city"></span>
-                         </div>
-                         </div>
+                                <div class="col-lg-12 mt-3">
+                                        
+                                        <div class="form-floating mb-4 floating">
+                                            <input
+                                                class="form-control city" 
+                                                id="city"
+                                                placeholder="Enter the city" 
+                                                name="city"
+                                            >
+                                            <label for="city"><span class='text-danger'>*</span> City</label>
+                                            <span class="error text-danger mt-5 city"></span>
+                                        </div>
+                                        </div>
 
-                   <div class="col-lg-12 mt-3">
-                         
-                         <div class="form-floating mb-4 floating">
-                             <input
-                                 class="form-control state" 
-                                 id="state"
-                                 placeholder="Enter the state" 
-                                 name="state"
-                             >
-                             <label for="state"><span class='text-danger'>*</span> State</label>
-                             <span class="error text-danger mt-5 state"></span>
-                         </div>
-                         </div>
+                                <div class="col-lg-12 mt-3">
+                                        
+                                        <div class="form-floating mb-4 floating">
+                                            <input
+                                                class="form-control state" 
+                                                id="state"
+                                                placeholder="Enter the state" 
+                                                name="state"
+                                            >
+                                            <label for="state"><span class='text-danger'>*</span> State</label>
+                                            <span class="error text-danger mt-5 state"></span>
+                                        </div>
+                                        </div>
 
-                         <div class="col-lg-12 mt-3">
-                         
-                         <div class="form-floating mb-4 floating">
-                             <input
-                                 class="form-control pincode" 
-                                 id="pincode"
-                                 placeholder="Enter the clinic pincode" 
-                                 name="pincode"
-                             >
-                             <label for="pincode"><span class='text-danger'>*</span> Pincode</label>
-                             <span class="error text-danger mt-5 pincode"></span>
-                         </div>
-                 </div>
+                                        <div class="col-lg-12 mt-3">
+                                        
+                                        <div class="form-floating mb-4 floating">
+                                            <input
+                                                class="form-control pincode" 
+                                                id="pincode"
+                                                placeholder="Enter the clinic pincode" 
+                                                name="pincode"
+                                            >
+                                            <label for="pincode"><span class='text-danger'>*</span> Pincode</label>
+                                            <span class="error text-danger mt-5 pincode"></span>
+                                        </div>
+                                </div>
 
 
 
-                            </div>
-                </div> <br><br>
-                <div class="mb-3 d-flex justify-content-end">
-                <a class="btn btn-success" id="btn-submit">Submit</a>
-                </div>
+                                            </div>
+                                </div> <br><br>
+                                <div class="mb-3 d-flex justify-content-end">
+                                <a class="btn btn-success" id="btn-submit">Submit</a>
+                                </div>
 
-                </hr>
+                                </hr>
                 </form>
 
             </div>

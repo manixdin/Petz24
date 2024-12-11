@@ -99,4 +99,49 @@ class Workflow_Booking extends BaseController
 
     }
 
+    public function updateBooking(){
+        $request = \Config\Services::request();
+        $data =  $request->getPost();
+        $filepath = '';
+
+
+
+
+        $id_check = $this->model->where('booking_id', $data['booking_id'])->first();
+
+
+        if ($id_check) {
+            // Update the filtered data
+            $update = $this->model
+                ->where('booking_id', $data['booking_id'])
+                ->set('booking_status', $data['bookingstatus']) // Update specific column
+                ->set('payment_status', $data['paymentstatus']) // Update specific column
+                ->update();
+                print_r($update);
+
+            if ($update) {
+                if ($this->model->db->affectedRows()) {
+                    echo $this->response_message([
+                        'code' => 200,
+                        'msg' => 'Booking updated successfully!'
+                    ]);
+                    return;
+                } else {
+                    echo $this->response_message([
+                        'code' => 400,
+                        'msg' => 'No changes made'
+                    ]);
+                    return;
+                }
+            }
+        }
+    
+        echo $this->response_message([
+            'code' => 404,
+            'msg' => 'Booking ID not found'
+        ]);
+
+  
+}
+
 }

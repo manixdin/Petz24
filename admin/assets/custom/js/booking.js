@@ -1,4 +1,4 @@
-var mode, masterData, booking_id;
+// var mode, masterData, booking_id;
 const module = 'booking';
 
 $(document).ready(function () {
@@ -18,50 +18,36 @@ $("#btn-submit").on('click', function () {
   $(".error").hide();
   let formObject = [
     {
-      value: $("#clinic_name").val(),
-      error: "Please enter the clinic name"
+      value: $("#booking_id").val(),
+      error: "Please enter booking id"
     },{
-      value: $("#address").val(),
-      error: "Please enter the address"
+      value: $("#paymentstatus").val(),
+      error: "Please select payment status"
     },{
-      value: $("#city").val(),
-      error: "Please enter the city"
-    },{
-      value: $("#city").val(),
-      error: "Please enter the city"
-    },{
-      value: $("#state").val(),
-      error: "Please enter the state"
-    },{
-      value: $("#pincode").val(),
-      error: "Please enter the pincode"
+      value: $("#bookingstatus").val(),
+      error: "Please select booking status"
     }
   ]
   
 
   if (FORM_VALIDATION(formObject)) {
-    if (mode == "new") {
-      insertClinicData();
-      }
     if (mode == "edit") {
-      updateClinicData();
+      updateBookingData();
     }
   }
 });
 
 //====[ Edit Product Data ]===
-// $(document).on("click", ".btnEdit", function () {
-//   mode = 'edit';
-//   let index = $(this).attr("id");
-//   clinic_id = masterData[index]['clinic_id'];
-//   $('#clinicModelTitle').html('Edit Clinic');
-//   $("#clinic_name").val(masterData[index].clinic_name);
-//   $("#address").val(masterData[index].address);
-//   $("#city").val(masterData[index].city);
-//   $("#state").val(masterData[index].state);
-//   $("#pincode").val(masterData[index].pincode);
-//   $("#popup-modal").modal("show");
-// });
+$(document).on("click", ".btnEdit", function () {
+  mode = 'edit';
+  let index = $(this).attr("id");
+  booking_id = masterData[index]['booking_id'];
+
+  $("#booking_id").val(masterData[index].booking_id);
+  $("#paymentstatus").val(masterData[index].payment_status);
+  $("#bookingstatus").val(masterData[index].booking_status);
+  $("#popup-modal-edit").modal("show");
+});
 
 $(document).on("click", ".btnView", function () {
   mode = 'edit';
@@ -144,19 +130,25 @@ function getSpecificBooking(module_id) {
       }
     });
 }
+//===[ Update Product Data ]===
+function updateBookingData() {
 
+  let data = getFormData();
+  
+  PUT({ module, data }).then((response) => {
 
+    
+    SWAL_HANDLER(response);
 
+    refreshDetails();
+  });
+}
 
-
-
+    
 
     function displayClinicDetails(tableData) {
 
-      console.log(tableData);
-      
-
-
+    
       //===[Destroy Data Table]===
       if ($.fn.DataTable.isDataTable('#datatable')) {
         $('#datatable').DataTable().destroy();
