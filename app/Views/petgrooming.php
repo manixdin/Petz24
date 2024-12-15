@@ -2,6 +2,7 @@
 <html lang="en">
 
 <?php require('components/head.php')?>
+<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/custom/css/petgroomingexperience.css">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/custom/css/petgrooming.css">
 
 <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/responsive.css">
@@ -13,8 +14,44 @@
 <body class="home-1">
 
     <section class="petgrooming-content section-tb-padding">
+
+    <div class="carousel-container">
+
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://www.zigly.com/media/mageplaza/bannerslider/banner/image/a/t/at_exp_center_2_1.png" class="w-100 desktop-banner" alt="...">
+      <img src="https://img.freepik.com/free-photo/full-shot-woman-dog-taking-selfie_23-2148928983.jpg" alt="" class="mobile-banner w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.zigly.com/media/mageplaza/bannerslider/banner/image/a/t/at_exp_cener_3.png" class="w-100 desktop-banner" alt="...">
+      <img src="https://img.freepik.com/free-photo/full-shot-woman-dog-taking-selfie_23-2148928983.jpg" alt="" class="mobile-banner w-100">
+    </div>
+  
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+</div>
+
+
         <div class="container text-center">
-            <h2 class="section-title">Professional Pet Grooming Services In VAN</h2>
+            <h2 class="section-title">Best-in-class Grooming Services</h2>
+            <h2 class="section-title-2">because we know your pet deserves the best</h2>
+
             <div class="row justify-content-center mt-4">
                 <!-- Service Item 1 -->
                 <div class="col-lg-3 col-md-6 mb-4">
@@ -79,118 +116,12 @@
 
 
     <div class="book-appoinment"><button id="book-now" class="appoinment" type="submit"> <a
-                href="/services/grooming/">BOOK NOW</a> </button>
+                href="<?= base_url('booking') ?>">BOOK APPOINTMENT</a> </button>
 
     </div>
 
 
-    <section class="grooming-section">
-
-
-    <div class="container-fluid">
-  <div class="tab-section">
-    <div class="tab-link active" onclick="showPackageGrooming('basic')">BASIC GROOMING</div>
-    <div class="tab-link" onclick="showPackageGrooming('full')">FULL GROOMING PACKAGE WITH SPA</div>
-  </div>
-
-  <!-- Basic Grooming Package -->
-  <div id="basic" class="package-container">
-    <div class="package-image">
-      <img src="https://www.zigly.com/media/mageplaza/blog/post/resize/400x/y/o/your_guide_to_ticks_fleas_in_pets_symptoms_treatment_care.jpg" alt="Basic Grooming Image">
-    </div>
-    <div class="package-details">
-
-
-      <div class="price">
-        <div class="left">
-
-        <span>
-        *Prices may vary as per breed
-        </span>
-
-        <div>BASIC GROOMING</div>
-
-        </div>
-
-        <div class="right">
-
-        <div> ₹1,549.00</div>
-
-        <span>
-        60 mins
-        </span>
-
-
-       
-        </div>
-      </div>
-     
-
-
-      <p class="included">What's Included</p>
-      <ul>
-        <li>Bath Shampoo Conditioner</li>
-        <li>Cleaning Package includes Ear and Nail Cleaning</li>
-        <li>Bath and Blow Dry</li>
-      </ul>
-      <p class="description">
-        Upon assessing your dog’s skin & coat, our groomers use suitable products, ensuring that it leaves with a clean coat & ears, and trimmed paws.
-      </p>
-    </div>
-  </div>
-
-  <!-- Full Grooming Package -->
-  <div id="full" class="package-container" style="display: none;">
-    <div class="package-image">
-      <img src="https://www.zigly.com/media/mageplaza/blog/post/resize/400x/d/o/dog_allergies.png" alt="Full Grooming Spa Package Image">
-    </div>
-    <div class="package-details">
-     
-
-      
-      <div class="price">
-        <div class="left">
-
-        <span>
-        *Prices may vary as per breed
-        </span>
-
-        <div>FULL GROOMING PACKAGE WITH SPA</div>
-
-        </div>
-
-        <div class="right">
-
-        <div>₹2,499.00 </div>
-
-        <span>
-        90 mins
-        </span>
-
-
-       
-        </div>
-      </div>
-      <p class="included">What's Included</p>
-      <ul>
-        <li>Bath Shampoo and Conditioner</li>
-        <li>Ear Cleaning and Nail Trimming</li>
-        <li>Full Body Haircut and Styling</li>
-        <li>Relaxing Massage and Aromatherapy</li>
-        <li>Bath and Blow Dry</li>
-      </ul>
-      <p class="description">
-        This package provides a complete grooming experience with spa-like relaxation, ensuring your pet is pampered and groomed to perfection.
-      </p>
-    </div>
-  </div>
-</div>
-
-
-    </section>
   
-    <div class="book-appoinment extra-padd-for-above-gif"><button id="book-now" class="appoinment" type="submit"> <a
-                href="/services/grooming/">BOOK NOW</a> </button>
 
     </div>
 
@@ -205,7 +136,7 @@
                     <h3>Enjoy best-in-class <br>grooming services <br>from the comfort of <br>your home</h3>
 
                     <div class="book-appoinment-2">
-                    <button class="appoinment" type="submit"> <a href="/services/grooming/">BOOK NOW</a> </button>
+                    <button class="appoinment" type="submit"> <a href="<?= base_url('booking') ?>">BOOK APPOINTMENT</a> </button>
 
                 </div>
                 </div>
@@ -260,6 +191,165 @@
 
     </section>
 
+    <div class="book-appoinment book-appoinment-custom"><button id="book-now" class="appoinment" type="submit"> <a
+                href="<?= base_url('booking') ?>">BOOK APPOINTMENT</a> </button>
+
+    </div>
+
+    <section class="grooming-section">
+
+
+<div class="container-fluid">
+<div class="tab-section">
+<div class="tab-link active" onclick="showPackageExperience('everyday')">EVERYDAY SHINE</div>
+<div class="tab-link" onclick="showPackageExperience('full')">FULL GROOMING</div>
+<div class="tab-link" onclick="showPackageExperience('puppy')">PUPPY PACKAGE</div>
+
+</div>
+
+<!-- Basic Grooming Package -->
+<div id="everyday" class="package-container">
+<div class="package-image">
+  <img src="https://www.zigly.com/media/mageplaza/blog/post/resize/400x/y/o/your_guide_to_ticks_fleas_in_pets_symptoms_treatment_care.jpg" alt="Basic Grooming Image">
+</div>
+<div class="package-details">
+
+
+  <div class="price">
+    <div class="left">
+
+    <span>
+    *Prices may vary as per breed
+    </span>
+
+    <div>BASIC GROOMING</div>
+
+    </div>
+
+    <div class="right">
+
+    <div> ₹1,549.00</div>
+
+    <span>
+    60 mins
+    </span>
+
+
+   
+    </div>
+  </div>
+ 
+
+
+  <p class="included">What's Included</p>
+  <ul>
+    <li>Bath Shampoo Conditioner</li>
+    <li>Cleaning Package includes Ear and Nail Cleaning</li>
+    <li>Bath and Blow Dry</li>
+  </ul>
+  <p class="description">
+    Upon assessing your dog’s skin & coat, our groomers use suitable products, ensuring that it leaves with a clean coat & ears, and trimmed paws.
+  </p>
+</div>
+</div>
+
+<!-- Full Grooming Package -->
+<div id="full" class="package-container" style="display: none;">
+<div class="package-image">
+  <img src="https://www.zigly.com/media/mageplaza/blog/post/resize/400x/d/o/dog_allergies.png" alt="Full Grooming Spa Package Image">
+</div>
+<div class="package-details">
+ 
+
+  
+  <div class="price">
+    <div class="left">
+
+    <span>
+    *Prices may vary as per breed
+    </span>
+
+    <div>FULL GROOMING PACKAGE WITH SPA</div>
+
+    </div>
+
+    <div class="right">
+
+    <div>₹2,499.00 </div>
+
+    <span>
+    90 mins
+    </span>
+
+
+   
+    </div>
+  </div>
+  <p class="included">What's Included</p>
+  <ul>
+    <li>Bath Shampoo and Conditioner</li>
+    <li>Ear Cleaning and Nail Trimming</li>
+    <li>Full Body Haircut and Styling</li>
+    <li>Relaxing Massage and Aromatherapy</li>
+    <li>Bath and Blow Dry</li>
+  </ul>
+  <p class="description">
+    This package provides a complete grooming experience with spa-like relaxation, ensuring your pet is pampered and groomed to perfection.
+  </p>
+</div>
+</div>
+
+<!-- puppy grooming -->
+
+<div id="puppy" class="package-container" style="display: none;">
+<div class="package-image">
+  <img src="https://www.zigly.com/media/mageplaza/blog/post/resize/400x/y/o/your_guide_to_ticks_fleas_in_pets_symptoms_treatment_care.jpg" alt="Basic Grooming Image">
+</div>
+<div class="package-details">
+
+
+  <div class="price">
+    <div class="left">
+
+    <span>
+    *Prices may vary as per breed
+    </span>
+
+    <div>BASIC GROOMING</div>
+
+    </div>
+
+    <div class="right">
+
+    <div> ₹1,549.00</div>
+
+    <span>
+    60 mins
+    </span>
+
+
+   
+    </div>
+  </div>
+ 
+
+
+  <p class="included">What's Included</p>
+  <ul>
+    <li>Bath Shampoo Conditioner</li>
+    <li>Cleaning Package includes Ear and Nail Cleaning</li>
+    <li>Bath and Blow Dry</li>
+  </ul>
+  <p class="description">
+    Upon assessing your dog’s skin & coat, our groomers use suitable products, ensuring that it leaves with a clean coat & ears, and trimmed paws.
+  </p>
+</div>
+</div>
+</div>
+
+
+</section>
+
 
 
     <section class='card-section'>
@@ -304,7 +394,7 @@
     </section>
 
     <div class="book-appoinment-3"><button id="book-now" class="appoinment" type="submit"> <a
-                href="/services/grooming/">BOOK NOW</a> </button>
+                href="/services/grooming/">BOOK APPOINTMENT</a> </button>
 
     </div>
 
@@ -322,6 +412,16 @@
           <p>When the question is of your pet's upkeep, our certified, pet-loving groomers ensure that your pet enjoys the best-in-class services at the comfort of its home.</p>
         </div>
       </div>
+
+      <div class="content-card">
+        <img src="https://www.zigly.com/media/wysiwyg/certified_groomers.png" alt="Certified Groomers">
+        <div class="content-description">
+          <h5>Certified Groomers, At Your Service</h5>
+          <p>When the question is of your pet's upkeep, our certified, pet-loving groomers ensure that your pet enjoys the best-in-class services at the comfort of its home.</p>
+        </div>
+      </div>
+
+      
       <div class="content-card">
         <img src="https://www.zigly.com/media/wysiwyg/certified_groomers.png" alt="Happy Pets, Happy Parents">
         <div class="content-description">
