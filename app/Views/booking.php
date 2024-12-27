@@ -39,7 +39,7 @@
                                 </div>
                                 <div class="step level-3">
                                     <span class="icon"><i class="fa fa-archive"></i>
-                                    </span> <span class="text">Select Center</span>
+                                    </span> <span class="text">Select Address</span>
                                 </div>
                                 <div class="step level-4">
                                     <span class="icon"><i class="fa fa-archive"></i>
