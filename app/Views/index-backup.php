@@ -6,7 +6,7 @@
 <body>
 <?php require('components/header.php')?>
 
-         <!-- <section class="home5-category home5-category-top mt-custom">
+         <section class="home5-category home5-category-top mt-custom">
             <div class="container">
                 <div class="row">
                     <div class="col"> 
@@ -71,10 +71,10 @@
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
         <!-- category image end -->
         <!--home page slider start-->
-        <section class="home-slider-5 home5-category home5-category-top mt-custom">
+        <section class="home-slider-5">
             <div class="home-slider-main-5">
                 <div class="home5-slider swiper-container">
                     <div class="swiper-wrapper">
