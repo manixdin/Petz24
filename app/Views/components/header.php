@@ -47,7 +47,7 @@
                                             <div class="mainwrap">
                                                 <ul class="main-menu"> 
                                                     <li class="menu-link">
-                                                        <a href="<?= base_url('booking') ?>" class="link-title">
+                                                        <a href="<?= base_url() ?>" class="link-title">
                                                             <span class="sp-link-title">Home</span>
                                                         </a>
                                                     </li>
