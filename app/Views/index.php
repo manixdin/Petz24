@@ -177,7 +177,7 @@
 
         <section class="t-banner1 section-tb-padding">
             <div class="container">
-                <h2 class="text-center mb-4 pb-4">Shop by category</h2>
+                <h2 class="text-center mb-4 pb-4"> Health Tips</h2>
                 <div class="row mt-4">
                     <div class="col">
                         <div class="home-offer-banner">
@@ -187,7 +187,7 @@
                                 </a>
                                 <div class="o-t-content">
                                     <h6>Dog</h6>
-                                    <a href="#" class="btn btn-style1">Shop now</a>
+                                    <a href="#" class="btn btn-style1">Watch now</a>
                                 </div>
                             </div>
                             <div class="o-t-banner">
@@ -196,7 +196,7 @@
                                 </a>
                                 <div class="o-t-content banner-color">
                                     <h6>Cat</h6>
-                                    <a href="#" class="btn btn-style1">Shop now</a>
+                                    <a href="#" class="btn btn-style1">Watch now</a>
                                 </div>
                             </div>
                             <div class="o-t-banner">
@@ -205,7 +205,99 @@
                                 </a>
                                 <div class="o-t-content banner-color">
                                     <h6>Rabbit</h6>
-                                    <a href="#" class="btn btn-style1">Shop now</a>
+                                    <a href="#" class="btn btn-style1">Watch now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- new elements -->
+
+        <section class="home-about section-tb-padding-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="home-about-area">
+                            <div class="about-image">
+                                <span>
+                                    <img src="<?= base_url();?>assets/image/home-10/about-image.png" class="img-fluid" alt="image">
+                                </span>
+                            </div>
+                            <div class="about-text">
+                                <span class="sub-title">Fresh and delicious</span>
+                                <h1 class="title">
+                                    <span class="bold-text">Fresh organic</span>
+                                    <span>grocery items</span>
+                                </h1>
+                                <p class="description">There variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some by injected humour believable.</p>
+                                <a href="grid-list.html" class="btn-style2 about-btn">Shop now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="service-7">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="service">
+                            <div class="service-box">
+                                <div class="s-box">
+                                    <div class="service-image">
+                                        <a href="javascript:void(0)">
+                                            <img src="<?= base_url();?>assets/image/s-image01.png" class="img-fluid" alt="image">
+                                        </a>
+                                    </div>
+                                    <div class="service-content">
+                                        <h3>Live wine function</h3>
+                                        <span>Unlimited alcoholic drink</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-box">
+                                <div class="s-box">
+                                    <div class="service-image">
+                                        <a href="javascript:void(0)">
+                                            <img src="<?= base_url();?>assets/image/s-image02.png" class="img-fluid" alt="image">
+                                        </a>
+                                    </div>
+                                    <div class="service-content">
+                                        <h3>Book dinnig table</h3>
+                                        <span>Money back guarantee</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-box">
+                                <div class="s-box">
+                                    <div class="service-image">
+                                        <a href="javascript:void(0)">
+                                            <img src="<?= base_url();?>assets/image/s-image03.png" class="img-fluid" alt="image">
+                                        </a>
+                                    </div>
+                                    <div class="service-content">
+                                        <h3>Master chef dinner</h3>
+                                        <span>Alway available timing</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-box">
+                                <div class="s-box">
+                                    <div class="service-image">
+                                        <a href="javascript:void(0)">
+                                            <img src="<?= base_url();?>assets/image/s-image04.png" class="img-fluid" alt="image">
+                                        </a>
+                                    </div>
+                                    <div class="service-content">
+                                        <h3>Balanced diet food</h3>
+                                        <span>Food is an important parts</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
