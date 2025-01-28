@@ -74,7 +74,7 @@
         </section> -->
         <!-- category image end -->
         <!--home page slider start-->
-        <section class="home-slider-5 home5-category home5-category-top mt-custom">
+        <section class="home-slider-5 home5-category home5-category-top section-tb-padding">
             <div class="home-slider-main-5">
                 <div class="home5-slider swiper-container">
                     <div class="swiper-wrapper">
@@ -174,8 +174,97 @@
             </div>
         </section>
         <!-- deal of the day end --> 
+      <!-- service start -->
+      
 
-        <section class="t-banner1 section-tb-padding">
+
+          <!-- service start -->
+          <section class="home-service section-b-padding section-tb-padding-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="section-title">
+                            <h2>Exquisite service</h2>
+                        </div>
+                        <div class="service-area-main">
+                            <div class="service-area-1 service">
+                                <ul class="service-ul">
+                                    <li class="service-li">
+                                        <div class="icon">
+                                            <a href="javascript:void(0)">
+                                                <span class="icon">
+                                                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="text">
+                                            <h4 class="title">Quality support</h4>
+                                            <span class="sub-title">Alway online 24/7</span>
+                                        </div>
+                                    </li>
+                                    <li class="service-li">
+                                        <div class="icon">
+                                            <a href="javascript:void(0)">
+                                                <span class="icon">
+                                                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="text">
+                                            <h4 class="title">Free delivery</h4>
+                                            <span class="sub-title">Orders from all item</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="service-area-1 service-img">
+                                <img src="<?= base_url();?>assets/image/home-8/service-middle-banner.jpg" class="img-fluid" alt="image">
+                            </div>
+                            <div class="service-area-2 service">
+                                <ul class="service-ul">
+                                    <li class="service-li">
+                                        <div class="icon">
+                                            <a href="javascript:void(0)">
+                                                <span class="icon">
+                                                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="text">
+                                            <h4 class="title">Join newslleter</h4>
+                                            <span class="sub-title">20% off by subscribing</span>
+                                        </div>
+                                    </li>
+                                    <li class="service-li">
+                                        <div class="icon">
+                                            <a href="javascript:void(0)">
+                                                <span class="icon">
+                                                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polyline points="23 4 23 10 17 10"></polyline><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path></svg>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="text">
+                                            <h4 class="title">Return & refund</h4>
+                                            <span class="sub-title">Money back guarantee</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- service end -->
+
+
+
+
+
+
+
+
+        <section class="t-banner1 section-bottom-padding-1">
             <div class="container">
                 <h2 class="text-center mb-4 pb-4"> Health Tips</h2>
                 <div class="row mt-4">

@@ -27,9 +27,14 @@
     <link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/css/swiper.min.css">
     <!-- animation -->
     <link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/css/animate.css">
+
+    
     <!-- style -->
     <link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/css/style5.css">
     <link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/css/responsive5.css">
+
+
+  
 
     <!-- Toaster -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">

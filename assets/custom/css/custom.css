@@ -65,6 +65,11 @@
     padding-top: 100px;
     padding-bottom: 100px;
 }
+
+.section-bottom-padding-1{
+    padding-bottom: 100px;
+
+}
 /* service css */
 .service-7{
     margin-top: -60px;
@@ -447,4 +452,200 @@
 }
 .profile-form.active{
     display: block;
+}
+
+
+
+
+
+
+/* service css */
+.home-service .service-area-main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.home-service .service-area-main .service {
+    width: 30%;
+}
+.home-service .service-area-main .service-area-2.service {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.home-service .service-area-main .service ul.service-ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.home-service .service-area-main .service ul.service-ul li.service-li {
+    display: flex;
+    align-items: center;
+}
+.home-service .service-area-main .service ul.service-ul li.service-li:last-child {
+    margin-top: 60px;
+}
+.home-service .service-area-main .service ul.service-ul li.service-li .icon a span {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #e2e2e2;
+    border-radius: 100%;
+}
+.home-service .service-area-main .service ul.service-ul li.service-li .icon a span svg {
+    width: 25px;
+    height: 25px;
+    color: #333;
+    -webkit-transition: all .3s ease-in-out 0s;
+    -o-transition: all .3s ease-in-out 0s;
+    transition: all .3s ease-in-out 0s;
+}
+.home-service .service-area-main .service ul.service-ul li.service-li .icon a:hover span svg {
+    color: #c28c2e;
+    -webkit-transition: all .3s ease-in-out 0s;
+    -o-transition: all .3s ease-in-out 0s;
+    transition: all .3s ease-in-out 0s;
+}
+.home-service .service-area-main .service ul.service-ul li.service-li .text {
+    padding-left: 30px;
+}
+.home-service .service-area-main .service ul.service-ul li.service-li .text h4.title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1;
+}
+.home-service .service-area-main .service ul.service-ul li.service-li .text span.sub-title {
+    color: #999;
+    margin-bottom: 0;
+    font-size: 14px;
+    margin-top: 5px;
+    text-transform: capitalize;
+}
+.home-service .service-area-main .service-img {
+    width: 40%;
+    padding: 0px 30px;
+}
+
+
+.home-service .section-title h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+    line-height: 1;
+}
+
+
+@media (max-width: 1199px){
+    
+
+    /* service css */
+    .home-service .service-area-main .service ul.service-ul li.service-li:last-child {
+        margin-top: 40px;
+    }
+    .home-service .service-area-main .service ul.service-ul li.service-li .icon a span {
+        width: 70px;
+        height: 70px;
+    }
+    .home-service .service-area-main .service ul.service-ul li.service-li .icon a span svg {
+        width: 22px;
+        height: 22px;
+    }
+
+}
+
+/*=====================================
+ipad css
+======================================*/
+@media (max-width: 991px){
+
+
+    /* service css */
+    .home-service .service-area-main .service {
+        width: 50%;
+    }
+    .home-service .service-area-main .service-img {
+        width: 100%;
+        padding: 0px;
+        margin-bottom: 30px;
+        order: -1;
+        text-align: center;
+    }
+
+}
+/*=====================================
+iphone css
+======================================*/
+
+@media (max-width: 479px) {
+  
+    /* service css */
+    .home-service .service-area-main .service {
+        width: 100%;
+    }
+    .home-service .service-area-main .service-area-2.service {
+        justify-content: flex-start;
+    }
+    .home-service .service-area-main .service ul.service-ul li.service-li {
+        margin-top: 30px;
+    }
+    .home-service .service-area-main .service-area-1.service ul.service-ul li.service-li:first-child {
+        margin-top: 0px;
+    }
+    .home-service .service-area-main .service ul.service-ul li.service-li:last-child {
+        margin-top: 30px;
+    }
+
+}
+
+
+
+/* Responsive styles for smaller screens */
+@media (max-width: 991px) {
+    .t-banner1 .home-offer-banner .o-t-banner {
+        width: calc(50% - 30px); /* Adjust to 2 items per row */
+    }
+}
+
+@media (max-width: 767px) {
+    .t-banner1 .home-offer-banner {
+        margin-left: -15px; /* Adjust gap for smaller screens */
+    }
+
+    .t-banner1 .home-offer-banner .o-t-banner {
+        width: calc(100% - 15px); /* Full-width banners for mobile */
+        margin-left: 15px;
+    }
+
+    .t-banner1 .home-offer-banner .o-t-banner .o-t-content {
+        width: auto;
+        left: 15px; /* Adjust text position for smaller screens */
+        bottom: 20px;
+        transform: translateY(0);
+    }
+
+    .t-banner1 .home-offer-banner .o-t-banner .o-t-content h6 {
+        font-size: 18px; /* Smaller font for mobile */
+    }
+
+    .t-banner1 .home-offer-banner .o-t-banner .o-t-content a {
+        margin-top: 15px; /* Adjust spacing */
+    }
+}
+
+@media (max-width: 576px) {
+    .t-banner1 h2 {
+        font-size: 20px; /* Smaller heading for mobile */
+    }
+
+    .t-banner1 .home-offer-banner .o-t-banner .o-t-content h6 {
+        font-size: 16px; /* Further reduce font size */
+    }
+
+    .t-banner1 .home-offer-banner .o-t-banner .o-t-content a {
+        font-size: 14px; /* Smaller button text */
+        padding: 8px 16px; /* Adjust button padding */
+    }
 }

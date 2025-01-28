@@ -45,9 +45,9 @@ $('#myModal1').modal('show');
 ==============================================================*/
 
 $(".shopping-cart a.cart-count").on('click', function(){
-    $(".mini-cart").addClass("show");
-    $(".mm-fullscreen-bg").addClass("active");
-    $("body").addClass("hidden");
+    // $(".mini-cart").addClass("show");
+    // $(".mm-fullscreen-bg").addClass("active");
+    // $("body").addClass("hidden");
 });
 
 $(".shopping-cart-close").on('click', function(){

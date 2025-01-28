@@ -8,11 +8,12 @@ $(document).ready(function(){
 });
 
 $(document).on('click', '#login-profile', function(){
+    
     signinSignupModalHandler()
 })
 
 $(document).on('click', '.show-ls-popup', function(){
- 
+
     mode = $(this).attr('show')
     modeCheck()
 })
