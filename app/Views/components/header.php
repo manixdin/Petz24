@@ -66,11 +66,11 @@
                                                             <span class="sp-link-title">Our Stores</span>
                                                         </a>
                                                     </li> -->
-                                                    <li class="menu-link">
+                                                    <!-- <li class="menu-link">
                                                         <a href="javascript:void(0)" class="link-title">
                                                             <span class="sp-link-title">Happy Pets</span>
                                                         </a>
-                                                    </li>
+                                                    </li> -->
                                                 </ul>
                                             </div>
                                         </div>
@@ -153,11 +153,11 @@
                                     <span class="sp-link-title">Our Stores</span>
                                 </a>
                             </li> -->
-                            <li class="menu-link">
+                            <!-- <li class="menu-link">
                                 <a href="javascript:void(0)" class="link-title">
                                     <span class="sp-link-title">Happy Pets</span>
                                 </a>
-                            </li> 
+                            </li>  -->
                         </ul>
                     </div>
                 </div>

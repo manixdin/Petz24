@@ -1,0 +1,210 @@
+CRITICAL - 2025-02-12 16:06:38 --> ErrorException: Undefined array key "center_id"
+in APPPATH\Controllers\BookingController.php on line 89.
+ 1 APPPATH\Controllers\BookingController.php(89): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookingController->addBooking()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-12 16:06:41 --> ErrorException: Undefined array key "center_id"
+in APPPATH\Controllers\BookingController.php on line 89.
+ 1 APPPATH\Controllers\BookingController.php(89): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookingController->addBooking()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-12 16:06:42 --> ErrorException: Undefined array key "center_id"
+in APPPATH\Controllers\BookingController.php on line 89.
+ 1 APPPATH\Controllers\BookingController.php(89): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookingController->addBooking()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-12 16:06:42 --> ErrorException: Undefined array key "center_id"
+in APPPATH\Controllers\BookingController.php on line 89.
+ 1 APPPATH\Controllers\BookingController.php(89): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookingController->addBooking()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-12 16:06:42 --> ErrorException: Undefined array key "center_id"
+in APPPATH\Controllers\BookingController.php on line 89.
+ 1 APPPATH\Controllers\BookingController.php(89): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookingController->addBooking()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-12 16:06:42 --> ErrorException: Undefined array key "center_id"
+in APPPATH\Controllers\BookingController.php on line 89.
+ 1 APPPATH\Controllers\BookingController.php(89): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookingController->addBooking()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-12 16:06:42 --> ErrorException: Undefined array key "center_id"
+in APPPATH\Controllers\BookingController.php on line 89.
+ 1 APPPATH\Controllers\BookingController.php(89): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookingController->addBooking()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-12 16:13:09 --> ErrorException: Undefined array key "center_id"
+in APPPATH\Controllers\BookingController.php on line 89.
+ 1 APPPATH\Controllers\BookingController.php(89): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookingController->addBooking()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-12 16:13:10 --> ErrorException: Undefined array key "center_id"
+in APPPATH\Controllers\BookingController.php on line 89.
+ 1 APPPATH\Controllers\BookingController.php(89): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookingController->addBooking()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-12 16:13:13 --> ErrorException: Undefined array key "center_id"
+in APPPATH\Controllers\BookingController.php on line 89.
+ 1 APPPATH\Controllers\BookingController.php(89): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookingController->addBooking()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-12 16:13:14 --> ErrorException: Undefined array key "center_id"
+in APPPATH\Controllers\BookingController.php on line 89.
+ 1 APPPATH\Controllers\BookingController.php(89): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookingController->addBooking()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-12 16:13:14 --> ErrorException: Undefined array key "center_id"
+in APPPATH\Controllers\BookingController.php on line 89.
+ 1 APPPATH\Controllers\BookingController.php(89): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookingController->addBooking()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-12 16:13:14 --> ErrorException: Undefined array key "center_id"
+in APPPATH\Controllers\BookingController.php on line 89.
+ 1 APPPATH\Controllers\BookingController.php(89): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookingController->addBooking()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-12 16:13:28 --> ErrorException: Undefined array key "center_id"
+in APPPATH\Controllers\BookingController.php on line 89.
+ 1 APPPATH\Controllers\BookingController.php(89): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookingController->addBooking()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-12 16:13:29 --> ErrorException: Undefined array key "center_id"
+in APPPATH\Controllers\BookingController.php on line 89.
+ 1 APPPATH\Controllers\BookingController.php(89): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookingController->addBooking()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-12 16:13:29 --> ErrorException: Undefined array key "center_id"
+in APPPATH\Controllers\BookingController.php on line 89.
+ 1 APPPATH\Controllers\BookingController.php(89): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookingController->addBooking()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-12 16:13:29 --> ErrorException: Undefined array key "center_id"
+in APPPATH\Controllers\BookingController.php on line 89.
+ 1 APPPATH\Controllers\BookingController.php(89): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookingController->addBooking()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-12 16:13:45 --> ErrorException: Undefined array key "address_id"
+in APPPATH\Controllers\BookingController.php on line 88.
+ 1 APPPATH\Controllers\BookingController.php(88): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookingController->addBooking()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-12 16:13:45 --> ErrorException: Undefined array key "address_id"
+in APPPATH\Controllers\BookingController.php on line 88.
+ 1 APPPATH\Controllers\BookingController.php(88): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookingController->addBooking()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-12 16:13:45 --> ErrorException: Undefined array key "address_id"
+in APPPATH\Controllers\BookingController.php on line 88.
+ 1 APPPATH\Controllers\BookingController.php(88): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookingController->addBooking()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-12 16:13:46 --> ErrorException: Undefined array key "address_id"
+in APPPATH\Controllers\BookingController.php on line 88.
+ 1 APPPATH\Controllers\BookingController.php(88): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookingController->addBooking()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-12 17:09:25 --> ErrorException: Undefined array key "center_id"
+in APPPATH\Controllers\BookingController.php on line 89.
+ 1 APPPATH\Controllers\BookingController.php(89): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookingController->addBooking()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-12 17:10:03 --> ErrorException: Undefined array key "center_id"
+in APPPATH\Controllers\BookingController.php on line 89.
+ 1 APPPATH\Controllers\BookingController.php(89): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookingController->addBooking()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-12 17:10:04 --> ErrorException: Undefined array key "center_id"
+in APPPATH\Controllers\BookingController.php on line 89.
+ 1 APPPATH\Controllers\BookingController.php(89): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookingController->addBooking()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-12 17:10:04 --> ErrorException: Undefined array key "center_id"
+in APPPATH\Controllers\BookingController.php on line 89.
+ 1 APPPATH\Controllers\BookingController.php(89): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookingController->addBooking()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-12 17:11:26 --> ErrorException: Undefined array key "center_id"
+in APPPATH\Controllers\BookingController.php on line 89.
+ 1 APPPATH\Controllers\BookingController.php(89): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookingController->addBooking()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-12 17:12:19 --> ErrorException: Undefined array key "center_id"
+in APPPATH\Controllers\BookingController.php on line 89.
+ 1 APPPATH\Controllers\BookingController.php(89): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookingController->addBooking()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-12 17:12:54 --> ErrorException: Undefined array key "center_id"
+in APPPATH\Controllers\BookingController.php on line 89.
+ 1 APPPATH\Controllers\BookingController.php(89): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookingController->addBooking()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-12 17:14:56 --> ErrorException: Undefined array key "center_id"
+in APPPATH\Controllers\BookingController.php on line 89.
+ 1 APPPATH\Controllers\BookingController.php(89): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookingController->addBooking()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-12 17:21:18 --> ErrorException: Undefined array key "center_id"
+in APPPATH\Controllers\BookingController.php on line 89.
+ 1 APPPATH\Controllers\BookingController.php(89): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookingController->addBooking()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

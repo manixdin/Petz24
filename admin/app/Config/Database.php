@@ -27,9 +27,9 @@ class Database extends Config
     public array $default = [
         'DSN'          => '',
         'hostname'     => 'localhost',
-        'username'     => 'root',
-        'password'     => '',
-        'database'     => 'petz24_db',
+         'username'     => 'u372271345_petz',
+        'password'     => 'J|rF*M*g/3r',
+        'database'     => 'u372271345_petz',
         'DBDriver'     => 'MySQLi',
         'DBPrefix'     => '',
         'pConnect'     => false,

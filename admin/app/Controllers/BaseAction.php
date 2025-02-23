@@ -5,11 +5,32 @@ namespace App\Controllers;
 class BaseAction extends BaseController
 {
 
-    public function __construct(){
+
+    public function __construct()
+    {
+        parent::__construct(); // Ensure the parent constructor runs
+
+        // Move session check logic to another function
+    }
+
+    public function initController(\CodeIgniter\Http\RequestInterface $request, 
+                                    \CodeIgniter\Http\ResponseInterface $response, 
+                                    \CodeIgniter\Log\LoggerInterface $logger)
+    {
+        parent::initController($request, $response, $logger);
+
         if (!sessionCheck()) {
-            return redirect()->to('/');
+            return redirect()->to('/')->send();
+            exit; // Stop further execution
         }
     }
+
+
+    // public function __construct(){
+    //     if (!sessionCheck()) {
+    //         return redirect()->to('/');
+    //     }
+    // }
     
     public function index()
     {

@@ -25,7 +25,7 @@
                         </div>
                         <div class="service-text">
                             <h5 class="service-title">Breed Specific Haircut</h5>
-                            <p class="service-description">Zigly's experienced groomers suggest specialty trims for each
+                            <p class="service-description">Petz24's experienced groomers suggest specialty trims for each
                                 breed.</p>
                         </div>
                     </div>
@@ -39,7 +39,7 @@
                         </div>
                         <div class="service-text">
                             <h5 class="service-title">Grooming Experts</h5>
-                            <p class="service-description">Zigly certified and trained groomers for your little
+                            <p class="service-description">Petz24 certified and trained groomers for your little
                                 companions.</p>
                         </div>
                     </div>
@@ -96,7 +96,7 @@
   <!-- Basic Grooming Package -->
   <div id="basic" class="package-container">
     <div class="package-image">
-      <img src="https://www.zigly.com/media/mageplaza/blog/post/resize/400x/y/o/your_guide_to_ticks_fleas_in_pets_symptoms_treatment_care.jpg" alt="Basic Grooming Image">
+      <img src="<?= base_url();?>assets/img/home_section/everyday_shine.png" alt="Basic Grooming Image">
     </div>
     <div class="package-details">
 
@@ -201,7 +201,7 @@
 
             <div class="left">
                 <div class="left-content">
-                    <div class="left-heading">Zigly at Home</div>
+                    <div class="left-heading">Petz24 at Home</div>
                     <h3>Enjoy best-in-class <br>grooming services <br>from the comfort of <br>your home</h3>
 
                     <div class="book-appoinment-2">
@@ -243,7 +243,7 @@
                             <img src="https://www.zigly.com/media/wysiwyg/petgrooming/at-home-icon.png"
                                 alt="Enjoy Home Icon" class="step-icon">
                         </div>
-                        <p>4. Enjoy the Zigly at home</p>
+                        <p>4. Enjoy the Petz24 at home</p>
                     </div>
                 </div>
 
@@ -316,14 +316,14 @@
 
     <div class="content-section">
       <div class="content-card">
-        <img src="https://www.zigly.com/media/wysiwyg/certified_groomers.png" alt="Certified Groomers">
+        <img src="<?= base_url();?>assets/img/home_section/certified_groomers.png" alt="Certified Groomers">
         <div class="content-description">
           <h5>Certified Groomers, At Your Service</h5>
           <p>When the question is of your pet's upkeep, our certified, pet-loving groomers ensure that your pet enjoys the best-in-class services at the comfort of its home.</p>
         </div>
       </div>
       <div class="content-card">
-        <img src="https://www.zigly.com/media/wysiwyg/certified_groomers.png" alt="Happy Pets, Happy Parents">
+        <img src="<?= base_url();?>assets/img/home_section/certified_groomers.png" alt="Happy Pets, Happy Parents">
         <div class="content-description">
           <h5>Happy Pets, Happy Parents</h5>
           <p>Our high-quality services address your pets' needs with the ultimate perfection! Every grooming session will help them be their best, happy selves.</p>

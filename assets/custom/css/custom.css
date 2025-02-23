@@ -35,6 +35,14 @@
     font-weight: 400;
     line-height: 1;
 }
+
+@media screen and (max-width:400px) {
+
+    .home-about .home-about-area .about-text h1.title{
+        font-size: 30px;
+    }
+    
+}
 .home-about .home-about-area .about-text h1.title span.bold-text {
     display: block;
     font-weight: 700;
@@ -51,16 +59,21 @@
 }
 .btn-style2 {
     position: relative;
-    background-color: #ee6c4d;
     color: #fff;
     font-size: 14px;
     padding: 10px 30px;
-    font-weight: 500;
-    border: 1px solid #ee6c4d;
-    border-radius: 4px;
-    overflow: hidden;
-    z-index: 2;
+    background-color: #052a50;
+    font-weight: 600;
+    border: 2px solid #052a50;
+    border-radius: 3px;
+    border-color: #052a50;
 }
+.btn-style2:hover {
+    background-color: transparent;
+    color: #052a50;
+}
+
+
 .section-tb-padding-1 {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -372,7 +385,7 @@
 .input-group .password-eye{
     position: absolute;
     right: 10px;
-    top: 10px;
+    top: 22px;
     font-size: large;
     z-index: 10;
 }
@@ -648,4 +661,8 @@ iphone css
         font-size: 14px; /* Smaller button text */
         padding: 8px 16px; /* Adjust button padding */
     }
+}
+
+.home-custom-icon{
+    max-width: 25% !important;
 }

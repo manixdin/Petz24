@@ -226,7 +226,7 @@
                                 <span class="amount-text mb-2">Amount</span>
                                 <span class="amount">₹ <b id="review-amount"></b></span>
                             </div>
-                            <a href="petz:;" class="btn btn-style1-custom my-4 make-payment">Make Payment</a>
+                            <a  class="btn btn-style1-custom my-4 make-payment">Make Payment</a>
                         </div> 
                     </div>
                 </div>

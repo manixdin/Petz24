@@ -251,6 +251,9 @@ $(document).ready(function() {
     $('.make-payment').click(function(){  
         let userInfo = DECRYPT_DATA(localStorage.getItem('user_data')); 
         let formData = {...bookingInfo, "user_id" : userInfo["user_id"]};
+
+        console.log(base_url + 'add-booking');
+        
         $.ajax({
             type: 'POST',
             url: base_url + 'add-booking', 

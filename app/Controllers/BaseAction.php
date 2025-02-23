@@ -89,6 +89,11 @@ class BaseAction extends BaseController
         $data['menuItems'] = [];
         return view('petgroomingexperience', $data);
     }
+    public function termsAndCondition()
+    {
+        return view('termsandconditions');
+    }
 
+    
     
 }

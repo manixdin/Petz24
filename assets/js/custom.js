@@ -3783,3 +3783,23 @@ var swiper = new Swiper('.swiper-container#home-slider-14', {
         $('.home-product-info .nav-item .nav-link').removeClass('active');
         $(this).addClass('active');
     });
+
+
+
+
+    function updatePadding() {
+      const targetDiv = document.querySelector(".top-5");
+      const paddingCustom = document.querySelector(".padding-top-custom");
+  
+      if (targetDiv && paddingCustom) {
+          let height = targetDiv.offsetHeight;
+          paddingCustom.style.paddingTop = `${height}px`; // Apply padding dynamically
+      }
+  }
+  
+  // Run on load
+  window.addEventListener("load", updatePadding);
+  
+  // Run on resize
+  window.addEventListener("resize", updatePadding);
+  

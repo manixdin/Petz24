@@ -75,6 +75,8 @@ class BookingController extends BaseController
     function addBooking(){
         $db = \Config\Database::connect();
         $data = $this->request->getPost(); 
+
+    
         preg_match('/(\w+ \w+ \d+ \d+ \d+:\d+:\d+)/', $data['booking_date'], $matches);
         if (empty($matches)) {
             return $this->response->setJSON([
@@ -85,10 +87,25 @@ class BookingController extends BaseController
         $dateTime = new \DateTime($matches[1], new \DateTimeZone('Asia/Kolkata'));
         $formattedDate = $dateTime->format('Y-m-d'); 
         $bookingJson = json_encode($data);
-        if(!$data['address_id']) $data['address_id'] = NULL;
-        if(!$data['center_id']) $data['center_id'] = NULL;
+
+
+
+
+
+       
+        if (!isset($data['address_id'])) {
+            $data['address_id'] = NULL;
+        }
+        if (!isset($data['center_id'])) {
+            $data['center_id'] = NULL;
+        }
         $sql = "INSERT INTO `booking_tbl` (`user_id`, `user_pet_id`, `plan_id`, `booking_date`, `slot_id`, `address_id`, `center_id`, `booking_json`) 
                 VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+
+
+
+
+
         $query = $db->query($sql, [
             $data['user_id'], 
             $data['user_pet_id'], 
@@ -99,6 +116,10 @@ class BookingController extends BaseController
             $data['center_id'], 
             $bookingJson
         ]); 
+
+
+
+        
         if ($query) {
             return $this->response->setJSON([
                 "code" => 200,

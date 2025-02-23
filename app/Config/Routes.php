@@ -2,6 +2,11 @@
 
 use CodeIgniter\Router\RouteCollection;
 
+$routes->post('razorpay/order', 'RazorpayController::createOrder');
+$routes->post('razorpay/verify', 'RazorpayController::verifyPayment');
+
+
+
 $routes->get('/', 'BaseAction::index');
 
 /*====[ Product Module ]=====*/
@@ -49,6 +54,10 @@ $routes->get('wishlist', 'BaseAction::wishlist');
 // pet grooming
 $routes->get('pet-grooming', 'BaseAction::petgrooming');
 $routes->get('pet-grooming-experience', 'BaseAction::petgroomingexperience');
+
+
+//terms and condition
+$routes->get('terms-conditions', 'BaseAction::termsAndCondition');
 
 //order
 $routes->get('order', 'BaseAction::order');

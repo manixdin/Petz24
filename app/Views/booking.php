@@ -6,7 +6,8 @@
 <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/custom/css/profile.css">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/responsive.css">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/custom/css/addpet.css">
-
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <?php require('components/header.php')?>
 
@@ -20,9 +21,9 @@
 
                     <div class="track-area">
                         <div class="track-main border-top-0"> 
-                            <div class="action-container text-end">
+                            <div class="action-container ">
                                 <a id="back-btn" class="btn btn-style1-custom-1 mx-2">Back</a>
-                                <a id="next" class="btn btn-style1-custom-1">Next</a>
+                                <!-- <a id="next" class="btn btn-style1-custom-1">Next</a> -->
                             </div> 
                             <div class="track">
                                 <div class="step level-0 active">
@@ -226,7 +227,7 @@
                                 <span class="amount-text mb-2">Amount</span>
                                 <span class="amount">₹ <b id="review-amount"></b></span>
                             </div>
-                            <a href="petz:;" class="btn btn-style1-custom my-4 make-payment">Make Payment</a>
+                            <button class="btn btn-style1-custom my-4 make-payment" id="payBtn">Make Payment</button>
                         </div> 
                     </div>
                 </div>
@@ -244,6 +245,57 @@
     <script src='<?= base_url() ?>/assets/custom/js/booking.js'></script>
     <script src='<?= base_url() ?>/assets/custom/js/pet-modal.js'></script>
     <script src='<?= base_url() ?>/assets/custom/js/address-modal.js'></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#payBtn').click(function () {
+                $.ajax({
+                    url: '<?= base_url("razorpay/order") ?>',
+                    type: 'POST',
+                    success: function (response) {
+                        var options = {
+                            "key": response.key,
+                            "amount": 50000,
+                            "currency": "INR",
+                            "name": "My Website",
+                            "description": "Test Transaction",
+                            "image": "https://yourdomain.com/logo.png",
+                            "order_id": response.order_id,
+                            "handler": function (razorpayResponse) {
+                                $.ajax({
+                                    url: '<?= base_url("razorpay/verify") ?>',
+                                    type: 'POST',
+                                    contentType: "application/json",
+                                    data: JSON.stringify(razorpayResponse),
+                                    success: function (verifyResponse) {
+                                        alert('Payment Successful: ' + verifyResponse.message);
+                                    },
+                                    error: function () {
+                                        alert('Payment Verification Failed');
+                                    }
+                                });
+                            },
+                            "prefill": {
+                                "name": "John Doe",
+                                "email": "john.doe@example.com",
+                                "contact": "9999999999"
+                            },
+                            "theme": {
+                                "color": "#528FF0"
+                            }
+                        };
+
+                        var rzp1 = new Razorpay(options);
+                        rzp1.open();
+                    },
+                    error: function () {
+                        alert('Error creating Razorpay order');
+                    }
+                });
+            });
+        });
+    </script>
 
 </body>
 

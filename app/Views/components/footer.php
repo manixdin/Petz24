@@ -1,7 +1,7 @@
 <section class="footer5">
     <div 
         class="section-tb-padding-footer footer-bg"
-        style="background-image: url(<?= base_url();?>assets/image/footer-5.jpg);"
+       
     >
         <div class="container">
             <div class="row">
@@ -17,7 +17,7 @@
                     </div>
                     <div class="search-div">
 
-                        <p class="footer-search"><strong class="text-black"
+                        <!-- <p class="footer-search"><strong class="text-black"
                                 style="font-weight: bold; margin-bottom: 10px; text-transform: uppercase;"> Pet Parents
                                 Searched : </strong> <a href="/shop/dogs/dog-food.html">Dog Food</a> | <a
                                 href="/shop/dogs/dog-food/dry-food.html">Dry Dog Food</a> | <a
@@ -33,7 +33,7 @@
                             | <a href="/shop/dogs/collars-harnesses-leashes/collars.html">Dog Collars &amp; Leashes </a>
                             | Cat Harnesses | Sheba Cat Food | Hay | <a
                                 href="/shop/dogs/dog-health/supplements.html">Vitamins &amp; Supplements</a></p>
-                    </div>
+                    </div> -->
                     <div class="home5-footer">
                         <div class="f-logo">
                             <ul class="footer-ul">
@@ -53,14 +53,12 @@
                                 <div class="f-link">
                                     <h2 class="h-footer">Quick Links</h2>
                                     <a href="#t-cate" data-bs-toggle="collapse" class="h-footer">
-                                        <span>Top categories</span>
+                                        <span>Quick Links</span>
                                         <i class="fa fa-angle-down"></i>
                                     </a>
                                     <ul class="f-link-ul collapse" id="t-cate" data-bs-parent="#footer-accordian">
                                         <li class="f-link-ul-li"><a href="#">Contact Us</a></li>
-                                        <li class="f-link-ul-li"><a href="#">FAQs &amp; Return policy</a></li>
-                                        <li class="f-link-ul-li"><a href="#">Promotion Cashback</a></li>
-                                        <li class="f-link-ul-li"><a href="#">Track your order</a></li>
+                                      <li class="f-link-ul-li"><a href="<?= base_url('terms-conditions') ?>">Terms and Conditions</a></li>
                                         <li class="f-link-ul-li"><a href="#">Privacy Policy</a></li>
                                     </ul>
                                 </div>
@@ -71,42 +69,26 @@
                                         <i class="fa fa-angle-down"></i>
                                     </a>
                                     <ul class="f-link-ul collapse" id="services" data-bs-parent="#footer-accordian">
-                                        <li class="f-link-ul-li"><a href="<?php echo base_url();?>groomingcenter">Pet
+                                        <li class="f-link-ul-li"><a href="<?= base_url('pet-grooming') ?>">Vet
                                                 Grooming</a></li>
                                         <li class="f-link-ul-li"><a
-                                                href="<?php echo base_url();?>consultationcenter">Vet Consultation</a>
+                                        href="<?= base_url('pet-grooming-experience') ?>">At Experience Centre</a>
                                         </li>
-                                        <li class="f-link-ul-li"><a href="<?php echo base_url();?>addpet">Add Pet</a>
-                                        </li>
-
-                                        <li class="f-link-ul-li"><a href="contact.html">Training</a></li>
+                                      
                                     </ul>
                                 </div>
-                                <div class="f-link">
-                                    <h2 class="h-footer">Explore</h2>
-                                    <a href="#privacy" data-bs-toggle="collapse" class="h-footer">
-                                        <span>Privacy & terms</span>
-                                        <i class="fa fa-angle-down"></i>
-                                    </a>
-                                    <ul class="f-link-ul collapse" id="privacy" data-bs-parent="#footer-accordian">
-                                        <li class="f-link-ul-li"><a href="payment-policy.html">About Us</a></li>
-                                        <li class="f-link-ul-li"><a href="privacy-policy.html">Experience Center</a>
-                                        </li>
-                                        <li class="f-link-ul-li"><a href="return-policy.html">Knowledge Center</a></li>
-                                        <li class="f-link-ul-li"><a href="shipping-policy.html">In the news</a></li>
-                                    </ul>
-                                </div>
+                       
                                 <div class="f-link">
                                     <h2 class="h-footer">Download The App Now</h2>
                                     <a href="#services1" data-bs-toggle="collapse" class="h-footer">
-                                        <span>My account</span>
+                                        <span>Download The App Now</span>
                                         <i class="fa fa-angle-down"></i>
                                     </a>
                                     <ul class="f-link-ul collapse" id="services1" data-bs-parent="#footer-accordian">
-                                        <li class="f-link-ul-li"><a href="account.html"><img class="footer-appstore"
+                                        <li class="f-link-ul-li"><a href="javascript:void(0)"><img class="footer-appstore"
                                                     src="https://www.zigly.com/media/wysiwyg/Web_footer_placement.png"
                                                     alt=""></a></li>
-                                        <li class="f-link-ul-li"><a href="account.html"><img class="footer-appstore"
+                                        <li class="f-link-ul-li"><a href="javascript:void(0)"><img class="footer-appstore"
                                                     src="https://www.zigly.com/media/wysiwyg/appstore.png" alt=""></a>
                                         </li>
                                     </ul>
@@ -127,7 +109,7 @@
             <div class="col">
                 <ul class="f-bottom">
                     <li class="f-c f-copyright">
-                        <p>Copyright <i class="fa fa-copyright"></i> 2024 Petz 24x7</p>
+                        <p>Copyright <i class="fa fa-copyright"></i> 2025 Petz 24x7</p>
                     </li>
                     <li class="f-c">
                         <ul class="f-bottom">
@@ -143,10 +125,10 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="f-c f-payment">
+                    <!-- <li class="f-c f-payment">
                         <a href="checkout-2.html"><img src="<?php echo base_url();?>assets/image/payment.png"
                                 class="img-fluid" alt="payment image"></a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>

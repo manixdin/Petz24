@@ -1,0 +1,29 @@
+.about-breadcrumb .about-back {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 5;
+  height: 40vh;
+}
+
+.terms-title h1 {
+  font-size: 30px;
+  margin-bottom: 31px;
+  text-align: center;
+}
+
+.terms-content ul.terms-policy li h2 {
+  font-size: 16px;
+  color: #222;
+}
+
+.terms-content ul.terms-policy li p.trems-desc {
+  padding-left: 20px;
+  display: block;
+  margin-top: 6px;
+}
+
+.terms-content ul.terms-policy li {
+  margin-top: 16px;
+}

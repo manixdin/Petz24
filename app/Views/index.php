@@ -74,20 +74,20 @@
         </section> -->
         <!-- category image end -->
         <!--home page slider start-->
-        <section class="home-slider-5 home5-category home5-category-top section-tb-padding">
+        <section class="home-slider-5 home5-category home5-category-top padding-top-custom">
             <div class="home-slider-main-5">
                 <div class="home5-slider swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="img-back s-image1" style="background-image:url(https://www.zigly.com/media/mageplaza/bannerslider/banner/image/v/a/valentine_1500-x-313px.jpg);">
+                            <div class="img-back s-image1" style="background-image:url(<?= base_url();?>assets/img/home_banner/1.jpg);">
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="img-back s-image1" style="background-image:url(https://www.zigly.com/media/mageplaza/bannerslider/banner/image/f/u/furpro_1500-x-313px.jpg);">
+                            <div class="img-back s-image1" style="background-image:url(<?= base_url();?>assets/img/home_banner/2.jpg);">
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="img-back s-image1" style="background-image:url(https://www.zigly.com/media/mageplaza/bannerslider/banner/image/n/e/new_start_puppy_banner_1500x313-01.png);">
+                            <div class="img-back s-image1" style="background-image:url(<?= base_url();?>assets/img/home_banner/3.jpg);">
                             </div>
                         </div>
                     </div>
@@ -110,7 +110,7 @@
                         <div class="row">
                             <div class="col-md-2 offset-md-1">
                                 <div class="cate-image">
-                                    <a href="#">
+                                    <a href="<?= base_url('booking') ?>">
                                         <img src="https://www.zigly.com/media/wysiwyg/Icons_Dog.jpg" class="img-fluid" alt="cate-image">
                                     </a>
                                     <span class="d-block">Dogs</span> 
@@ -118,7 +118,7 @@
                             </div>
                             <div class="col-md-2">
                                 <div class="cate-image">
-                                    <a href="#">
+                                    <a href="<?= base_url('booking') ?>">
                                         <img src="https://www.zigly.com/media/wysiwyg/Icons_Cat.jpg" class="img-fluid" alt="cate-image">
                                     </a>
                                     <span class="d-block">Cats</span>
@@ -126,7 +126,7 @@
                             </div>
                             <div class="col-md-2">
                                 <div class="cate-image">
-                                    <a href="#">
+                                    <a href="<?= base_url('booking') ?>">
                                         <img src="https://www.zigly.com/media/wysiwyg/Icons_SmallAnimal.png" class="img-fluid" alt="cate-image">
                                     </a>
                                     <span class="d-block">Small Pets</span>
@@ -134,7 +134,7 @@
                             </div>
                             <div class="col-md-2">
                                 <div class="cate-image">
-                                    <a href="#">
+                                    <a href="<?= base_url('booking') ?>">
                                         <img src="https://www.zigly.com/media/wysiwyg/Icons_Bird.png" class="img-fluid" alt="cate-image">
                                     </a>
                                     <span class="d-block">Birds</span>
@@ -142,7 +142,7 @@
                             </div>
                             <div class="col-md-2">
                                 <div class="cate-image">
-                                    <a href="#">
+                                    <a href="<?= base_url('booking') ?>">
                                         <img src="https://www.zigly.com/media/wysiwyg/Icons_EC.jpg" class="img-fluid" alt="cate-image">
                                     </a>
                                     <span class="d-block">Experience Center</span>
@@ -166,7 +166,7 @@
                                     <h2>Chat with Doctor!</h2>
                                     <span class="deal-slogan mt-4">Let’s raise healthy and happy pets together.</span>
                                 </div>
-                                <a href="#" class="btn btn-style1">Ask your doubts here</a>
+                                <a href="<?= base_url('pet-grooming-experience') ?>" class="btn btn-style1">Ask your doubts here</a>
                             </div>
                         </div>
                     </div>
@@ -205,34 +205,55 @@
                                     <li class="service-li">
                                         <div class="icon">
                                             <a href="javascript:void(0)">
-                                                <span class="icon">
-                                                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
-                                                </span>
+                                            <span class="icon">
+    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+        <path d="M12 2L12 22"></path>
+        <path d="M2 12L22 12"></path>
+        <path d="M8 5C7.3 6 7 7 7.5 8S9 10 10 9.5 11 8 10.5 7 9 4 8 5Z"></path>
+        <path d="M16 5C15.3 6 15 7 15.5 8S17 10 18 9.5 19 8 18.5 7 17 4 16 5Z"></path>
+        <path d="M5 10C4.3 11 4 12 4.5 13S6 15 7 14.5 8 13 7.5 12 6 9 5 10Z"></path>
+        <path d="M19 10C18.3 11 18 12 18.5 13S20 15 21 14.5 22 13 21.5 12 20 9 19 10Z"></path>
+        <path d="M12 14C10 14 7 15 7 18S9 21 12 21 17 20 17 18 14 14 12 14Z"></path>
+    </svg>
+</span>
+
                                             </a>
                                         </div>
                                         <div class="text">
-                                            <h4 class="title">Free delivery</h4>
-                                            <span class="sub-title">Orders from all item</span>
+                                            <h4 class="title">Expert Veterinary</h4>
+                                            <span class="sub-title">Professional pet care</span>
                                         </div>
                                     </li>
                                 </ul>
                             </div>
                             <div class="service-area-1 service-img">
-                                <img src="<?= base_url();?>assets/image/home-8/service-middle-banner.jpg" class="img-fluid" alt="image">
+                                <img src="<?= base_url();?>assets/img/home_section/exquisite_service.png" class="img-fluid" alt="image">
                             </div>
                             <div class="service-area-2 service">
                                 <ul class="service-ul">
                                     <li class="service-li">
                                         <div class="icon">
                                             <a href="javascript:void(0)">
-                                                <span class="icon">
-                                                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                                                </span>
+                                            <span class="icon">
+    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+        <path d="M12 12c2 0 4 1.5 4 4s-2 4-4 4-4-1.5-4-4 2-4 4-4z"></path>
+        <path d="M8 4c1 2 .5 4-1 5s-3.5-.5-4-2 1-4 3-4 2 1 2 1z"></path>
+        <path d="M16 4c-1 2-.5 4 1 5s3.5-.5 4-2-1-4-3-4-2 1-2 1z"></path>
+        <path d="M4 14c.5-.5 1-1 2-1s2 .5 2 2-.5 2-2 2-2-.5-2-2 .5-1 1-1z"></path>
+        <path d="M20 14c-.5-.5-1-1-2-1s-2 .5-2 2 .5 2 2 2 2-.5 2-2-.5-1-1-1z"></path>
+        <path d="M6 20s1 2 6 2 6-2 6-2"></path>
+        <path d="M15 8l1 2"></path>
+        <path d="M9 8l-1 2"></path>
+    </svg>
+</span>
                                             </a>
                                         </div>
                                         <div class="text">
-                                            <h4 class="title">Join newslleter</h4>
-                                            <span class="sub-title">20% off by subscribing</span>
+                                            <h4 class="title">Premium Grooming
+                                            </h4>
+                                            <span class="sub-title">Pampering your pets
+
+</span>
                                         </div>
                                     </li>
                                     <li class="service-li">
@@ -244,8 +265,11 @@
                                             </a>
                                         </div>
                                         <div class="text">
-                                            <h4 class="title">Return & refund</h4>
-                                            <span class="sub-title">Money back guarantee</span>
+                                            <h4 class="title">Home Service
+                                            </h4>
+                                            <span class="sub-title">Doorstep convenience
+
+</span>
                                         </div>
                                     </li>
                                 </ul>
@@ -271,30 +295,30 @@
                     <div class="col">
                         <div class="home-offer-banner">
                             <div class="o-t-banner">
-                                <a href="#" class="image-b">
+                                <a href="<?= base_url('booking') ?>" class="image-b">
                                     <img class="img-fluid" src="<?= base_url();?>assets/img/dog.jpg" alt="banner image">
                                 </a>
                                 <div class="o-t-content">
                                     <h6>Dog</h6>
-                                    <a href="#" class="btn btn-style1">Watch now</a>
+                                    <a href="<?= base_url('booking') ?>" class="btn btn-style1">Watch now</a>
                                 </div>
                             </div>
                             <div class="o-t-banner">
-                                <a href="#" class="image-b">
+                                <a href="<?= base_url('booking') ?>" class="image-b">
                                     <img class="img-fluid" src="<?= base_url();?>assets/img/cat.jpg" alt="banner image">
                                 </a>
                                 <div class="o-t-content banner-color">
                                     <h6>Cat</h6>
-                                    <a href="#" class="btn btn-style1">Watch now</a>
+                                    <a href="<?= base_url('booking') ?>" class="btn btn-style1">Watch now</a>
                                 </div>
                             </div>
                             <div class="o-t-banner">
-                                <a href="#" class="image-b">
+                                <a href="<?= base_url('booking') ?>" class="image-b">
                                     <img class="img-fluid" src="<?= base_url();?>assets/img/rabbit.jpg" alt="banner image">
                                 </a>
                                 <div class="o-t-content banner-color">
                                     <h6>Rabbit</h6>
-                                    <a href="#" class="btn btn-style1">Watch now</a>
+                                    <a href="<?= base_url('booking') ?>" class="btn btn-style1">Watch now</a>
                                 </div>
                             </div>
                         </div>
@@ -313,17 +337,22 @@
                         <div class="home-about-area">
                             <div class="about-image">
                                 <span>
-                                    <img src="<?= base_url();?>assets/image/home-10/about-image.png" class="img-fluid" alt="image">
+                                    <img src="<?= base_url();?>assets/img/home_section/about-image.png" class="img-fluid" alt="image">
                                 </span>
                             </div>
                             <div class="about-text">
-                                <span class="sub-title">Fresh and delicious</span>
+                                <span class="sub-title">Vet Grooming
+                                </span>
                                 <h1 class="title">
-                                    <span class="bold-text">Fresh organic</span>
-                                    <span>grocery items</span>
+                                    <span class="bold-text">Professional pet
+                                    </span>
+                                    <span>care & styling
+                                    </span>
                                 </h1>
-                                <p class="description">There variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some by injected humour believable.</p>
-                                <a href="grid-list.html" class="btn-style2 about-btn">Shop now</a>
+                                <p class="description">There are variations of grooming styles available, but the majority ensure comfort and care with expert hands.
+
+</p>
+                                <a href="<?= base_url('booking') ?>" class="btn-style2 about-btn">Book now</a>
                             </div>
                         </div>
                     </div>
@@ -341,12 +370,17 @@
                                 <div class="s-box">
                                     <div class="service-image">
                                         <a href="javascript:void(0)">
-                                            <img src="<?= base_url();?>assets/image/s-image01.png" class="img-fluid" alt="image">
+                                            <img src="<?= base_url();?>assets/image/s-image01.png" class="img-fluid home-custom-icon" alt="image">
                                         </a>
                                     </div>
                                     <div class="service-content">
-                                        <h3>Live wine function</h3>
-                                        <span>Unlimited alcoholic drink</span>
+                                      
+
+                                        <h3> Grooming
+                                        </h3>
+                                        <span>Trendy pet makeovers
+
+</span>
                                     </div>
                                 </div>
                             </div>
@@ -354,12 +388,14 @@
                                 <div class="s-box">
                                     <div class="service-image">
                                         <a href="javascript:void(0)">
-                                            <img src="<?= base_url();?>assets/image/s-image02.png" class="img-fluid" alt="image">
+                                            <img src="<?= base_url();?>assets/image/s-image02.png" class="img-fluid home-custom-icon" alt="image">
                                         </a>
                                     </div>
                                     <div class="service-content">
-                                        <h3>Book dinnig table</h3>
-                                        <span>Money back guarantee</span>
+                                    <h3>Healthy Pets
+                                        </h3>
+                                        <span>Expert care & love
+</span>
                                     </div>
                                 </div>
                             </div>
@@ -367,12 +403,15 @@
                                 <div class="s-box">
                                     <div class="service-image">
                                         <a href="javascript:void(0)">
-                                            <img src="<?= base_url();?>assets/image/s-image03.png" class="img-fluid" alt="image">
+                                            <img src="<?= base_url();?>assets/image/s-image04.png" class="img-fluid home-custom-icon" alt="image">
                                         </a>
                                     </div>
                                     <div class="service-content">
-                                        <h3>Master chef dinner</h3>
-                                        <span>Alway available timing</span>
+                                        <h3>Fast Booking
+                                        </h3>
+                                        <span>Easy & quick slots
+
+</span>
                                     </div>
                                 </div>
                             </div>
@@ -380,12 +419,21 @@
                                 <div class="s-box">
                                     <div class="service-image">
                                         <a href="javascript:void(0)">
-                                            <img src="<?= base_url();?>assets/image/s-image04.png" class="img-fluid" alt="image">
+                                            <img src="<?= base_url();?>assets/image/s-image03.png" class="img-fluid home-custom-icon" alt="image">
                                         </a>
                                     </div>
                                     <div class="service-content">
-                                        <h3>Balanced diet food</h3>
-                                        <span>Food is an important parts</span>
+                                        <h3>Home Comfort
+                                        </h3>
+                                        <span>Service at your door
+
+
+
+
+
+
+
+</span>
                                     </div>
                                 </div>
                             </div>
