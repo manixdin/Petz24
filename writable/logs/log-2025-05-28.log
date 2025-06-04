@@ -1,0 +1,62 @@
+ERROR - 2025-05-28 17:09:50 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'u372271345_petz'@'localhost' (using password: YES) in C:\xampp\htdocs\projects\Petz24\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\projects\Petz24\system\Database\MySQLi\Connection.php(185): mysqli->real_connect()
+#1 C:\xampp\htdocs\projects\Petz24\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 C:\xampp\htdocs\projects\Petz24\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\projects\Petz24\app\Controllers\BookingController.php(16): CodeIgniter\Database\BaseConnection->query()
+#4 C:\xampp\htdocs\projects\Petz24\system\CodeIgniter.php(941): App\Controllers\BookingController->getPetList()
+#5 C:\xampp\htdocs\projects\Petz24\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#6 C:\xampp\htdocs\projects\Petz24\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#7 C:\xampp\htdocs\projects\Petz24\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\projects\Petz24\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\projects\Petz24\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 C:\xampp\htdocs\projects\Petz24\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\projects\Petz24\app\Controllers\BookingController.php(16): CodeIgniter\Database\BaseConnection->query()
+#3 C:\xampp\htdocs\projects\Petz24\system\CodeIgniter.php(941): App\Controllers\BookingController->getPetList()
+#4 C:\xampp\htdocs\projects\Petz24\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#5 C:\xampp\htdocs\projects\Petz24\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#6 C:\xampp\htdocs\projects\Petz24\index.php(79): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2025-05-28 17:09:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\BookingController.php(16): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookingController->getPetList()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-28 17:09:50 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'u372271345_petz'@'localhost' (using password: YES) in C:\xampp\htdocs\projects\Petz24\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\projects\Petz24\system\Database\MySQLi\Connection.php(185): mysqli->real_connect()
+#1 C:\xampp\htdocs\projects\Petz24\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 C:\xampp\htdocs\projects\Petz24\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\projects\Petz24\app\Controllers\UserPetController.php(13): CodeIgniter\Database\BaseConnection->query()
+#4 C:\xampp\htdocs\projects\Petz24\system\CodeIgniter.php(941): App\Controllers\UserPetController->getUserPetList()
+#5 C:\xampp\htdocs\projects\Petz24\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#6 C:\xampp\htdocs\projects\Petz24\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#7 C:\xampp\htdocs\projects\Petz24\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\projects\Petz24\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\projects\Petz24\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 C:\xampp\htdocs\projects\Petz24\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\projects\Petz24\app\Controllers\UserPetController.php(13): CodeIgniter\Database\BaseConnection->query()
+#3 C:\xampp\htdocs\projects\Petz24\system\CodeIgniter.php(941): App\Controllers\UserPetController->getUserPetList()
+#4 C:\xampp\htdocs\projects\Petz24\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#5 C:\xampp\htdocs\projects\Petz24\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#6 C:\xampp\htdocs\projects\Petz24\index.php(79): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2025-05-28 17:09:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\UserPetController.php(13): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UserPetController->getUserPetList()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

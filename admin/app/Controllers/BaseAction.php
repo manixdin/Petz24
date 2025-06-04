@@ -8,21 +8,9 @@ class BaseAction extends BaseController
 
     public function __construct()
     {
-        parent::__construct(); // Ensure the parent constructor runs
+        // parent::__construct(); 
 
         // Move session check logic to another function
-    }
-
-    public function initController(\CodeIgniter\Http\RequestInterface $request, 
-                                    \CodeIgniter\Http\ResponseInterface $response, 
-                                    \CodeIgniter\Log\LoggerInterface $logger)
-    {
-        parent::initController($request, $response, $logger);
-
-        if (!sessionCheck()) {
-            return redirect()->to('/')->send();
-            exit; // Stop further execution
-        }
     }
 
 
@@ -34,10 +22,11 @@ class BaseAction extends BaseController
     
     public function index()
     {
-        if (sessionCheck()) {
-            return view('dashboard');
-        }
-        return view('login');
+        // if (sessionCheck()) {
+        //     return view('dashboard');
+        // }
+        // return view('login');
+        return view('dashboard');
     }
 
     public function dashboard()

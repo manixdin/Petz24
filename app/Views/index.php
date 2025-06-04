@@ -108,7 +108,7 @@
                             <h2 class="text-center">I want consultation for</h2>
                         </div>
                         <div class="row">
-                            <div class="col-md-2 offset-md-1">
+                            <div class="col-md offset-md-1">
                                 <div class="cate-image">
                                     <a href="<?= base_url('booking') ?>">
                                         <img src="https://www.zigly.com/media/wysiwyg/Icons_Dog.jpg" class="img-fluid" alt="cate-image">
@@ -116,7 +116,7 @@
                                     <span class="d-block">Dogs</span> 
                                 </div>
                             </div>
-                            <div class="col-md-2">
+                            <div class="col-md">
                                 <div class="cate-image">
                                     <a href="<?= base_url('booking') ?>">
                                         <img src="https://www.zigly.com/media/wysiwyg/Icons_Cat.jpg" class="img-fluid" alt="cate-image">
@@ -124,30 +124,39 @@
                                     <span class="d-block">Cats</span>
                                 </div>
                             </div>
-                            <div class="col-md-2">
+
+                             <div class="col-md">
+                                <div class="cate-image">
+                                    <a href="<?= base_url('booking') ?>">
+                                        <img src="https://www.zigly.com/media/wysiwyg/Icons_SmallAnimal.png" class="img-fluid" alt="cate-image">
+                                    </a>
+                                    <span class="d-block">Others</span>
+                                </div>
+                            </div>
+                            <!-- <div class="col-md-2">
                                 <div class="cate-image">
                                     <a href="<?= base_url('booking') ?>">
                                         <img src="https://www.zigly.com/media/wysiwyg/Icons_SmallAnimal.png" class="img-fluid" alt="cate-image">
                                     </a>
                                     <span class="d-block">Small Pets</span>
                                 </div>
-                            </div>
-                            <div class="col-md-2">
+                            </div> -->
+                            <!-- <div class="col-md-2">
                                 <div class="cate-image">
                                     <a href="<?= base_url('booking') ?>">
                                         <img src="https://www.zigly.com/media/wysiwyg/Icons_Bird.png" class="img-fluid" alt="cate-image">
                                     </a>
                                     <span class="d-block">Birds</span>
                                 </div>
-                            </div>
-                            <div class="col-md-2">
+                            </div> -->
+                            <!-- <div class="col-md-2">
                                 <div class="cate-image">
                                     <a href="<?= base_url('booking') ?>">
                                         <img src="https://www.zigly.com/media/wysiwyg/Icons_EC.jpg" class="img-fluid" alt="cate-image">
                                     </a>
                                     <span class="d-block">Experience Center</span>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>

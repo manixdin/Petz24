@@ -43,6 +43,13 @@
     <link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/custom/css/signin.css">
 
 
+<!-- jQuery Confirm CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.4/jquery-confirm.min.css">
+
+<!-- jQuery Confirm JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.4/jquery-confirm.min.js"></script>
+
+
     <script>
         var base_url = "<?= base_url();?>"
         var base_url_admin = "http://localhost/projects/petzadmin/"

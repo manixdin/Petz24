@@ -24,33 +24,12 @@ class Database extends Config
     /**
      * The default database connection.
      */
-    // public array $default = [
-    //     'DSN'          => '',
-    //     'hostname'     => 'localhost',
-    //     'username'     => 'root',
-    //     'password'     => '',
-    //     'database'     => 'petz24_db',
-    //     'DBDriver'     => 'MySQLi',
-    //     'DBPrefix'     => '',
-    //     'pConnect'     => false,
-    //     'DBDebug'      => true,
-    //     'charset'      => 'utf8',
-    //     'DBCollat'     => 'utf8_general_ci',
-    //     'swapPre'      => '',
-    //     'encrypt'      => false,
-    //     'compress'     => false,
-    //     'strictOn'     => false,
-    //     'failover'     => [],
-    //     'port'         => 3306,
-    //     'numberNative' => false,
-    // ];
-
     public array $default = [
         'DSN'          => '',
         'hostname'     => 'localhost',
-         'username'     => 'u372271345_petz',
-        'password'     => 'J|rF*M*g/3r',
-        'database'     => 'u372271345_petz',
+        'username'     => 'root',
+        'password'     => '',
+        'database'     => 'petz24_db',
         'DBDriver'     => 'MySQLi',
         'DBPrefix'     => '',
         'pConnect'     => false,
@@ -65,6 +44,27 @@ class Database extends Config
         'port'         => 3306,
         'numberNative' => false,
     ];
+
+    // public array $default = [
+    //     'DSN'          => '',
+    //     'hostname'     => 'localhost',
+    //      'username'     => 'u372271345_petz',
+    //     'password'     => 'J|rF*M*g/3r',
+    //     'database'     => 'u372271345_petz',
+    //     'DBDriver'     => 'MySQLi',
+    //     'DBPrefix'     => '',
+    //     'pConnect'     => false,
+    //     'DBDebug'      => true,
+    //     'charset'      => 'utf8',
+    //     'DBCollat'     => 'utf8_general_ci',
+    //     'swapPre'      => '',
+    //     'encrypt'      => false,
+    //     'compress'     => false,
+    //     'strictOn'     => false,
+    //     'failover'     => [],
+    //     'port'         => 3306,
+    //     'numberNative' => false,
+    // ];
 
 
     /**
