@@ -18,9 +18,16 @@ $routes->get('profile', 'BaseAction::profile');
 
 /*====[ Booking Module Start ]=====*/
 $routes->get('booking','BookingController::index');
+$routes->get('chatbooking','BookingController::chatbooking');
+
 $routes->get('get-pet-list','BookingController::getPetList');
+$routes->get('get-doctor-language','BookingController::getDoctorLanguage');
+$routes->post('get-doctors','BookingController::getDoctors');
+
 $routes->post('get-breed-list','BookingController::getBreedList');
 $routes->post('get-user-pet-plan','BookingController::getUserPetPlan');
+
+
 $routes->post('get-time-slot','BookingController::getTimeSlot');
 $routes->post('add-booking','BookingController::addBooking');
 /*====[ Booking Module End ]=====*/
@@ -52,8 +59,8 @@ $routes->get('cart', 'BaseAction::cart');
 //Wishlist
 $routes->get('wishlist', 'BaseAction::wishlist');
 // pet grooming
-$routes->get('pet-grooming', 'BaseAction::petgrooming');
-$routes->get('pet-grooming-experience', 'BaseAction::petgroomingexperience');
+$routes->get('consultation', 'BaseAction::consultation');
+$routes->get('chatwithdoctor', 'BaseAction::chatwithdoctor');
 
 
 //terms and condition

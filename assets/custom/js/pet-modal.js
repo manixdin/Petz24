@@ -146,7 +146,6 @@ $(document).ready(function () {
 
     $("#add-pet").click(function () {
         $('.error').hide();
-        console.log($("#pet_img").val());
 
         if ($("#pet-list").val() == "") {
             $(".pet-list-error").text("Please select pet").show();
@@ -179,6 +178,10 @@ $(document).ready(function () {
         let formData = new FormData($("#user-pet-form")[0]);
         formData.append("gender", gender);
         let userInfo = DECRYPT_DATA(localStorage.getItem('user_data'));
+
+        
+
+
         formData.append("user_id", userInfo["user_id"]);
 
 

@@ -52,13 +52,13 @@
                                                         </a>
                                                     </li>
                                                     <li class="menu-link">
-                                                        <a href="<?= base_url('pet-grooming') ?>" class="link-title">
-                                                            <span class="sp-link-title">Vet Grooming</span>
+                                                        <a href="<?= base_url('consultation') ?>" class="link-title">
+                                                            <span class="sp-link-title">Consultation</span>
                                                         </a>
                                                     </li>
                                                     <li class="menu-link">
-                                                        <a href="<?= base_url('pet-grooming-experience') ?>" class="link-title">
-                                                            <span class="sp-link-title">At Experience Center</span>
+                                                        <a href="<?= base_url('chatwithdoctor') ?>" class="link-title">
+                                                            <span class="sp-link-title">Chat with Doctor</span>
                                                         </a>
                                                     </li>
                                                     <!-- <li class="menu-link">
@@ -139,13 +139,13 @@
                                 </a>
                             </li>
                                 <li class="menu-link">
-                                    <a href="<?= base_url('pet-grooming') ?>" class="link-title">
-                                        <span class="sp-link-title">Vet Grooming</span>
+                                    <a href="<?= base_url('consultation') ?>" class="link-title">
+                                        <span class="sp-link-title">Consultation</span>
                                     </a>
                                 </li>
                                 <li class="menu-link">
-                                    <a href="<?= base_url('pet-grooming-experience') ?>" class="link-title">
-                                        <span class="sp-link-title">At Experience Center</span>
+                                    <a href="<?= base_url('chatwithdoctor') ?>" class="link-title">
+                                        <span class="sp-link-title">Chat with Doctor</span>
                                     </a>
                                 </li>
                             <!-- <li class="menu-link">

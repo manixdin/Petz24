@@ -2,7 +2,8 @@
 
 <!-- TITLE -->
 <title>Product Type</title>
-<html lang="en" dir="ltr" data-nav-layout="vertical" data-theme-mode="light" data-header-styles="light" data-menu-styles="dark" data-toggled="close">
+<html lang="en" dir="ltr" data-nav-layout="vertical" data-theme-mode="light" data-header-styles="light"
+    data-menu-styles="dark" data-toggled="close">
 
 <?php require ('components/head.php') ?>
 
@@ -21,7 +22,7 @@
                 <!-- Page Header -->
                 <div class="d-md-flex d-block align-items-center justify-content-between my-4 page-header-breadcrumb">
                     <h1 class="page-title fw-semibold fs-18 mb-0">Product Type</h1>
-                   
+
                 </div>
                 <!-- Page Header Close -->
 
@@ -30,10 +31,8 @@
                     <div class="col-xl-12">
                         <div class="card custom-card">
                             <div class="card-header">
-                                <a 
-                                    id="add_product_type"
-                                    class="btn btn-end btn-outline-primary btn-wave d-sm-flex align-items-center justify-content-between"
-                                >
+                                <a id="add_product_type"
+                                    class="btn btn-end btn-outline-primary btn-wave d-sm-flex align-items-center justify-content-between">
                                     Add Product Type
                                 </a>
                             </div>
@@ -43,8 +42,8 @@
                                         <thead>
                                             <tr>
                                                 <th>S.No</th>
-                                                <th>Type</th>   
-                                                <th>Pet Name</th>   
+                                                <th>Type</th>
+                                                <th>Pet Name</th>
 
                                                 <th></th>
                                             </tr>
@@ -76,47 +75,45 @@
                         <div class="container">
                             <div class="row">
 
-                            <div class="col-lg-12 mt-3">
-                                <div class="form-floating">
-                                <select class="form-select" id="producttypeselect" aria-label="Floating label select example" name="pet_id">
-                                <option value="">Select a pet</option>
+                                <div class="col-lg-12 mt-3">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="producttypeselect"
+                                            aria-label="Floating label select example" name="pet_id">
+                                            <option value="">Select a pet</option>
 
-                                 
-                                </select>
-                                <label for="producttypeselect"><span class='text-danger'>*</span>Pet Name</label>
-                                </div>
-                  
+
+                                        </select>
+                                        <label for="producttypeselect"><span class='text-danger'>*</span>Pet
+                                            Name</label>
+                                    </div>
+
                                 </div>
 
                                 <div class="col-lg-12 mt-3">
                                     <div class="form-floating mb-4 floating">
-                                        <input
-                                            class="form-control product_name" 
-                                            id="product_name"
-                                            placeholder="Enter the product name" 
-                                            name="type"
-                                        >
+                                        <input class="form-control product_name" id="product_name"
+                                            placeholder="Enter the product name" name="type">
                                         <label for="product_name"><span class='text-danger'>*</span> ProductName</label>
                                         <span class="error text-danger mt-5 product_name"></span>
                                     </div>
                                 </div>
 
-                       
+
 
                             </div>
-                </div> <br><br>
-                <div class="mb-3 d-flex justify-content-end">
-                    <a class="btn btn-success" id="btn-submit">Submit</a>
+                        </div> <br><br>
+                        <div class="mb-3 d-flex justify-content-end">
+                            <a class="btn btn-success" id="btn-submit">Submit</a>
+
+                        </div>
+
+                        </hr>
+                    </form>
 
                 </div>
 
-                </hr>
-                </form>
-
             </div>
-
         </div>
-    </div>
 
     </div>
 

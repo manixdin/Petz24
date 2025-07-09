@@ -84,50 +84,50 @@
                     </a>
                 </li>
 
-                <li class="slide">
+                <!-- <li class="slide">
                     <a href="<?php echo base_url() ?>product_type" class="side-menu__item">
                         <i class="bx bx-home side-menu__icon"></i>
                         <span class="side-menu__label">Product type<span class="badge bg-warning-transparent ms-2"></span></span>
 
                     </a>
-                </li>
+                </li> -->
 
-                <li class="slide">
+                <!-- <li class="slide">
                     <a href="<?php echo base_url() ?>product_category" class="side-menu__item">
                         <i class="bx bx-home side-menu__icon"></i>
                         <span class="side-menu__label">Product category<span
                                 class="badge bg-warning-transparent ms-2"></span></span>
 
                     </a>
-                </li>
+                </li> -->
 
-                <li class="slide">
+                <!-- <li class="slide">
                     <a href="<?php echo base_url() ?>product" class="side-menu__item">
                         <i class="bx bx-home side-menu__icon"></i>
                         <span class="side-menu__label">Product<span
                                 class="badge bg-warning-transparent ms-2"></span></span>
 
                     </a>
-                </li>
+                </li> -->
 
-                <li class="slide">
+                <!-- <li class="slide">
                     <a href="<?php echo base_url() ?>product_image" class="side-menu__item">
                         <i class="bx bx-home side-menu__icon"></i>
                         <span class="side-menu__label">Product Image<span
                                 class="badge bg-warning-transparent ms-2"></span></span>
 
                     </a>
-                </li>
+                </li> -->
 
 
-                <li class="slide">
+                <!-- <li class="slide">
                     <a href="<?php echo base_url() ?>brand" class="side-menu__item">
                         <i class="bx bx-home side-menu__icon"></i>
                         <span class="side-menu__label">Brand<span
                                 class="badge bg-warning-transparent ms-2"></span></span>
 
                     </a>
-                </li>
+                </li> -->
 
                 <li class="slide">
                     <a href="<?php echo base_url() ?>breed" class="side-menu__item">
@@ -147,6 +147,7 @@
                         </span> 
                     </a>
                 </li>
+
                 <li class="slide">
                     <a href="<?php echo base_url() ?>pet-plan-details" class="side-menu__item">
                         <i class="bx bx-home side-menu__icon"></i>
@@ -157,14 +158,14 @@
                 </li>
                 <!-- // Created by mani start -->
 
-                <li class="slide">
+                <!-- <li class="slide">
                     <a href="<?php echo base_url() ?>clinic" class="side-menu__item">
                         <i class="bx bx-home side-menu__icon"></i>
                         <span class="side-menu__label">Clinic
                             <span class="badge bg-warning-transparent ms-2"></span>
                         </span> 
                     </a>
-                </li>
+                </li> -->
 
                 <li class="slide">
                     <a href="<?php echo base_url() ?>booking" class="side-menu__item">
@@ -174,6 +175,30 @@
                         </span> 
                     </a>
                 </li>
+
+
+
+
+
+                    <li class="slide">
+                    <a href="<?php echo base_url() ?>doctor-language" class="side-menu__item">
+                        <i class="bx bx-home side-menu__icon"></i>
+                        <span class="side-menu__label">Language
+                            <span class="badge bg-warning-transparent ms-2"></span>
+                        </span> 
+                    </a>
+                </li>
+
+                
+                    <li class="slide">
+                    <a href="<?php echo base_url() ?>doctor" class="side-menu__item">
+                        <i class="bx bx-home side-menu__icon"></i>
+                        <span class="side-menu__label">Doctor
+                            <span class="badge bg-warning-transparent ms-2"></span>
+                        </span> 
+                    </a>
+                </li>
+
 
 
 

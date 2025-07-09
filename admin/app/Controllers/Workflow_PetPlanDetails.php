@@ -24,8 +24,12 @@
             echo $this->response_message(false, false);
         } 
         public function insertPetPlanDetails(){
+
+    
             $petPlanDetailsModel = new PetPlanDetailsModel;
             $request = \Config\Services::request();
+
+    
             $data =  $request->getPost();
             if($data && $petPlanDetailsModel->insert($data, false)){
                 echo $this->response_message([

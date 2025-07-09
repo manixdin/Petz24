@@ -35,7 +35,6 @@ class Workflow_User extends BaseController
         if(!isset($res_data['user_id'])){
             echo $this->response_message(false); return;
         }
-
         echo $this->response_message([
             'code' => 200,
             'msg' => 'Login successfully!',

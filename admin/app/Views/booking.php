@@ -19,7 +19,7 @@
         <div class="main-content app-content">
             <div class="container-fluid">
 
-            <button id="getLocationBtn">Get My Location</button>
+            <!-- <button id="getLocationBtn">Get My Location</button> -->
             <p id="status"></p>
 
                 <!-- Page Header -->
@@ -45,7 +45,6 @@
                                                 <th>Booking Status</th>
                                                 <th>Payment Status</th>
                                                 <th>Booking Date</th>
-                                                <th>Booking Type</th>
 
                                                 <th>Action</th>
                                             </tr>

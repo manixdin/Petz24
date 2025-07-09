@@ -7,7 +7,7 @@
 <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/responsive.css">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/custom/css/addpet.css">
 <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <?php require('components/header.php')?>
 
@@ -20,11 +20,11 @@
                 <div class="col">
 
                     <div class="track-area">
-                        <div class="track-main border-top-0"> 
+                        <div class="track-main border-top-0">
                             <div class="action-container ">
                                 <a id="back-btn" class="btn btn-style1-custom-1 mx-2">Back</a>
                                 <!-- <a id="next" class="btn btn-style1-custom-1">Next</a> -->
-                            </div> 
+                            </div>
                             <div class="track">
                                 <div class="step level-0 active">
                                     <span class="icon"><i class="fa fa-check"></i></span>
@@ -32,7 +32,7 @@
                                 </div>
                                 <div class="step level-1">
                                     <span class="icon"><i class="fa fa-user"></i></span>
-                                    <span class="text">Select Plan</span>
+                                    <span class="text">Select Doctor</span>
                                 </div>
                                 <div class="step level-2">
                                     <span class="icon"><i class="fa fa-truck"></i></span>
@@ -40,7 +40,7 @@
                                 </div>
                                 <div class="step level-3">
                                     <span class="icon"><i class="fa fa-archive"></i>
-                                    </span> <span class="text">Select Address</span>
+                                    </span> <span class="text">Select Plan</span>
                                 </div>
                                 <div class="step level-4">
                                     <span class="icon"><i class="fa fa-archive"></i>
@@ -48,103 +48,131 @@
                                 </div>
                             </div>
                         </div>
-                    </div> 
+                    </div>
                     <!-- ALREADY ADDED PET START-->
-                    <div class="existing-pet-wrapper my-5">
-                        <span class="groom-title">Select A Pet You Want Groomed:</span> 
-                        <div class="row" id="user-pet-list"> 
-                            <div class="col-md-3">
-                                <div class="card-skeleton">
-                                    <div class="skeleton pad-55"> </div>
-                                    <div class="skeleton pad-15 mt-2"> </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card-skeleton">
-                                    <div class="skeleton pad-55"> </div>
-                                    <div class="skeleton pad-15 mt-2"> </div>
-                                </div>
-                            </div>  
-                            <div class="col-md-3">
-                                <div class="card-skeleton">
-                                    <div class="skeleton pad-55"> </div>
-                                    <div class="skeleton pad-15 mt-2"> </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card-skeleton">
-                                    <div class="skeleton pad-55"> </div>
-                                    <div class="skeleton pad-15 mt-2"> </div>
-                                </div>
-                            </div>  
-                        </div>
-                    </div>
-                    <!-- ALREADY ADDED PET ENDS --> 
-                    <!-- Pricing page start -->
-                    <div class="pricing-area pt-4">
-                        <div class='containerrr' id="pricing-list">  
-                            <div class="carddd skeleton-carddd-shadow">
-                                <div class="card-skeleton">
-                                    <div class="skeleton pad-30 skeleton-title"> </div> 
-                                    <div class="skeleton pad-25 skeleton-img mb-4"> </div> 
-                                    <div class="skeleton pad-15 mt-2 mb-4"> </div> 
-                                    <div class="skeleton pad-25 mt-2"> </div> 
-                                    <div class="skeleton pad-25 mt-1"> </div>   
-                                    <div class="skeleton pad-10 mt-4"> </div> 
-                                </div>
-                            </div> 
-                            <div class="carddd skeleton-carddd-shadow">
-                                <div class="card-skeleton">
-                                    <div class="skeleton pad-30 skeleton-title"> </div> 
-                                    <div class="skeleton pad-25 skeleton-img mb-4"> </div> 
-                                    <div class="skeleton pad-15 mt-2 mb-4"> </div> 
-                                    <div class="skeleton pad-25 mt-2"> </div> 
-                                    <div class="skeleton pad-25 mt-1"> </div>   
-                                    <div class="skeleton pad-10 mt-4"> </div> 
-                                </div>
-                            </div> 
-                            <div class="carddd skeleton-carddd-shadow">
-                                <div class="card-skeleton">
-                                    <div class="skeleton pad-30 skeleton-title"> </div> 
-                                    <div class="skeleton pad-25 skeleton-img mb-4"> </div> 
-                                    <div class="skeleton pad-15 mt-2 mb-4"> </div> 
-                                    <div class="skeleton pad-25 mt-2"> </div> 
-                                    <div class="skeleton pad-25 mt-1"> </div>   
-                                    <div class="skeleton pad-10 mt-4"> </div> 
-                                </div>
-                            </div> 
 
-                        </div>
-                    </div>
+                    <!-- ALREADY ADDED PET ENDS -->
+                    <!-- Pricing page start -->
+
                     <!-- pricing page ends -->
                 </div>
             </div>
             <!-- TIME SLOT START -->
+            <div class="existing-pet-wrapper my-5">
+                <span class="groom-title">Please select the pet for consultation:</span>
+                <div class="row" id="user-pet-list">
+                    <div class="col-md-3">
+                        <div class="card-skeleton">
+                            <div class="skeleton pad-55"> </div>
+                            <div class="skeleton pad-15 mt-2"> </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card-skeleton">
+                            <div class="skeleton pad-55"> </div>
+                            <div class="skeleton pad-15 mt-2"> </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card-skeleton">
+                            <div class="skeleton pad-55"> </div>
+                            <div class="skeleton pad-15 mt-2"> </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card-skeleton">
+                            <div class="skeleton pad-55"> </div>
+                            <div class="skeleton pad-15 mt-2"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- DOCTOR SELECTION START -->
+            <div class="doctor-area" style="display:none;">
+                <div class="form-group mb-3">
+                    <label for="pet_problem">Describe Pet Problem</label>
+                    <textarea id="pet_problem" class="form-control" rows="3"></textarea>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="language_select">Preferred Doctor Language</label>
+                    <select id="language_select" class="form-control">
+                        <option value="">-- Select Language --</option>
+                    </select>
+                </div>
+                <div class="row" id="doctor-list">
+
+
+
+                    <!-- Doctor cards will be appended here -->
+                </div>
+            </div>
+            <!-- DOCTOR SELECTION END -->
+            <div class="pricing-area pt-4">
+                <div class='containerrr' id="pricing-list">
+                    <div class="carddd skeleton-carddd-shadow">
+                        <div class="card-skeleton">
+                            <div class="skeleton pad-30 skeleton-title"> </div>
+                            <div class="skeleton pad-25 skeleton-img mb-4"> </div>
+                            <div class="skeleton pad-15 mt-2 mb-4"> </div>
+                            <div class="skeleton pad-25 mt-2"> </div>
+                            <div class="skeleton pad-25 mt-1"> </div>
+                            <div class="skeleton pad-10 mt-4"> </div>
+                        </div>
+                    </div>
+                    <div class="carddd skeleton-carddd-shadow">
+                        <div class="card-skeleton">
+                            <div class="skeleton pad-30 skeleton-title"> </div>
+                            <div class="skeleton pad-25 skeleton-img mb-4"> </div>
+                            <div class="skeleton pad-15 mt-2 mb-4"> </div>
+                            <div class="skeleton pad-25 mt-2"> </div>
+                            <div class="skeleton pad-25 mt-1"> </div>
+                            <div class="skeleton pad-10 mt-4"> </div>
+                        </div>
+                    </div>
+                    <div class="carddd skeleton-carddd-shadow">
+                        <div class="card-skeleton">
+                            <div class="skeleton pad-30 skeleton-title"> </div>
+                            <div class="skeleton pad-25 skeleton-img mb-4"> </div>
+                            <div class="skeleton pad-15 mt-2 mb-4"> </div>
+                            <div class="skeleton pad-25 mt-2"> </div>
+                            <div class="skeleton pad-25 mt-1"> </div>
+                            <div class="skeleton pad-10 mt-4"> </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
             <div class="time-slot">
                 <div class="row">
-                    <div class="col-lg-6"> 
+                    <div class="col-lg-6">
                         <div id="calendar-container">
                             <p class="mb-4">Note: Date will be selectable for next 7 days</p>
                             <div id="calendar-header">
-                                <button id="prev-month"><i class="ionicons ion-android-arrow-dropleft-circle"></i></button>
+                                <button id="prev-month"><i
+                                        class="ionicons ion-android-arrow-dropleft-circle"></i></button>
                                 <span id="month-year"></span>
-                                <button id="next-month"><i class="ionicons ion-android-arrow-dropright-circle"></i></button>
+                                <button id="next-month"><i
+                                        class="ionicons ion-android-arrow-dropright-circle"></i></button>
                             </div>
                             <div id="calendar"></div>
-                        </div>    
+                        </div>
                     </div>
-                    <div class="col-lg-6"> 
-                        <div id="timeSlot"> 
+                    <div class="col-lg-6">
+                        <div id="timeSlot">
                             <h4><i class="ionicons ion-android-time"></i> Select Time</h4>
                             <div id="calendar-timeSlot">
                                 <div class="timeslot-list">
 
                                 </div>
-                            </div>   
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+
             <!-- TIME SLOT ENDS -->
 
 
@@ -162,7 +190,7 @@
                             <div class="skeleton pad-55"> </div>
                             <div class="skeleton pad-15 mt-2"> </div>
                         </div>
-                    </div>  
+                    </div>
                     <div class="col-md-3">
                         <div class="card-skeleton">
                             <div class="skeleton pad-55"> </div>
@@ -174,7 +202,7 @@
                             <div class="skeleton pad-55"> </div>
                             <div class="skeleton pad-15 mt-2"> </div>
                         </div>
-                    </div>  
+                    </div>
                 </div>
             </div>
 
@@ -194,41 +222,44 @@
                             <div class="left-side-wrapper">
                                 <div class="row">
                                     <div class="col-lg-6">
-                                        <div class=" box-shadow package-wrapper d-flex justify-content-center align-items-center flex-column p-2">
-                                            <img id="review-plan-image" alt="" class="img-fluid d-block my-2" src="admin/uploads/pet/1729068173_9b635871766923b230a5.png">
+                                        <div
+                                            class=" box-shadow package-wrapper d-flex justify-content-center align-items-center flex-column p-2">
+                                            <img id="review-plan-image" alt="" class="img-fluid d-block my-2"
+                                                src="admin/uploads/pet/1729068173_9b635871766923b230a5.png">
                                             <span class="package-name d-block my-2" id="review-plan-name"></span>
-                                            <span class="duration d-block mb-3 mt-2">Duration : <b id="review-plan-duration"></b></span>
+                                            <span class="duration d-block mb-3 mt-2">Duration : <b
+                                                    id="review-plan-duration"></b></span>
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="other-detail">
-                                            <span class="pet-name-review d-block pt-2">For <span id="review-pet-name"></span></span>
+                                            <span class="pet-name-review d-block pt-2">For <span
+                                                    id="review-pet-name"></span></span>
                                             <span class="booking-date d-block">
-                                                <span class="summary-width"><i class="fa fa-calendar-check-o" aria-hidden="true"></i>&nbsp; DATE </span> :
+                                                <span class="summary-width"><i class="fa fa-calendar-check-o"
+                                                        aria-hidden="true"></i>&nbsp; DATE </span> :
                                                 <span id="review-plan-date"></span>
                                             </span>
                                             <span class="booking-time d-block">
-                                                <span class="summary-width"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp; TIME </span> :
+                                                <span class="summary-width"><i class="fa fa-clock-o"
+                                                        aria-hidden="true"></i>&nbsp; TIME </span> :
                                                 <span id="review-timeslot"> </span>
                                             </span>
-                                            <span class="booking-place">
-                                                <span class="summary-width"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp; ADDRESS </span> :
-                                                <span class="center-address display-inline" id="review-address"></span>
-                                            </span>
+                                      
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3  my-3 my-lg-0"> 
+                    <div class="col-lg-3  my-3 my-lg-0">
                         <div class="box-shadow p-4 text-center">
                             <div class="booking-amount d-flex justify-content-center align-items-center flex-column">
                                 <span class="amount-text mb-2">Amount</span>
                                 <span class="amount">₹ <b id="review-amount"></b></span>
                             </div>
                             <button class="btn btn-style1-custom my-4 make-payment" id="payBtn">Make Payment</button>
-                        </div> 
+                        </div>
                     </div>
                 </div>
             </div>
@@ -248,53 +279,56 @@
 
 
     <script>
-        $(document).ready(function () {
-            $('#payBtn').click(function () {
-                $.ajax({
-                    url: '<?= base_url("razorpay/order") ?>',
-                    type: 'POST',
-                    success: function (response) {
-                        var options = {
-                            "key": response.key,
-                            "amount": 50000,
-                            "currency": "INR",
-                            "name": "My Website",
-                            "description": "Test Transaction",
-                            "image": "https://yourdomain.com/logo.png",
-                            "order_id": response.order_id,
-                            "handler": function (razorpayResponse) {
-                                $.ajax({
-                                    url: '<?= base_url("razorpay/verify") ?>',
-                                    type: 'POST',
-                                    contentType: "application/json",
-                                    data: JSON.stringify(razorpayResponse),
-                                    success: function (verifyResponse) {
-                                        alert('Payment Successful: ' + verifyResponse.message);
-                                    },
-                                    error: function () {
-                                        alert('Payment Verification Failed');
-                                    }
-                                });
-                            },
-                            "prefill": {
-                                "name": "John Doe",
-                                "email": "john.doe@example.com",
-                                "contact": "9999999999"
-                            },
-                            "theme": {
-                                "color": "#528FF0"
-                            }
-                        };
+    // $(document).ready(function() {
+    //     $('#payBtn').click(function() {
+    //         $.ajax({
+    //             url: '<?= base_url("razorpay/order") ?>',
+    //             type: 'POST',
+    //             success: function(response) {
+    //                 var options = {
+    //                     "key": response.key,
+    //                     "amount": 50000,
+    //                     "currency": "INR",
+    //                     "name": "My Website",
+    //                     "description": "Test Transaction",
+    //                     "image": "https://yourdomain.com/logo.png",
+    //                     "order_id": response.order_id,
+    //                     "handler": function(razorpayResponse) {
+    //                         $.ajax({
+    //                             url: '<?= base_url("razorpay/verify") ?>',
+    //                             type: 'POST',
+    //                             contentType: "application/json",
+    //                             data: JSON.stringify(razorpayResponse),
+    //                             success: function(verifyResponse) {
+    //                                 alert('Payment Successful: ' +
+    //                                     verifyResponse.message);
+    //                             },
+    //                             error: function() {
+    //                                 alert(
+    //                                     'Payment Verification Failed'
+    //                                 );
+    //                             }
+    //                         });
+    //                     },
+    //                     "prefill": {
+    //                         "name": "John Doe",
+    //                         "email": "john.doe@example.com",
+    //                         "contact": "9999999999"
+    //                     },
+    //                     "theme": {
+    //                         "color": "#528FF0"
+    //                     }
+    //                 };
 
-                        var rzp1 = new Razorpay(options);
-                        rzp1.open();
-                    },
-                    error: function () {
-                        alert('Error creating Razorpay order');
-                    }
-                });
-            });
-        });
+    //                 var rzp1 = new Razorpay(options);
+    //                 rzp1.open();
+    //             },
+    //             error: function() {
+    //                 alert('Error creating Razorpay order');
+    //             }
+    //         });
+    //     });
+    // });
     </script>
 
 </body>

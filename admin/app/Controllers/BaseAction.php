@@ -79,7 +79,15 @@ class BaseAction extends BaseController
         return view('booking');
     }
 
+   public function doctor_language()
+    {
+        return view('doctor_language');
+    }
 
+   public function doctor()
+    {
+        return view('doctor');
+    }
 
 
     ##############################################

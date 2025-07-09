@@ -128,6 +128,8 @@ function signinUser(){
         data: fields,
         dataType: "json",
         success: function (response) {
+
+            
             handelUserResponseForm(response)
             signinSignupModalHandler()
         },
@@ -147,6 +149,9 @@ function signupUser(){
 
     POST({module, data}).then((response) => {
         if(response.code == '200'){
+
+            console.log(response);
+            
             localStorage.setItem("user_data", response.data)
         }
 

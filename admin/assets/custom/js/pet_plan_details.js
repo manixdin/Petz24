@@ -10,7 +10,7 @@ $(document).ready(function () {
             $.each(petData, function (key, value) {
                 $('#petselect')
                 .append($('<option>', { value: value.plan_id })
-                    .text(`${value.pet_name} - ${value.plan_name}`));
+                    .text(` ${value.plan_name}`));
             });
         }); 
     }
@@ -57,7 +57,7 @@ $(document).ready(function () {
                 {
                     mDataProp: function (data, type, full, meta) {
                     return (
-                        `<p>${data.pet_name} - ${data.plan_name}</p>`
+                        `<p> ${data.plan_name}</p>`
                     );
                     },
                 },

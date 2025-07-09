@@ -22,26 +22,34 @@
             }
             echo $this->response_message(false, false);
         } 
-        public function insertPetPlan(){
-            $petPlanModel = new PetPlanModel;
-            $request = \Config\Services::request();
-            $data =  $request->getPost();
-            if($_FILES['plan_img']['name'] != ''){
-                $img = $this->request->getFile('plan_img');
-                if (!$img->hasMoved()) {
-                    $newName = $img->getRandomName();
-                    $img->move('uploads/plan', $newName);
-                    $data['plan_img']= 'uploads/plan/'.$newName;          
-                }
-            }
-            if($data && $petPlanModel->insert($data, false)){
-                echo $this->response_message([
-                    'code' => 200,
-                    'msg' => "Pet plan inserted successfully!"
-                ]); return;
-            }
-            echo $this->response_message(false);
+       public function insertPetPlan(){
+    $petPlanModel = new PetPlanModel;
+    $request = \Config\Services::request();
+    $data =  $request->getPost();
+
+    // Add pet_id to the data
+    $data['pet_id'] = 1;
+
+    if($_FILES['plan_img']['name'] != ''){
+        $img = $this->request->getFile('plan_img');
+        if (!$img->hasMoved()) {
+            $newName = $img->getRandomName();
+            $img->move('uploads/plan', $newName);
+            $data['plan_img'] = 'uploads/plan/' . $newName;          
         }
+    }
+
+    if ($data && $petPlanModel->insert($data, false)) {
+        echo $this->response_message([
+            'code' => 200,
+            'msg' => "Pet plan inserted successfully!"
+        ]); 
+        return;
+    }
+
+    echo $this->response_message(false);
+}
+
         public function updatePetPlan(){ 
             $planModel = new PetPlanModel;
             $request = \Config\Services::request();

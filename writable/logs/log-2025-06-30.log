@@ -1,0 +1,28 @@
+CRITICAL - 2025-06-30 18:07:21 --> ErrorException: Undefined variable $plan_type
+in APPPATH\Controllers\BookingController.php on line 60.
+ 1 APPPATH\Controllers\BookingController.php(60): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookingController->getUserPetPlan()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-30 18:10:40 --> ErrorException: Undefined variable $plan_type
+in APPPATH\Controllers\BookingController.php on line 60.
+ 1 APPPATH\Controllers\BookingController.php(60): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookingController->getUserPetPlan()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-30 18:12:10 --> ErrorException: Undefined variable $plan_type
+in APPPATH\Controllers\BookingController.php on line 60.
+ 1 APPPATH\Controllers\BookingController.php(60): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookingController->getUserPetPlan()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-30 18:13:35 --> ErrorException: Undefined variable $plan_type
+in APPPATH\Controllers\BookingController.php on line 60.
+ 1 APPPATH\Controllers\BookingController.php(60): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookingController->getUserPetPlan()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

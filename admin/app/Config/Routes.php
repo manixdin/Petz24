@@ -37,6 +37,12 @@ $routes->get('clinic', 'BaseAction::clinic');
 $routes->get('booking', 'BaseAction::booking');
 
 
+# doctor
+$routes->get('doctor-language', 'BaseAction::doctor_language');
+
+$routes->get('doctor', 'BaseAction::doctor');
+
+
 ###########################[ API Routes ]##################################
 
 # Login Logout
@@ -52,6 +58,22 @@ $routes->post('getspecificpet', 'Workflow_Pet::getSpecificPet');
 $routes->post('insertpet', 'Workflow_Pet::insertPet');
 $routes->post('updatepet', 'Workflow_Pet::updatePet');
 $routes->post('deletepet', 'Workflow_Pet::deletePet');
+
+
+# Doctor Language
+$routes->get('getlanguage', 'Workflow_Language::getLanguage');
+$routes->post('getspecificlanguage', 'Workflow_Language::getSpecificLanguage');
+$routes->post('insertlanguage', 'Workflow_Language::insertLanguage');
+$routes->post('updatelanguage', 'Workflow_Language::updateLanguage');
+$routes->post('deletelanguage', 'Workflow_Language::deleteLanguage');
+
+
+# Doctor Language
+$routes->get('getdoctor', 'Workflow_Doctor::getDoctor');
+$routes->post('getspecificdoctor', 'Workflow_Doctor::getSpecificDoctor');
+$routes->post('insertdoctor', 'Workflow_Doctor::insertDoctor');
+$routes->post('updatedoctor', 'Workflow_Doctor::updateDoctor');
+$routes->post('deletedoctor', 'Workflow_Doctor::deleteDoctor');
 
 # Product Type
 $routes->get('getproducttype', 'Workflow_Product_Type::getProductType');

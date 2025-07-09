@@ -10,6 +10,13 @@ class BookingController extends BaseController
         return view('booking');
     }
 
+      public function chatbooking()
+    {
+        return view('chatbooking');
+    }
+
+
+    
     public function getPetList()
     {
         $db = \Config\Database::connect();
@@ -17,6 +24,32 @@ class BookingController extends BaseController
         $pets = $query->getResultArray();
         return $this->response->setJSON($pets);
     } 
+
+public function getDoctorLanguage()
+{
+    $db = \Config\Database::connect();
+    $query = $db->query("SELECT * FROM doctor_language_tbl WHERE flag = 1");
+    $languages = $query->getResultArray();
+    return $this->response->setJSON($languages);
+}
+
+public function getDoctors()
+{
+
+   
+    $request = \Config\Services::request();
+    $language_id = $request->getPost('language_id');
+
+    $db = \Config\Database::connect();
+
+    $query = $db->query("SELECT * FROM doctor_tbl WHERE language_id = ? AND flag = 1", [$language_id]);
+    $doctors = $query->getResultArray();
+
+    return $this->response->setJSON($doctors);
+}
+
+
+    
 
     public function getBreedList()
     {
@@ -30,8 +63,8 @@ class BookingController extends BaseController
     function getUserPetPlan(){
         $db = \Config\Database::connect();
         $data = $this->request->getPost();
-        $pedID = $data["pet_id"];
-        $query = $db->query("SELECT * FROM `pet_plan_tbl` WHERE `pet_id` = '$pedID' AND flag = '1'");
+        $plan_type = $data["plan_type"];
+        $query = $db->query("SELECT * FROM `pet_plan_tbl` WHERE plan_type = '$plan_type'  AND flag = '1'");
         $plans = $query->getResultArray();
         foreach($plans as $index => $plan){
             $planId = $plan["plan_id"];
@@ -75,6 +108,9 @@ class BookingController extends BaseController
     function addBooking(){
         $db = \Config\Database::connect();
         $data = $this->request->getPost(); 
+
+
+
 
     
         preg_match('/(\w+ \w+ \d+ \d+ \d+:\d+:\d+)/', $data['booking_date'], $matches);

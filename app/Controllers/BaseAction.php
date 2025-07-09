@@ -78,16 +78,16 @@ class BaseAction extends BaseController
     {
         return view('consultationcenter');
     }
-    public function petgrooming()
+    public function consultation()
     {  
         $data['menuItems'] = [];
-        return view('petgrooming', $data);
+        return view('consultation', $data);
     }
 
-    public function petgroomingexperience()
+    public function chatwithdoctor()
     {  
         $data['menuItems'] = [];
-        return view('petgroomingexperience', $data);
+        return view('chatwithdoctor', $data);
     }
     public function termsAndCondition()
     {

@@ -11,6 +11,7 @@ class PetPlanModel extends Model{
         'plan_price', 
         'duration', 
         'plan_img', 
+        'plan_type', 
         'flag'
     ];
 }

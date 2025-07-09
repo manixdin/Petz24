@@ -54,18 +54,23 @@ $(document).ready(function () {
                 return meta.row + 1;
                 },
             },
-            {
-                mDataProp: "pet_name",
-            },
+      
             {
                 mDataProp: "plan_name",
             },
             {
                 mDataProp: "plan_price",
             },
-            {
-                mDataProp: "duration",
-            }, 
+
+             {
+    mDataProp: "plan_type",
+    render: function (data, type, row) {
+        if (data == 1) return "Consultation with Doctor";
+        if (data == 2) return "Chat with Doctor";
+        return "";
+    }
+},
+           
             {
                 mDataProp: function (data, type, full, meta) {
                 if (data.plan_img && data.plan_img !== "") {
@@ -80,8 +85,7 @@ $(document).ready(function () {
             {
                 mDataProp: function (data, type, full, meta) {
                 return (
-                    `<a id="${meta.row}" class="btn btnEdit text-info fs-14 lh-1"> <i class="ri-edit-line"></i></a>
-                <a id="${meta.row}" class="btn BtnDelete text-danger fs-14 lh-1"> <i class="ri-delete-bin-5-line"></i></a>`
+                    `<a id="${meta.row}" class="btn btnEdit text-info fs-14 lh-1"> <i class="ri-edit-line"></i></a>`
                 );
                 },
             },
@@ -107,10 +111,7 @@ $(document).ready(function () {
     $("#btn-submit").on('click', function () { 
       $(".error").hide(); 
       let formObjectNew = [
-        {
-          value: $("#petselect").val(),
-          error: "Please select the pet type"
-        },
+       
         {
           value: $("#plan_name").val(),
           error: "Please entrer the plan name"
@@ -119,9 +120,11 @@ $(document).ready(function () {
           value: $("#plan_price").val(),
           error: "Please entrer the plan price"
         },
-        {
-          value: $("#duration").val(),
-          error: "Please entrer the plan duration"
+     
+
+         {
+          value: $("#plan_type").val(),
+          error: "Please select the plan type"
         },
         {
           value: $("#plan_img").val(),
@@ -129,10 +132,7 @@ $(document).ready(function () {
         }
       ] 
       let formObjectUpdate = [
-        {
-          value: $("#petselect").val(),
-          error: "Please select the pet type"
-        },
+       
         {
           value: $("#plan_name").val(),
           error: "Please entrer the plan name"
@@ -140,11 +140,10 @@ $(document).ready(function () {
         {
           value: $("#plan_price").val(),
           error: "Please entrer the plan price"
+        },{
+          value: $("#plan_type").val(),
+          error: "Please select the plan type"
         },
-        {
-          value: $("#duration").val(),
-          error: "Please entrer the plan duration"
-        }
       ] 
       if (mode == "new") {
         if (FORM_VALIDATION(formObjectNew)) {
@@ -161,6 +160,7 @@ $(document).ready(function () {
     //===[ Insert Pet Data ]===
     function insertPlanData() { 
       let data = getFormData();
+
       POST({ module, data }).then((response) => {
         SWAL_HANDLER(response);
         refreshDetails();
@@ -178,6 +178,8 @@ $(document).ready(function () {
       $("#plan_name").val(masterData[index].plan_name);
       $("#plan_price").val(masterData[index].plan_price);
       $("#duration").val(masterData[index].duration);
+
+      $("#plan_type").val(masterData[index].plan_type);
       if (masterData[index].plan_img) {
         $("#plan_img_url").attr('src', masterData[index].plan_img);
         $("#plan_img_url").show();

@@ -37,6 +37,8 @@ class UserPetController extends BaseController
                 }
             }
 
+
+    
  
         $sql = "INSERT INTO `user_pet_tbl` (`user_id`, `pet_id`, `breed_id`, `gender`, `date_of_birth`, `name`, `age_year`, `age_month`, `pet_img`) 
                 VALUES (?, ?, ?, ?, ?, ?, ?, ?,?)";
