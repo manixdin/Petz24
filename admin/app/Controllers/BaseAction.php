@@ -6,27 +6,15 @@ class BaseAction extends BaseController
 {
 
 
-    public function __construct()
-    {
-        // parent::__construct(); 
 
-        // Move session check logic to another function
-    }
-
-
-    // public function __construct(){
-    //     if (!sessionCheck()) {
-    //         return redirect()->to('/');
-    //     }
-    // }
     
     public function index()
     {
-        // if (sessionCheck()) {
-        //     return view('dashboard');
-        // }
-        // return view('login');
-        return view('dashboard');
+        if (sessionCheck()) {
+            return view('dashboard');
+        }
+        return view('login');
+        // return view('dashboard');
     }
 
     public function dashboard()

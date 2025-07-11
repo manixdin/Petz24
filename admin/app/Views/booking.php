@@ -41,11 +41,12 @@
                                                 <th>S.No</th>
                                                 <th>User Name</th>
                                                 <th>User Pet Name</th>
+                                                <th>Pet Problem</th>
+                                                <th>Doctor</th>
                                                 <th>Plan Name</th>
                                                 <th>Booking Status</th>
                                                 <th>Payment Status</th>
                                                 <th>Booking Date</th>
-
                                                 <th>Action</th>
                                             </tr>
                                         </thead>

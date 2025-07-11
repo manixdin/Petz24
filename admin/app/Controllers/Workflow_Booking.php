@@ -25,6 +25,8 @@ class Workflow_Booking extends BaseController
         $data = $this->model
             ->select('
             booking_tbl.booking_id as booking_id, 
+            booking_tbl.booking_json, 
+
             booking_tbl.booking_date as booking_date,
             booking_tbl.booking_status as booking_status,
             booking_tbl.payment_status as payment_status,

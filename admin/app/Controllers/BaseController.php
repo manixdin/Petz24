@@ -50,17 +50,25 @@ abstract class BaseController extends Controller
 	protected $db;
     protected $userData;
 
-    public function initController(RequestInterface $request, ResponseInterface $response, LoggerInterface $logger)
-    {
-        // Do Not Edit This Line
-        parent::initController($request, $response, $logger);
+public function initController(RequestInterface $request, ResponseInterface $response, LoggerInterface $logger)
+{
+    parent::initController($request, $response, $logger);
 
-        // Preload any models, libraries, etc, here.
+    helper('sessionCheck'); // ✅ load custom helper
 
-        $this->session = \Config\Services::session();
+    $this->session = \Config\Services::session();
+    $this->db = db_connect();
 
-        $this->db = db_connect();
+    // Skip session check on login or root page
+    $uri = service('uri')->getSegment(1); // Get first segment
+
+    $publicRoutes = ['login', '', 'auth']; // Publicly accessible routes
+
+    if (!sessionCheck() && !in_array($uri, $publicRoutes)) {
+        redirect()->to('/')->send(); // 🔁 prevent loop
+        exit;
     }
+}
 
     public function response_message($messData){
 

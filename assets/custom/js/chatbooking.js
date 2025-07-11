@@ -12,6 +12,7 @@ $(document).ready(function () {
         booking_date: '',
         slot_id: 0,
         slot_info: '',
+        pet_problem:''
     };
 
     let userPetPlan = [];
@@ -240,6 +241,9 @@ $(document).ready(function () {
 
         bookingInfo.doctor_id = doctor_id;
         bookingInfo.doctor_name = doctor_name;
+        bookingInfo.pet_problem = pet_problem;
+
+        
         renderCalendar(currentDate);
 
         showCurrentTab(++level);  // go to next step (Plan)

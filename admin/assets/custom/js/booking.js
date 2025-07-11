@@ -139,7 +139,6 @@ function updateBookingData() {
   
   PUT({ module, data }).then((response) => {
 
-    console.log(response);
     
 
     
@@ -152,6 +151,8 @@ function updateBookingData() {
     
 
     function displayClinicDetails(tableData) {
+
+     
 
     
       //===[Destroy Data Table]===
@@ -196,6 +197,41 @@ function updateBookingData() {
                 return `${row.user_pet_name} (${row.pet_name})`;
               }
             },
+
+            {
+  mDataProp: null, // since we're customizing rendering
+  render: function (data, type, row) {
+    let bookingData = {};
+    try {
+      bookingData = JSON.parse(row.booking_json || '{}');
+    } catch (e) {
+      console.error("Invalid JSON in booking_json", e);
+    }
+
+    // Example: use fields from the parsed JSON
+    return ` ${bookingData.pet_problem || 'N/A'}
+      
+    `;
+  }
+},
+
+
+            {
+  mDataProp: null, // since we're customizing rendering
+  render: function (data, type, row) {
+    let bookingData = {};
+    try {
+      bookingData = JSON.parse(row.booking_json || '{}');
+    } catch (e) {
+      console.error("Invalid JSON in booking_json", e);
+    }
+
+    // Example: use fields from the parsed JSON
+    return ` ${bookingData.doctor_name || 'N/A'}
+      
+    `;
+  }
+},
             {
               mDataProp: "plan_name",
             },

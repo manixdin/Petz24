@@ -155,11 +155,27 @@ public function getDoctors()
 
 
 
-        
+        $planId = $data['plan_id'];
+$msg = 'Plan booked successfully'; // default message
+
+switch ($planId) {
+    case 1:
+        $msg = 'Expect a call and a WhatsApp message (1 to 2 hrs).';
+        break;
+    case 2:
+        $msg = 'Calling/WhatsApping now (10 to 15mins).';
+        break;
+    case 3:
+        $msg = 'The doctor will contact you soon via WhatsApp.';
+        break;
+}
+
+
+
         if ($query) {
             return $this->response->setJSON([
-                "code" => 200,
-                'msg' => 'Plan booked successfully'
+                'code' => 200,
+    'msg'  => $msg
             ]);
         } else {
             return $this->response->setJSON([
