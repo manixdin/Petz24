@@ -62,14 +62,23 @@ class Workflow_User extends BaseController
             ]); return;
         }
 
-        if($builder->insert($data)){
+            if ($builder->insert($data)) {
 
-            unset($data['password']);
+            $user_id = $this->db->insertID();
+
+            
+            $data['user_id'] = $user_id;     // Add it to the data array
+
+        
+
+            unset($data['password']);        // Remove password before response
+
             echo $this->response_message([
                 'code' => 200,
-                'msg' => 'Welcome '.$data['first_name'].'!',
+                'msg'  => 'Welcome ' . $data['first_name'] . '!',
                 'data' => $this->encryptData($data)
-            ]); return;
+            ]);
+            return;
         }
 
         echo $this->response_message(false);

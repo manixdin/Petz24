@@ -14,21 +14,21 @@ $(document).ready(function () {
 });
 
 
-$("#btn-submit").on('click', function () {   
+$("#btn-submit").on('click', function () {
   $(".error").hide();
   let formObject = [
     {
       value: $("#booking_id").val(),
       error: "Please enter booking id"
-    },{
+    }, {
       value: $("#paymentstatus").val(),
       error: "Please select payment status"
-    },{
+    }, {
       value: $("#bookingstatus").val(),
       error: "Please select booking status"
     }
   ]
-  
+
 
   if (FORM_VALIDATION(formObject)) {
     if (mode == "edit") {
@@ -54,11 +54,11 @@ $(document).on("click", ".btnView", function () {
   let index = $(this).attr("id");
   booking_id = masterData[index]['booking_id'];
   console.log(booking_id);
-  
+
   getSpecificBooking(booking_id).then((specificData) => {
     if (specificData && specificData.length > 0) {
       console.log(specificData);
-      
+
       let booking = specificData[0]; // Assuming you need the first item from the response
 
       // Build HTML for modal content
@@ -86,28 +86,28 @@ $(document).on("click", ".btnView", function () {
       console.log("No specific data found.");
     }
   })
-  .catch((error) => {
-    console.error("Error fetching specific data:", error);
-  });
+    .catch((error) => {
+      console.error("Error fetching specific data:", error);
+    });
 });
 
 
 
-function getFormData(){
+function getFormData() {
   return new FormData($("#clinic-form")[0]);
 }
 
-function refreshDetails(){
+function refreshDetails() {
   getBooking();
   $("#popup-modal").modal("hide");
   $("#popup-modal-edit").modal("hide");
 
 }
 
-    //====[ Get All Pet Data ]===
+//====[ Get All Pet Data ]===
 function getBooking() {
   GET({ module }).then((data) => {
-    masterData=(data);
+    masterData = (data);
     displayClinicDetails(masterData);
   });
 }
@@ -116,7 +116,7 @@ function getSpecificBooking(module_id) {
   return POST({ module, module_id }) // Assuming POST returns a Promise
     .then((response) => {
       if (response) {
-        
+
         // Flatten the booking_json field for each item in the response
         return response.map(item => {
           const parsedBookingJson = JSON.parse(item.booking_json);
@@ -136,151 +136,186 @@ function getSpecificBooking(module_id) {
 function updateBookingData() {
 
   let data = getFormData();
-  
+
   PUT({ module, data }).then((response) => {
 
-    
 
-    
+
+
     SWAL_HANDLER(response);
 
     refreshDetails();
   });
 }
 
+
+
+function displayClinicDetails(tableData) {
+
+
+    console.log(tableData);
+
+
+  //===[Destroy Data Table]===
+  if ($.fn.DataTable.isDataTable('#datatable')) {
+    $('#datatable').DataTable().destroy();
+  }
+
+  $('#datatable tbody').empty();
+
+
+  if (typeof tableData === 'string') {
+
     
 
-    function displayClinicDetails(tableData) {
-
-     
-
-    
-      //===[Destroy Data Table]===
-      if ($.fn.DataTable.isDataTable('#datatable')) {
-        $('#datatable').DataTable().destroy();
+    $('#datatable').dataTable({
+      "oLanguage": {
+        "sEmptyTable": "There is no clinic data available"
       }
-    
-      $('#datatable tbody').empty();
-    
-    
-      if (typeof tableData === 'string') {
-    
-        $('#datatable').dataTable({
-          "oLanguage": {
-            "sEmptyTable": "There is no clinic data available"
+    });
+
+  }
+  else {
+
+    $("#datatable").DataTable({
+      destroy: true,
+      aaSorting: [],
+      aaData: tableData,
+      aoColumns: [
+        {
+          mDataProp: null,
+          render: function (data, type, row, meta) {
+            return meta.row + 1;
+          },
+        },
+
+        {
+          mDataProp: "plan_name",
+        },
+        {
+          mDataProp: null, // Set to null if combining multiple fields
+          render: function (data, type, row) {
+            return `${row.first_name} ${row.last_name}`;
           }
-        });
-    
-      }
-      else {
-    
-        $("#datatable").DataTable({
-          destroy: true,
-          aaSorting: [],
-          aaData: tableData,
-          aoColumns: [
-            {
-              mDataProp: null,
-              render: function (data, type, row, meta) {
-                return meta.row + 1;
-              },
-            },
-            {
-              mDataProp: null, // Set to null if combining multiple fields
-              render: function (data, type, row) {
-                return `${row.first_name} ${row.last_name}`;
-              }
-            },
-            {
-              mDataProp: null, // Set to null if combining multiple fields
-              render: function (data, type, row) {
-                return `${row.user_pet_name} (${row.pet_name})`;
-              }
-            },
+        },
+        {
+          mDataProp: null, // Set to null if combining multiple fields
+          render: function (data, type, row) {
+            return `${row.user_pet_name} (${row.pet_name})`;
+          }
+        },
 
-            {
-  mDataProp: null, // since we're customizing rendering
-  render: function (data, type, row) {
-    let bookingData = {};
-    try {
-      bookingData = JSON.parse(row.booking_json || '{}');
-    } catch (e) {
-      console.error("Invalid JSON in booking_json", e);
-    }
+        {
+          mDataProp: null, // since we're customizing rendering
+          render: function (data, type, row) {
+            let bookingData = {};
+            try {
+              bookingData = JSON.parse(row.booking_json || '{}');
+            } catch (e) {
+              console.error("Invalid JSON in booking_json", e);
+            }
 
-    // Example: use fields from the parsed JSON
-    return ` ${bookingData.pet_problem || 'N/A'}
+            // Example: use fields from the parsed JSON
+            return ` ${bookingData.pet_problem || 'N/A'}
       
     `;
-  }
-},
+          }
+        },
 
 
-            {
-  mDataProp: null, // since we're customizing rendering
-  render: function (data, type, row) {
-    let bookingData = {};
-    try {
-      bookingData = JSON.parse(row.booking_json || '{}');
-    } catch (e) {
-      console.error("Invalid JSON in booking_json", e);
-    }
+        {
+          mDataProp: null, // since we're customizing rendering
+          render: function (data, type, row) {
+            let bookingData = {};
+            try {
+              bookingData = JSON.parse(row.booking_json || '{}');
+            } catch (e) {
+              console.error("Invalid JSON in booking_json", e);
+            }
 
-    // Example: use fields from the parsed JSON
-    return ` ${bookingData.doctor_name || 'N/A'}
+            // Example: use fields from the parsed JSON
+            return ` ${bookingData.doctor_name || 'N/A'}
       
     `;
-  }
-},
-            {
-              mDataProp: "plan_name",
-            },
-            {
-              mDataProp: "booking_status",
-            },
-            {
-              mDataProp: "payment_status",
-            },
-            {
-              mDataProp: "booking_date",
-            },
-           
-            {
-              mDataProp: function (data, type, full, meta) {
-                return (
-                  `<a id="${meta.row}" class="btn btnView text-primary fs-14 lh-1"><i class="ri-eye-line"></i></a>
+          }
+        },
+
+        {
+          mDataProp: "booking_status",
+        },
+        {
+          mDataProp: "payment_status",
+        },
+        {
+          mDataProp: "booking_date",
+        }, {
+          mDataProp: null, // since we're customizing rendering
+          render: function (data, type, row) {
+            let bookingData = {};
+            try {
+              bookingData = JSON.parse(row.booking_json || '{}');
+            } catch (e) {
+              console.error("Invalid JSON in booking_json", e);
+            }
+
+            // Example: use fields from the parsed JSON
+            return ` ${bookingData.whatsapp_number || 'N/A'}
+      
+    `;
+          }
+        },
+
+        {
+          mDataProp: function (data, type, full, meta) {
+            return (
+              `<a id="${meta.row}" class="btn btnView text-primary fs-14 lh-1"><i class="ri-eye-line"></i></a>
                   <a id="${meta.row}" class="btn btnEdit text-info fs-14 lh-1"> <i class="ri-edit-line"></i></a>
                    `
-                );
-              },
-            },
-          ],
-        });
-    
-      }
+            );
+          },
+        },
+      ],
+
+rowCallback: function(row, data, index) {
+    switch (data.plan_id) {
+      case '1':
+        $(row).addClass('row-blue');
+        break;
+      case '2':
+        $(row).addClass('row-red');
+        break;
+      case '3':
+        $(row).addClass('row-green');
+        break;
     }
-    
-    // *************************** [Delete Data]
-  
-    $(document).on('change','#navbar_title_id',function(){
+  }
 
-      let id = $(this).val();
+    });
 
-      $.ajax({
-        type: "POST",
-        url: base_url + "getsubmenu",
-        data: {
-          id: id
-        },
-        dataType: "json",
-        success: function (data) {
-          $('#navbar_page_id').html('<option value="">Select</option>' + data);
-        },
-        error: function () {
-          console.log("Error");
-        },
-      });
-    })
+  }
+}
+
+// *************************** [Delete Data]
+
+$(document).on('change', '#navbar_title_id', function () {
+
+  let id = $(this).val();
+
+  $.ajax({
+    type: "POST",
+    url: base_url + "getsubmenu",
+    data: {
+      id: id
+    },
+    dataType: "json",
+    success: function (data) {
+      $('#navbar_page_id').html('<option value="">Select</option>' + data);
+    },
+    error: function () {
+      console.log("Error");
+    },
+  });
+})
 
 
 

@@ -12,7 +12,8 @@ $(document).ready(function () {
         booking_date: '',
         slot_id: 0,
         slot_info: '',
-        pet_problem:''
+        pet_problem: '',
+        whatsapp_number: ''
     };
 
     let userPetPlan = [];
@@ -44,12 +45,16 @@ $(document).ready(function () {
         canShowBackBtn();
     });
 
-    function canShowBackBtn() {
-        level > 0 ? $('#back-btn').show() : $('#back-btn').hide();
+   function canShowBackBtn() {
+    if (level === 0 || level === 5) {
+        $('#back-btn').hide();
+    } else {
+        $('#back-btn').show();
     }
+}
 
     function showCurrentTab(level) {
-        $('.existing-pet-wrapper, .doctor-area, .pricing-area, .time-slot, .clinic-area, .review-area').hide();
+        $('.existing-pet-wrapper, .doctor-area, .pricing-area, .time-slot, .clinic-area, .review-area, .booking-status-area').hide();
 
         $(`.level-${level}`).addClass('active');
 
@@ -70,6 +75,10 @@ $(document).ready(function () {
                 break;
             case 4:
                 $('.review-area').show();
+                break;
+
+            case 5:
+                $('.booking-status-area').show();
                 break;
 
 
@@ -213,6 +222,8 @@ $(document).ready(function () {
 
     $(document).on('click', '.select-doctor', function () {
         const pet_problem = $('#pet_problem').val().trim();
+        const whatsapp_number = $('#whatsapp_number').val().trim();
+
         const language_id = $('#language_select').val();
 
         if (!pet_problem) {
@@ -222,10 +233,22 @@ $(document).ready(function () {
             return;
         }
 
-        if (!language_id) {
-            TOASTER_HANDLER({ code: 500, msg: "Please select a preferred language." });
+        if (!whatsapp_number) {
+            TOASTER_HANDLER({ code: 500, msg: "Please whats app number to contact." });
 
-            $('#language_select').focus();
+            $('#whatsapp_number').focus();
+            return;
+        } else {
+
+        }
+
+        if (!whatsapp_number) {
+            TOASTER_HANDLER({ code: 500, msg: "Please enter WhatsApp number to contact." });
+            $('#whatsapp_number').focus();
+            return;
+        } else if (!/[6-9][0-9]{9}$/.test(whatsapp_number)) {
+            TOASTER_HANDLER({ code: 500, msg: "Please enter a valid 10-digit mobile number." });
+            $('#whatsapp_number').focus();
             return;
         }
 
@@ -242,8 +265,9 @@ $(document).ready(function () {
         bookingInfo.doctor_id = doctor_id;
         bookingInfo.doctor_name = doctor_name;
         bookingInfo.pet_problem = pet_problem;
+        bookingInfo.whatsapp_number = whatsapp_number;
 
-        
+
         renderCalendar(currentDate);
 
         showCurrentTab(++level);  // go to next step (Plan)
@@ -256,7 +280,6 @@ $(document).ready(function () {
         let element = $(this);
         bookingInfo["slot_id"] = element.data('id');
         bookingInfo["slot_info"] = element.text();
-        getAddressList();
         showCurrentTab(++level);
         canShowBackBtn();
     });
@@ -289,28 +312,52 @@ $(document).ready(function () {
     }
     // ================= Render Review end  ================= 
     // ================= Make Payment start  ================= 
-    $('.make-payment').click(function () {
-        let userInfo = DECRYPT_DATA(localStorage.getItem('user_data'));
-        let formData = { ...bookingInfo, "user_id": userInfo["user_id"] };
+$('.make-payment').click(function () {
+    let userInfo = DECRYPT_DATA(localStorage.getItem('user_data'));
+    let formData = { ...bookingInfo, "user_id": userInfo["user_id"] };
 
-        
-    
-        $.ajax({
-            type: 'POST',
-            url: base_url + 'add-booking',
-            data: formData,
-            success: function (response) {
-                if (response["code"] == "200") {
-                    $('#add-address_popup').modal('hide');
-                    getAddressList();
-                }
-                TOASTER_HANDLER(response);
-            },
-            error: function (xhr, status, error) {
-                console.error('AJAX Error: ' + error);
+    $.ajax({
+        type: 'POST',
+        url: base_url + 'add-booking',
+        data: formData,
+        success: function (response) {
+
+            if (response.code == 200) {
+                $('#booking-status-msg').text(response.msg);
+                $('.fa-check-circle').removeClass('text-danger').addClass('text-success');
+                $('.booking-status-area h3').text('Booking Confirmed');
+            } else {
+                $('#booking-status-msg').text(response.msg);
+                $('.fa-check-circle').removeClass('text-success').addClass('text-danger');
+                $('.booking-status-area h3').text('Booking Failed');
             }
-        });
+
+            // Always show the booking status tab
+            level = 5;
+            showCurrentTab(level);
+            canShowBackBtn();
+
+            // Fetch support details and display
+            $.ajax({
+                url: base_url + 'get-support-details',
+                method: 'GET',
+                success: function (support) {
+                    if (support) {
+                      $('#support-email').text(support.support_email || 'N/A');
+                        $('#support-phone').text(support.support_contact || 'N/A');
+                    }
+                },
+                error: function () {
+                    console.error("Failed to load support details.");
+                }
+            });
+
+        },
+        error: function (xhr, status, error) {
+            console.error('AJAX Error: ' + error);
+        }
     });
+});
     // ================= Make Payment end  ================= 
     $.ajax({
         type: "GET",

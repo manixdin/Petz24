@@ -27,7 +27,7 @@
                             </div>
                             <div class="track">
                                 <div class="step level-0 active">
-                                    <span class="icon"><i class="fa fa-check"></i></span>
+                                    <span class="icon"><i class="fa fa-paw"></i></span>
                                     <span class="text">Select Pets(s)</span>
                                 </div>
                                 <div class="step level-1">
@@ -35,16 +35,21 @@
                                     <span class="text">Select Doctor</span>
                                 </div>
                                 <div class="step level-2">
-                                    <span class="icon"><i class="fa fa-truck"></i></span>
+                                    <span class="icon"><i class="fa fa-clock-o"></i></span>
                                     <span class="text">Select Time Slot</span>
                                 </div>
                                 <div class="step level-3">
-                                    <span class="icon"><i class="fa fa-archive"></i>
+                                    <span class="icon"><i class="fa fa-list-alt"></i>
                                     </span> <span class="text">Select Plan</span>
                                 </div>
                                 <div class="step level-4">
-                                    <span class="icon"><i class="fa fa-archive"></i>
+                                    <span class="icon"><i class="fa fa-eye"></i>
                                     </span> <span class="text">Review Booking</span>
+                                </div>
+
+                                <div class="step level-5">
+                                    <span class="icon"><i class="fa fa-info-circle"></i>
+                                    </span> <span class="text">Booking Status</span>
                                 </div>
                             </div>
                         </div>
@@ -95,6 +100,15 @@
                     <label for="pet_problem">Describe Pet Problem</label>
                     <textarea id="pet_problem" class="form-control" rows="3"></textarea>
                 </div>
+
+                <div class="input-group my-4">
+                    <span class="input-group-text" id="basic-addon1">+91</span>
+                    <input type="number" class="form-control" placeholder="Whats App Number"
+                        aria-label="Whats App Number" aria-describedby="basic-addon1" id="whatsapp_number"
+                        name="whatsapp_number" max='10'>
+                </div>
+
+
                 <div class="form-group mb-3">
                     <label for="language_select">Preferred Doctor Language</label>
                     <select id="language_select" class="form-control">
@@ -245,7 +259,7 @@
                                                         aria-hidden="true"></i>&nbsp; TIME </span> :
                                                 <span id="review-timeslot"> </span>
                                             </span>
-                                      
+
                                         </div>
                                     </div>
                                 </div>
@@ -264,6 +278,27 @@
                 </div>
             </div>
         </div>
+        <!-- REVIEW SECTION ENDS -->
+
+
+        
+        <!-- REVIEW SECTION START -->
+<div class="booking-status-area py-3" style="display:none;">
+    <div class="container p-5 my-3 text-center">
+        <i class="fa fa-check-circle fa-3x text-success mb-3"></i>
+        <h3 class="mb-3"></h3>
+        <p id="booking-status-msg"></p>
+
+        <!-- Support info section -->
+        <div class="support-info mt-4">
+            <p class="mb-1">For any help, contact us at:</p>
+            <p id="support-email" class="mb-0 fw-bold"></p>
+            <p id="support-phone" class="fw-bold"></p>
+        </div>
+
+        <a href="<?php echo base_url(); ?>" class="btn btn-style1-custom mt-3">Go to Home</a>
+    </div>
+</div>
         <!-- REVIEW SECTION ENDS -->
     </section>
 

@@ -175,7 +175,7 @@
                                     <h2>Chat with Doctor!</h2>
                                     <span class="deal-slogan mt-4">Let’s raise healthy and happy pets together.</span>
                                 </div>
-                                <a href="<?= base_url('pet-grooming-experience') ?>" class="btn btn-style1">Ask your doubts here</a>
+                                <a href="<?= base_url('chatbooking') ?>" class="btn btn-style1">Ask your doubts here</a>
                             </div>
                         </div>
                     </div>

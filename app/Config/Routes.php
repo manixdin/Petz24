@@ -21,6 +21,8 @@ $routes->get('booking','BookingController::index');
 $routes->get('chatbooking','BookingController::chatbooking');
 
 $routes->get('get-pet-list','BookingController::getPetList');
+$routes->get('get-support-details','BookingController::getSupportDetails');
+
 $routes->get('get-doctor-language','BookingController::getDoctorLanguage');
 $routes->post('get-doctors','BookingController::getDoctors');
 

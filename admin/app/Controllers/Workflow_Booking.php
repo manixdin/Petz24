@@ -34,6 +34,8 @@ class Workflow_Booking extends BaseController
             user_tbl.first_name as first_name, 
             user_tbl.last_name as last_name, 
             pet_plan_tbl.plan_name as plan_name, 
+             pet_plan_tbl.plan_id  as plan_id , 
+
             user_pet_tbl.name as user_pet_name, 
             pet_tbl.pet_name as pet_name,             
             ') // Add required user fields

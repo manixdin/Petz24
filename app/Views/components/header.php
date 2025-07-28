@@ -8,7 +8,7 @@
                     <ul class="top-home">
                         <!-- offer text start -->
                         <li class="top-home-li t-content">
-                            <p>Celebrate The Love Of Pets With <b> Our Valentine Sale!</b></p>
+                            <p>Your Pet’s Health, Just a Click Away </p>
                         </li>
                         <!-- offer text end -->
                         <li class="top-home-li">

@@ -111,3 +111,16 @@
   aspect-ratio: 4 / 2.7;
 }
 
+
+
+.row-blue td {
+  background-color: #d0e7ff !important; /* light blue */
+}
+
+.row-red td {
+  background-color: #f8d7da !important; /* light red */
+}
+
+.row-green td {
+  background-color: #d4edda !important; /* light green */
+}

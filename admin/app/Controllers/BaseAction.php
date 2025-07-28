@@ -76,6 +76,10 @@ class BaseAction extends BaseController
     {
         return view('doctor');
     }
+  public function support()
+    {
+        return view('support');
+    }
 
 
     ##############################################

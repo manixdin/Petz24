@@ -137,14 +137,14 @@
 
                     </a>
                 </li>
-                
+
                 <!-- // Created by mani start -->
                 <li class="slide">
                     <a href="<?php echo base_url() ?>pet-plan" class="side-menu__item">
                         <i class="bx bx-home side-menu__icon"></i>
                         <span class="side-menu__label">Pet Plan
                             <span class="badge bg-warning-transparent ms-2"></span>
-                        </span> 
+                        </span>
                     </a>
                 </li>
 
@@ -153,7 +153,7 @@
                         <i class="bx bx-home side-menu__icon"></i>
                         <span class="side-menu__label">Pet Plan Details
                             <span class="badge bg-warning-transparent ms-2"></span>
-                        </span> 
+                        </span>
                     </a>
                 </li>
                 <!-- // Created by mani start -->
@@ -172,7 +172,7 @@
                         <i class="bx bx-home side-menu__icon"></i>
                         <span class="side-menu__label">Booking
                             <span class="badge bg-warning-transparent ms-2"></span>
-                        </span> 
+                        </span>
                     </a>
                 </li>
 
@@ -180,22 +180,32 @@
 
 
 
-                    <li class="slide">
+                <li class="slide">
                     <a href="<?php echo base_url() ?>doctor-language" class="side-menu__item">
                         <i class="bx bx-home side-menu__icon"></i>
                         <span class="side-menu__label">Language
                             <span class="badge bg-warning-transparent ms-2"></span>
-                        </span> 
+                        </span>
                     </a>
                 </li>
 
-                
-                    <li class="slide">
+
+                <li class="slide">
                     <a href="<?php echo base_url() ?>doctor" class="side-menu__item">
                         <i class="bx bx-home side-menu__icon"></i>
                         <span class="side-menu__label">Doctor
                             <span class="badge bg-warning-transparent ms-2"></span>
-                        </span> 
+                        </span>
+                    </a>
+                </li>
+
+
+                <li class="slide">
+                    <a href="<?php echo base_url() ?>support" class="side-menu__item">
+                        <i class="bx bx-home side-menu__icon"></i>
+                        <span class="side-menu__label">Support
+                            <span class="badge bg-warning-transparent ms-2"></span>
+                        </span>
                     </a>
                 </li>
 

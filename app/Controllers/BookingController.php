@@ -25,6 +25,17 @@ class BookingController extends BaseController
         return $this->response->setJSON($pets);
     } 
 
+
+   public function getSupportDetails()
+{
+    $db = \Config\Database::connect();
+    $builder = $db->table('support_tbl');
+    $query = $builder->get(1); // Limit to 1 record
+    $row = $query->getRowArray(); // Get the first row as an associative array
+
+    return $this->response->setJSON($row);
+}
+
 public function getDoctorLanguage()
 {
     $db = \Config\Database::connect();
@@ -107,7 +118,8 @@ public function getDoctors()
     } 
     function addBooking(){
         $db = \Config\Database::connect();
-        $data = $this->request->getPost(); 
+        $data = $this->request->getPost();
+
 
 
 
@@ -135,6 +147,14 @@ public function getDoctors()
         if (!isset($data['center_id'])) {
             $data['center_id'] = NULL;
         }
+
+
+        if (!isset($data['user_id'])) {
+    return $this->response->setJSON([
+        'code' => 400,
+        'msg'  => 'User ID is missing'
+    ]);
+}
         $sql = "INSERT INTO `booking_tbl` (`user_id`, `user_pet_id`, `plan_id`, `booking_date`, `slot_id`, `address_id`, `center_id`, `booking_json`) 
                 VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
 
@@ -153,7 +173,13 @@ public function getDoctors()
             $bookingJson
         ]); 
 
-
+if (!$query) {
+    $error = $db->error();
+    return $this->response->setJSON([
+        'code' => 500,
+        'msg' => 'Database error: ' . $error['message']
+    ]);
+}
 
         $planId = $data['plan_id'];
 $msg = 'Plan booked successfully'; // default message

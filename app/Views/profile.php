@@ -31,7 +31,7 @@
                             <div class="order-his-page">
                                 <ul class="profile-ul">
                                     <li class="profile-li"><a data-tap="#manage-profile" class="change-profile-tap active">Profile</a></li>
-                                    <li class="profile-li"><a data-tap="#manage-address" class="change-profile-tap">Manage Address</a></li>
+                                    <!-- <li class="profile-li"><a data-tap="#manage-address" class="change-profile-tap">Manage Address</a></li> -->
                                     <li class="profile-li"><a data-tap="#manage-pet" class="change-profile-tap">Manage Pet</a></li>
                                 </ul>
                             </div>
@@ -64,7 +64,7 @@
                             </form>
                         </div>
 
-                        <div class="profile-form" id="manage-address">  
+                        <!-- <div class="profile-form" id="manage-address">  
                             <div class="clinic-area">
                                 <span class="groom-title">Manage your address details </span> 
                                 <div class="row" id="address-list">
@@ -90,7 +90,7 @@
                                     </div>  
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="profile-form" id="manage-pet">  
                             <div class="existing-pet-wrapper">
