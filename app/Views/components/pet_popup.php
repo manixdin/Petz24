@@ -80,14 +80,14 @@
 
 
                                     </div>
-                                    
-                                    
+
+
                                 </div>
 
                                 <div class="billing-addresss-1">
-                                     <img src="" id="pet_image_url" alt="image" width="130px"
-                                            style="padding-top: 15px; display:none;">
-</div>
+                                    <img src="" id="pet_image_url" alt="image" width="130px"
+                                        style="padding-top: 15px; display:none;">
+                                </div>
                                 <p class="error pet-img-error"></p>
 
 

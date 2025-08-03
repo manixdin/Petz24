@@ -67,7 +67,8 @@ $routes->get('chatwithdoctor', 'BaseAction::chatwithdoctor');
 
 //terms and condition
 $routes->get('terms-conditions', 'BaseAction::termsAndCondition');
-
+//Privacypolicy
+$routes->get('privacy-policy', 'BaseAction::privacypolicy');
 //order
 $routes->get('order', 'BaseAction::order');
 //checkout
@@ -78,8 +79,7 @@ $routes->get('about', 'BaseAction::about');
 $routes->get('contact', 'BaseAction::contact');
 //FAQ
 $routes->get('faq', 'BaseAction::faq');
-//Privacypolicy
-$routes->get('privacypolicy', 'BaseAction::privacypolicy');
+
 //Experience
 $routes->get('experience', 'BaseAction::experience');
 //Add Pet

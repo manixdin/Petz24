@@ -11,6 +11,10 @@ $(document).ready(function(){
             data,
             success: function (response) {
                 let res = JSON.parse(response), userData = res.data
+
+
+                console.log(res);
+                
                 userProfile = DECRYPT_DATA(userData)
                 localStorage.setItem('user_data', userData)
                 refreshProfileData();

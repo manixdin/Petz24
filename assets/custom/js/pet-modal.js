@@ -7,6 +7,9 @@ $(document).ready(function () {
     getUserPetList();
     // ===== Get Pet List Start =====
     function getPetList() {
+
+        
+        
         $.ajax({
             type: 'GET',
             url: base_url + 'get-pet-list',
@@ -127,21 +130,33 @@ $(document).ready(function () {
     });
 
 
-    $("#pet_img").change(function () {
-        const input = this;
+  $("#pet_img").change(function () {
+    const input = this;
 
-        if (input.files && input.files[0]) {
-            const reader = new FileReader();
+    if (input.files && input.files[0]) {
+        const file = input.files[0];
 
-            reader.onload = function (e) {
-                $("#pet_image_url")
-                    .attr("src", e.target.result)
-                    .css("display", "block");
-            };
+        // Check file size (1MB = 1 * 1024 * 1024 bytes)
+        if (file.size > 1024 * 1024) {
+            input.value = ''; // Clear the file input
+            $("#pet_image_url").hide(); // Optionally hide preview
+           TOASTER_HANDLER({code:400, msg:'File size must be less than 1MB'});
 
-            reader.readAsDataURL(input.files[0]);
+            return;
         }
-    });
+
+        const reader = new FileReader();
+
+        reader.onload = function (e) {
+            $("#pet_image_url")
+                .attr("src", e.target.result)
+                .css("display", "block");
+        };
+
+        reader.readAsDataURL(file);
+    }
+});
+
 
 
     $("#add-pet").click(function () {

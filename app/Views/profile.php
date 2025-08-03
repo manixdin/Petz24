@@ -33,6 +33,8 @@
                                     <li class="profile-li"><a data-tap="#manage-profile" class="change-profile-tap active">Profile</a></li>
                                     <!-- <li class="profile-li"><a data-tap="#manage-address" class="change-profile-tap">Manage Address</a></li> -->
                                     <li class="profile-li"><a data-tap="#manage-pet" class="change-profile-tap">Manage Pet</a></li>
+
+                                      <li class="profile-li"><a href="<?php echo base_url();?>contact" class="change-profile-tap">Contact Us</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -44,21 +46,21 @@
                                 <ul class="pro-input-label">
                                     <li>
                                         <label>First name</label>
-                                        <input class='first_name profile-input' type="text" name="first_name" placeholder="First name">
+                                        <input class='first_name profile-input' type="text" name="first_name" placeholder="First name" readonly>
                                     </li>
                                     <li>
                                         <label>Last name</label>
-                                        <input class='last_name profile-input' type="text" name="last_name" placeholder="Last name">
+                                        <input class='last_name profile-input' type="text" name="last_name" placeholder="Last name" readonly>
                                     </li>
                                 </ul>
                                 <ul class="pro-input-label">
                                     <li>
                                         <label>Email address</label>
-                                        <input class='email_id profile-input' type="text" name="email_id" placeholder="Email address" required>
+                                        <input class='email_id profile-input' type="text" name="email_id" placeholder="Email address" readonly>
                                     </li>
                                     <li>
                                         <label>Phone number</label>
-                                        <input class='mobile_number profile-input' type="text" name="mobile_number" placeholder="Phone number">
+                                        <input class='mobile_number profile-input' type="text" name="mobile_number" placeholder="Phone number" readonly>
                                     </li>
                                 </ul>
                             </form>
